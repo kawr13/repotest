@@ -1,2 +1,4 @@
 .idea
 SmartLearn/Learn/migrations/
+SmartLearn/Learn/__pycache__/models.cpython-311.pyc
+SmartLearn/SmartLearn/__pycache__/
