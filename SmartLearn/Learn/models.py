@@ -41,7 +41,6 @@ class Tag(models.Model):
         return self.name
 
 
-
 class Cabinet(models.Model):
     name = models.CharField(max_length=100)
     teachers = models.ManyToManyField(Teacher, related_name='cabinets')
@@ -50,7 +49,6 @@ class Cabinet(models.Model):
 
     def __str__(self):
         return self.name
-
 
 
 # class CabinetUser(models.Model):

@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    "Learn.apps.LearnConfig",
+    # "Learn.apps.LearnConfig",
+    'Cabinet.apps.CabinetConfig',
 ]
 
 MIDDLEWARE = [
