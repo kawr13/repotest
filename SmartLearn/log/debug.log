@@ -1967,3 +1967,12 @@ INFO 2023-10-11 14:53:30,723 basehttp 17508 13552 "GET /static/admin/img/icon-no
 INFO 2023-10-11 14:53:30,725 basehttp 17508 15548 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
 INFO 2023-10-11 14:53:33,237 basehttp 17508 15548 "GET /admin/Learn/user/1/change/ HTTP/1.1" 200 32294
 INFO 2023-10-11 14:53:33,265 basehttp 17508 15548 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-11 15:25:33,685 autoreload 17508 4580 F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\Learn\models.py changed, reloading.
+INFO 2023-10-11 15:25:34,167 autoreload 14440 8692 Watching for file changes with StatReloader
+INFO 2023-10-11 15:36:32,121 autoreload 14440 8692 F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\Learn\models.py changed, reloading.
+INFO 2023-10-11 15:36:32,572 autoreload 17684 18112 Watching for file changes with StatReloader
+INFO 2023-10-11 15:39:22,146 autoreload 17684 18112 F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\Learn\models.py changed, reloading.
+INFO 2023-10-11 15:39:22,644 autoreload 17632 8448 Watching for file changes with StatReloader
+INFO 2023-10-11 15:50:16,295 autoreload 17632 8448 F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\Learn\models.py changed, reloading.
+INFO 2023-10-11 15:50:17,096 autoreload 14316 5376 Watching for file changes with StatReloader
+INFO 2023-10-11 15:52:00,321 autoreload 4516 16480 Watching for file changes with StatReloader

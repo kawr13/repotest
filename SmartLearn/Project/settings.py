@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    "Learn.apps.LearnConfig",
+    "profileapp",
 ]
 
 MIDDLEWARE = [
@@ -126,7 +126,7 @@ MEDIA_URL = 'media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
 # User
-AUTH_USER_MODEL = 'Learn.User'
+AUTH_USER_MODEL = 'profileapp.User'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
@@ -161,7 +161,7 @@ LOGGING = {
             'handlers': ['console', 'file'],
             'level': 'INFO',
         },
-        'Learn': {
+        'profileapp': {
             'handlers': ['console', 'file'],
             'level': 'INFO',
             'propagate': True,

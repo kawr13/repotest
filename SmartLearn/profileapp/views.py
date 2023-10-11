@@ -3,11 +3,11 @@ from http.client import HTTPResponse
 from django.http import JsonResponse, HttpRequest, HttpResponseRedirect
 from django.shortcuts import render
 from django.urls import reverse
-from Learn.forms import UserForm
-
+from profileapp.forms import UserForm
+from profileapp.models import Teacher, User, Category, Tag
+# from Cabinet.models import Schedule
 from django.contrib import auth
-
-# Create your views here.
+from django.shortcuts import render
 
 
 def index(request: HttpRequest) -> render:
@@ -33,20 +33,20 @@ def sort_category(request: HttpRequest, tag_id: int=None) -> render:
     return render(request, 'profileapp/profile/index.html', context=context)
 
 
-def get_events(request: HttpRequest) -> JsonResponse:
-    events = Schedule.objects.all().values('date_create')
-    events = [
-        {
-            'start': event['date_create'].strftime('%Y-%m-%d %H:%M:%S')
-        }
-        for event in events
-    ]
-
-    return JsonResponse(events, safe=False)
-
-
-def calendar_view(request: HttpRequest) -> render:
-    return render(request, 'profileapp/profile/calend.html')
+# def get_events(request: HttpRequest) -> JsonResponse:
+#     events = Schedule.objects.all().values('date_create')
+#     events = [
+#         {
+#             'start': event['date_create'].strftime('%Y-%m-%d %H:%M:%S')
+#         }
+#         for event in events
+#     ]
+#
+#     return JsonResponse(events, safe=False)
+#
+#
+# def calendar_view(request: HttpRequest) -> render:
+#     return render(request, 'profileapp/profile/calend.html')
 
 
 def blog(request: HttpRequest, user_id: int) -> render:
