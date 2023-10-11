@@ -1,10 +1,10 @@
-{% extends 'Learn/profile/base_home.html' %}
+{% extends 'profileapp/profile/base_home.html' %}
 {% load static %}
 
 {% block scripts %}
     <script src='{% static "fullcalendar-6.1.9\dist\index.global.min.js" %}'></script>
     <script>
-        var getEventsURL = "{% url 'Learn:get_events' %}";
+        var getEventsURL = "{% url 'profileapp:get_events' %}";
     </script>
 {% endblock %}
 

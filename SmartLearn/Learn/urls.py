@@ -1,7 +1,7 @@
 from django.urls import path
 from .views import sort_category, get_events, calendar_view, blog, login
 
-app_name = 'Learn'
+app_name = 'profileapp'
 
 urlpatterns = [
     path('tag/<int:tag_id>/', sort_category, name='tag'),
