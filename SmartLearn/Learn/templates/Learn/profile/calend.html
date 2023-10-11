@@ -1,0 +1,66 @@
+{% extends 'Learn/profile/base_home.html' %}
+{% load static %}
+
+{% block scripts %}
+    <script src='{% static "fullcalendar-6.1.9\dist\index.global.min.js" %}'></script>
+    <script>
+        var getEventsURL = "{% url 'Learn:get_events' %}";
+    </script>
+{% endblock %}
+
+{% block styles %}
+    <style>
+        body {
+            margin: 40px 10px;
+            padding: 0;
+            font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+            font-size: 14px;
+        }
+
+                #calendar {
+            border-radius: 10px;
+            box-shadow: 0 0 10px #ccc;
+        }
+
+            .fc-header-toolbar {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+            .fc-button {
+            border-radius: 30px;
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+    <div class="container my-4">
+        <div id='calendar' class="p-3"></div>
+    </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var calendarEl = document.getElementById('calendar');
+
+                var calendar = new FullCalendar.Calendar(calendarEl, {
+                    headerToolbar: {
+                        left: 'prevYear,prev,next,nextYear today',
+                        center: 'title',
+                        right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
+                    },
+                    initialDate: '2023-01-12',
+                    navLinks: true,
+                    editable: true,
+                    dayMaxEvents: true,
+                    selectable: true,
+                    selectMirror: true,
+                    events: getEventsURL,
+                    eventClick: function(info) {
+                        alert('Event: ' + info.event.title);
+                    },
+                });
+
+                calendar.render();
+            });
+        </script>
+{% endblock %}
+{% block script %}<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>{% endblock %}

@@ -1,10 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Index</title>
-</head>
+{% extends 'Learn/profile/base_home.html' %}
+
+{% block content %}
 <body>
-<h1>Index</h1>
-</body>
-</html>
+    <div class="container mt-5">
+        <div class="btn-group" role="group" id="categoryButtons">
+            <a href="{% url 'index' %}" class="btn btn-secondary">ALL</a>
+            {% for category in categories %}
+                <a href="{% url 'Learn:tag' tag_id=category.id|urlencode %}" class="btn btn-primary">{{ category.name }}</a>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="container">
+        <!-- Содержимое страницы -->
+        <h2>Список учителей</h2>
+        <div class="row">
+            {% for user in users %}
+                <div class="col-md-12">
+                    <div class="card mb-4">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="{{ user.images.url }}" class="card-img" alt="Учитель">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <a href="{% url 'Learn:blog' user.id %}">
+                                        <p class="card-text">Имя: {{ user.first_name }}</p>
+                                        <p class="card-text">Фамилия: {{ user.last_name }}</p>
+                                        <p class="card-title">{{ user.teacher.description }}</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

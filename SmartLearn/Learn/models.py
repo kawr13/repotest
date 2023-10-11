@@ -2,13 +2,6 @@ from django.contrib.auth.models import AbstractUser
 from django.db import models
 
 
-class Teacher(models.Model):
-    description = models.TextField()
-
-    def __str__(self):
-        return self.description
-
-
 class Requisites(models.Model):
     card_number = models.CharField(max_length=16)
     card_date = models.DateField()
@@ -20,27 +13,45 @@ class Requisites(models.Model):
 
 class User(AbstractUser):
     phone_number = models.CharField(max_length=15, unique=True)
-    teacher = models.OneToOneField('Teacher', on_delete=models.CASCADE, related_name='user_teacher')
     is_teacher = models.BooleanField(default=False)
-    requisites = models.OneToOneField('Requisites', on_delete=models.CASCADE, related_name='user_requisites')
+    teacher = models.OneToOneField('Teacher', on_delete=models.CASCADE, related_name='user_teacher', null=True, blank=True)
+    images = models.ImageField(upload_to='users/images', null=True, blank=True)
+    requisites = models.OneToOneField('Requisites', on_delete=models.CASCADE, related_name='user_requisites', null=True, blank=True)
 
-    def __str__(self):
-        return self.username
 
 class Schedule(models.Model):
-    date_create = models.DateTimeField(auto_now_add=True)
+    date_create = models.DateTimeField(null=True, blank=True)
 
     def __str__(self):
-        return self.date_create
+        return str(self.date_create)
+
+
+class Teacher(models.Model):
+    description = models.TextField()
+    tags = models.ManyToManyField('Tag', related_name='teachers')
+
+    def __str__(self):
+        return self.description
+
+
+class Tag(models.Model):
+    name = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.name
+
 
 
 class Cabinet(models.Model):
     name = models.CharField(max_length=100)
-    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='cabinet_user')
-    schedule = models.OneToOneField('Schedule', on_delete=models.CASCADE, related_name='cabinet_schedule')
+    teachers = models.ManyToManyField(Teacher, related_name='cabinets')
+    users = models.ManyToManyField(User, related_name='cabinets')
+    schedules = models.ManyToManyField(Schedule, related_name='cabinets')
 
     def __str__(self):
         return self.name
+
+
 
 # class CabinetUser(models.Model):
 #     user = models.ManyToManyField(User, related_name='cabinet_user')
@@ -68,6 +79,7 @@ class Service(models.Model):
 
     def __str__(self):
         return self.name
+
 
 class Category(models.Model):
     name = models.CharField(max_length=100)
@@ -103,15 +115,6 @@ class Comment(models.Model):
 
     def __str__(self):
         return self.content
-
-
-class Tag(models.Model):
-    name = models.CharField(max_length=100)
-    teacher = models.ManyToManyField(Teacher, related_name='teacher_tag')
-
-    def __str__(self):
-        return self.name
-
 
 
 class Record(models.Model):
