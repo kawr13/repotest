@@ -1976,3 +1976,1087 @@ INFO 2023-10-11 15:39:22,644 autoreload 17632 8448 Watching for file changes wit
 INFO 2023-10-11 15:50:16,295 autoreload 17632 8448 F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\Learn\models.py changed, reloading.
 INFO 2023-10-11 15:50:17,096 autoreload 14316 5376 Watching for file changes with StatReloader
 INFO 2023-10-11 15:52:00,321 autoreload 4516 16480 Watching for file changes with StatReloader
+INFO 2023-10-11 16:13:27,553 autoreload 3584 8448 Watching for file changes with StatReloader
+INFO 2023-10-11 16:13:32,031 basehttp 3584 15612 "GET / HTTP/1.1" 200 2164
+ERROR 2023-10-11 16:13:51,288 log 3584 15612 Internal Server Error: /profile/login/
+Traceback (most recent call last):
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\urls\base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'profileapp'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\profileapp\views.py", line 75, in login
+    return render(request, 'profileapp/profile/login.html', context=context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\urls\base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'profileapp' is not a registered namespace
+ERROR 2023-10-11 16:13:51,291 basehttp 3584 15612 "GET /profile/login/ HTTP/1.1" 500 169677
+INFO 2023-10-11 16:14:30,491 autoreload 15144 16920 Watching for file changes with StatReloader
+INFO 2023-10-11 16:14:36,165 basehttp 15144 17252 "GET /profile/login/ HTTP/1.1" 200 2604
+ERROR 2023-10-11 16:14:46,556 log 15144 17252 Internal Server Error: /profile/calendar/
+Traceback (most recent call last):
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\urls\base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'profileapp'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\profileapp\views.py", line 51, in calendar_view
+    return render(request, 'profileapp/profile/calend.html')
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\urls\base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'profileapp' is not a registered namespace
+ERROR 2023-10-11 16:14:46,561 basehttp 15144 17252 "GET /profile/calendar/ HTTP/1.1" 500 169332
+INFO 2023-10-11 16:15:13,887 autoreload 3116 8456 Watching for file changes with StatReloader
+INFO 2023-10-11 16:15:18,009 basehttp 3116 11028 "GET /profile/calendar/ HTTP/1.1" 200 3610
+INFO 2023-10-11 16:15:18,083 basehttp 3116 11028 "GET /profile/get_events/?start=2023-01-01T00%3A00%3A00%2B05%3A00&end=2023-02-12T00%3A00%3A00%2B05%3A00 HTTP/1.1" 200 2
+INFO 2023-10-11 16:16:30,326 basehttp 3116 11028 "GET /admin/ HTTP/1.1" 302 0
+INFO 2023-10-11 16:16:30,356 basehttp 3116 11028 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4267
+INFO 2023-10-11 16:17:05,238 autoreload 16600 4596 Watching for file changes with StatReloader
+INFO 2023-10-11 16:17:23,866 basehttp 16600 4732 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4533
+INFO 2023-10-11 16:17:27,450 basehttp 16600 4732 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4533
+INFO 2023-10-11 16:17:35,396 basehttp 16600 4732 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4533
+INFO 2023-10-11 16:17:43,861 basehttp 16600 4732 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4533
+INFO 2023-10-11 16:17:53,717 basehttp 16600 4732 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4533
+INFO 2023-10-11 16:20:05,149 basehttp 16600 4732 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2023-10-11 16:20:05,165 basehttp 16600 4732 "GET /admin/ HTTP/1.1" 200 6099
+INFO 2023-10-11 16:20:09,753 basehttp 16600 4732 "GET /admin/Cabinet/cabinet/ HTTP/1.1" 200 7524
+INFO 2023-10-11 16:20:09,788 basehttp 16600 4732 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-11 16:20:11,556 basehttp 16600 4732 "GET /admin/Cabinet/cabinet/ HTTP/1.1" 200 7524
+INFO 2023-10-11 16:20:11,581 basehttp 16600 4732 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-11 16:20:12,449 basehttp 16600 4732 "GET /admin/Cabinet/cabinet/add/ HTTP/1.1" 200 13715
+INFO 2023-10-11 16:20:12,481 basehttp 16600 4732 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-11 16:23:18,677 autoreload 3328 18044 Watching for file changes with StatReloader
+INFO 2023-10-11 16:23:23,690 basehttp 3328 13748 "GET /admin/Cabinet/cabinet/add/ HTTP/1.1" 200 19252
+INFO 2023-10-11 16:23:23,714 basehttp 3328 13748 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-11 16:23:31,611 basehttp 3328 13748 "GET /admin/Cabinet/schedule/ HTTP/1.1" 200 10925
+INFO 2023-10-11 16:23:31,642 basehttp 3328 13748 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-11 16:23:33,696 basehttp 3328 13748 "GET /admin/Cabinet/schedule/add/ HTTP/1.1" 200 12025
+INFO 2023-10-11 16:23:33,722 basehttp 3328 13748 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-11 16:23:36,270 basehttp 3328 13748 "GET /admin/Cabinet/cabinet/ HTTP/1.1" 200 10918
+INFO 2023-10-11 16:23:36,294 basehttp 3328 13748 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-11 16:23:37,389 basehttp 3328 13748 "GET /admin/Cabinet/cabinet/add/ HTTP/1.1" 200 19252
+INFO 2023-10-11 16:23:37,414 basehttp 3328 13748 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-11 16:23:51,704 basehttp 3328 13748 "GET /admin/profileapp/category/ HTTP/1.1" 200 10937
+INFO 2023-10-11 16:23:51,739 basehttp 3328 13748 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-11 16:23:53,481 basehttp 3328 13748 "GET /admin/profileapp/category/add/ HTTP/1.1" 200 13628
+INFO 2023-10-11 16:23:53,504 basehttp 3328 13748 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-11 16:24:10,117 basehttp 3328 13748 "GET /admin/profileapp/teacher/ HTTP/1.1" 200 10930
+INFO 2023-10-11 16:24:10,144 basehttp 3328 13748 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-11 16:24:11,562 basehttp 3328 13748 "GET /admin/profileapp/teacher/add/ HTTP/1.1" 200 15085
+INFO 2023-10-11 16:24:11,588 basehttp 3328 13748 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-11 16:24:20,409 basehttp 3328 13748 "GET /admin/profileapp/post/ HTTP/1.1" 200 10909
+INFO 2023-10-11 16:24:20,439 basehttp 3328 13748 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-11 16:24:21,872 basehttp 3328 13748 "GET /admin/profileapp/post/add/ HTTP/1.1" 200 17548
+INFO 2023-10-11 16:24:21,900 basehttp 3328 13748 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-11 16:24:31,783 basehttp 3328 13748 "GET /admin/profileapp/record/ HTTP/1.1" 200 10923
+INFO 2023-10-11 16:24:31,818 basehttp 3328 13748 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-11 16:24:32,553 basehttp 3328 13748 "GET /admin/profileapp/requisites/ HTTP/1.1" 200 10951
+INFO 2023-10-11 16:24:32,579 basehttp 3328 13748 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-11 16:24:35,881 basehttp 3328 13748 "GET /admin/profileapp/requisites/add/ HTTP/1.1" 200 13249
+INFO 2023-10-11 16:24:35,911 basehttp 3328 13748 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-11 16:24:38,948 basehttp 3328 13748 "GET /admin/profileapp/service/ HTTP/1.1" 200 10930
+INFO 2023-10-11 16:24:38,974 basehttp 3328 13748 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-11 16:24:39,723 basehttp 3328 13748 "GET /admin/profileapp/tag/ HTTP/1.1" 200 10902
+INFO 2023-10-11 16:24:39,752 basehttp 3328 13748 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-11 16:24:40,475 basehttp 3328 13748 "GET /admin/profileapp/teacher/ HTTP/1.1" 200 10930
+INFO 2023-10-11 16:24:40,501 basehttp 3328 13748 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-11 16:24:41,623 basehttp 3328 13748 "GET /admin/profileapp/user/ HTTP/1.1" 200 13557
+INFO 2023-10-11 16:24:41,656 basehttp 3328 13748 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-11 16:24:45,518 basehttp 3328 13748 "GET /admin/profileapp/user/1/change/ HTTP/1.1" 200 32310
+INFO 2023-10-11 16:24:45,544 basehttp 3328 13748 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-11 16:24:56,036 basehttp 3328 13748 "POST /admin/profileapp/user/1/change/ HTTP/1.1" 200 32464
+INFO 2023-10-11 16:24:56,066 basehttp 3328 13748 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-11 16:25:01,108 basehttp 3328 13748 "POST /admin/profileapp/user/1/change/ HTTP/1.1" 302 0
+INFO 2023-10-11 16:25:01,133 basehttp 3328 13748 "GET /admin/profileapp/user/ HTTP/1.1" 200 13843
+INFO 2023-10-11 16:25:01,169 basehttp 3328 13748 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-11 16:25:10,570 basehttp 3328 13748 "GET /admin/profileapp/user/1/change/ HTTP/1.1" 200 32422
+INFO 2023-10-11 16:25:10,606 basehttp 3328 13748 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-11 16:25:15,329 basehttp 3328 13748 "GET /admin/profileapp/teacher/add/?_to_field=id&_popup=1 HTTP/1.1" 200 7792
+INFO 2023-10-11 16:25:15,348 basehttp 3328 13748 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-11 16:25:21,942 basehttp 3328 13748 "GET /static/admin/img/inline-delete.svg HTTP/1.1" 304 0
+INFO 2023-10-11 16:25:23,701 basehttp 3328 13748 "GET /admin/profileapp/tag/add/?_to_field=id&_popup=1 HTTP/1.1" 200 4458
+INFO 2023-10-11 16:25:23,724 basehttp 3328 13748 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-11 16:25:41,356 basehttp 3328 13748 "POST /admin/profileapp/tag/add/?_to_field=id&_popup=1 HTTP/1.1" 200 502
+INFO 2023-10-11 16:25:41,371 basehttp 3328 13748 "GET /static/admin/js/popup_response.js HTTP/1.1" 304 0
+INFO 2023-10-11 16:25:42,189 basehttp 3328 13748 "POST /admin/profileapp/teacher/add/?_to_field=id&_popup=1 HTTP/1.1" 200 392
+INFO 2023-10-11 16:25:44,004 basehttp 3328 13748 "POST /admin/profileapp/user/1/change/ HTTP/1.1" 302 0
+INFO 2023-10-11 16:25:44,019 basehttp 3328 13748 "GET /admin/profileapp/user/ HTTP/1.1" 200 13843
+INFO 2023-10-11 16:25:44,051 basehttp 3328 13748 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+ERROR 2023-10-11 16:25:47,712 log 3328 13748 Internal Server Error: /
+Traceback (most recent call last):
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\urls\base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'profileapp'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\profileapp\views.py", line 20, in index
+    return render(request, 'profileapp/profile/index.html', context=context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\urls\base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'profileapp' is not a registered namespace
+ERROR 2023-10-11 16:25:47,715 basehttp 3328 13748 "GET / HTTP/1.1" 500 184093
+INFO 2023-10-11 16:26:17,662 autoreload 9728 7892 Watching for file changes with StatReloader
+ERROR 2023-10-11 16:26:19,428 log 9728 17116 Internal Server Error: /
+Traceback (most recent call last):
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+TypeError: 'ImageFieldFile' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\profileapp\views.py", line 20, in index
+    return render(request, 'profileapp/profile/index.html', context=context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\db\models\fields\files.py", line 66, in url
+    self._require_file()
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\db\models\fields\files.py", line 41, in _require_file
+    raise ValueError(
+ValueError: The 'images' attribute has no file associated with it.
+ERROR 2023-10-11 16:26:19,433 basehttp 9728 17116 "GET / HTTP/1.1" 500 196872
+INFO 2023-10-11 16:30:57,740 autoreload 2540 12040 Watching for file changes with StatReloader
+INFO 2023-10-11 16:31:13,606 basehttp 2540 14760 "GET /admin/profileapp/user/ HTTP/1.1" 200 13617
+INFO 2023-10-11 16:31:13,636 basehttp 2540 14760 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-11 16:31:15,049 basehttp 2540 14760 "GET /admin/profileapp/user/1/change/ HTTP/1.1" 200 32472
+INFO 2023-10-11 16:31:15,077 basehttp 2540 14760 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-11 16:31:19,842 basehttp 2540 14760 "POST /admin/profileapp/user/1/change/ HTTP/1.1" 302 0
+INFO 2023-10-11 16:31:19,859 basehttp 2540 14760 "GET /admin/profileapp/user/ HTTP/1.1" 200 13843
+INFO 2023-10-11 16:31:19,891 basehttp 2540 14760 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-11 16:31:21,722 basehttp 2540 14760 "GET /admin/profileapp/user/1/change/ HTTP/1.1" 200 32808
+INFO 2023-10-11 16:31:21,742 basehttp 2540 14760 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-11 16:31:24,996 basehttp 2540 14760 "POST /admin/profileapp/user/1/change/ HTTP/1.1" 302 0
+INFO 2023-10-11 16:31:25,013 basehttp 2540 14760 "GET /admin/profileapp/user/ HTTP/1.1" 200 13843
+INFO 2023-10-11 16:31:25,048 basehttp 2540 14760 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+ERROR 2023-10-11 16:31:26,764 log 2540 14760 Internal Server Error: /
+Traceback (most recent call last):
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\urls\base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'profileapp'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\profileapp\views.py", line 20, in index
+    return render(request, 'profileapp/profile/index.html', context=context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\urls\base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'profileapp' is not a registered namespace
+ERROR 2023-10-11 16:31:26,773 basehttp 2540 14760 "GET / HTTP/1.1" 500 185468
+INFO 2023-10-11 16:32:09,194 autoreload 6616 1872 Watching for file changes with StatReloader
+INFO 2023-10-11 16:32:13,761 basehttp 6616 12368 "GET / HTTP/1.1" 200 3293
+INFO 2023-10-11 16:32:13,845 basehttp 6616 12368 "GET /media/users/images/75927-ksyu_jt8G665.jpg HTTP/1.1" 200 531462
+INFO 2023-10-11 16:32:16,252 basehttp 6616 12368 "GET /profile/tag/1/ HTTP/1.1" 200 3293
+INFO 2023-10-11 16:32:17,326 basehttp 6616 12368 "GET / HTTP/1.1" 200 3293
+INFO 2023-10-11 16:32:17,700 basehttp 6616 12368 "GET /profile/tag/1/ HTTP/1.1" 200 3293
+INFO 2023-10-11 16:32:20,138 basehttp 6616 12368 "GET /admin/profileapp/user/add/ HTTP/1.1" 200 32021
+INFO 2023-10-11 16:32:20,170 basehttp 6616 12368 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-11 16:32:45,076 basehttp 6616 12368 "GET /admin/profileapp/teacher/add/?_to_field=id&_popup=1 HTTP/1.1" 200 7872
+INFO 2023-10-11 16:32:45,095 basehttp 6616 12368 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-11 16:32:50,594 basehttp 6616 12368 "POST /admin/profileapp/teacher/add/?_to_field=id&_popup=1 HTTP/1.1" 200 367
+INFO 2023-10-11 16:32:58,979 basehttp 6616 12368 "POST /admin/profileapp/user/add/ HTTP/1.1" 302 0
+INFO 2023-10-11 16:32:59,010 basehttp 6616 12368 "GET /admin/profileapp/user/ HTTP/1.1" 200 14353
+INFO 2023-10-11 16:32:59,042 basehttp 6616 12368 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-11 16:33:03,592 basehttp 6616 12368 "GET /admin/profileapp/user/2/change/ HTTP/1.1" 200 32419
+INFO 2023-10-11 16:33:03,619 basehttp 6616 12368 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-11 16:33:06,884 basehttp 6616 12368 "POST /admin/profileapp/user/2/change/ HTTP/1.1" 302 0
+INFO 2023-10-11 16:33:06,901 basehttp 6616 12368 "GET /admin/profileapp/user/ HTTP/1.1" 200 14355
+INFO 2023-10-11 16:33:06,933 basehttp 6616 12368 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-11 16:33:09,394 basehttp 6616 12368 "GET /profile/tag/1/ HTTP/1.1" 200 3293
+INFO 2023-10-11 16:33:09,409 basehttp 6616 12368 "GET /media/users/images/75927-ksyu_jt8G665.jpg HTTP/1.1" 304 0
+ERROR 2023-10-11 16:33:11,131 log 6616 12368 Internal Server Error: /
+Traceback (most recent call last):
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+TypeError: 'ImageFieldFile' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\profileapp\views.py", line 20, in index
+    return render(request, 'profileapp/profile/index.html', context=context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\db\models\fields\files.py", line 66, in url
+    self._require_file()
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\db\models\fields\files.py", line 41, in _require_file
+    raise ValueError(
+ValueError: The 'images' attribute has no file associated with it.
+ERROR 2023-10-11 16:33:11,134 basehttp 6616 12368 "GET / HTTP/1.1" 500 198902
+INFO 2023-10-11 16:36:26,246 autoreload 17320 7908 Watching for file changes with StatReloader
+ERROR 2023-10-11 16:36:40,530 log 17320 17804 Internal Server Error: /
+Traceback (most recent call last):
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+TypeError: 'ImageFieldFile' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\profileapp\views.py", line 20, in index
+    return render(request, 'profileapp/profile/index.html', context=context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\db\models\fields\files.py", line 66, in url
+    self._require_file()
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\db\models\fields\files.py", line 41, in _require_file
+    raise ValueError(
+ValueError: The 'images' attribute has no file associated with it.
+ERROR 2023-10-11 16:36:40,536 basehttp 17320 17804 "GET / HTTP/1.1" 500 199039
+INFO 2023-10-11 16:36:44,173 basehttp 17320 17804 "GET /admin/profileapp/user/2/change/ HTTP/1.1" 200 32427
+INFO 2023-10-11 16:36:44,201 basehttp 17320 17804 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-11 16:36:47,015 basehttp 17320 17804 "GET /admin/profileapp/user/2/delete/ HTTP/1.1" 200 11621
+INFO 2023-10-11 16:36:47,084 basehttp 17320 17804 "GET /static/admin/js/cancel.js HTTP/1.1" 200 884
+INFO 2023-10-11 16:36:48,333 basehttp 17320 17804 "POST /admin/profileapp/user/2/delete/ HTTP/1.1" 302 0
+INFO 2023-10-11 16:36:48,361 basehttp 17320 17804 "GET /admin/profileapp/user/ HTTP/1.1" 200 13794
+INFO 2023-10-11 16:36:48,388 basehttp 17320 17804 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-11 16:36:49,910 basehttp 17320 17804 "GET /admin/profileapp/user/add/ HTTP/1.1" 200 32058
+INFO 2023-10-11 16:36:49,935 basehttp 17320 17804 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-11 16:37:14,793 basehttp 17320 17804 "POST /admin/profileapp/user/add/ HTTP/1.1" 302 0
+INFO 2023-10-11 16:37:14,810 basehttp 17320 17804 "GET /admin/profileapp/user/ HTTP/1.1" 200 14355
+INFO 2023-10-11 16:37:14,845 basehttp 17320 17804 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-11 16:37:17,267 basehttp 17320 17804 "GET / HTTP/1.1" 200 4269
+INFO 2023-10-11 16:37:17,316 basehttp 17320 4708 "GET /media/users/images/75927-ksyu_jt8G665.jpg HTTP/1.1" 304 0
+WARNING 2023-10-11 16:37:17,321 log 17320 17804 Not Found: /media/static/image/profile_img/img.png
+WARNING 2023-10-11 16:37:17,322 basehttp 17320 17804 "GET /media/static/image/profile_img/img.png HTTP/1.1" 404 2901
+INFO 2023-10-11 16:37:22,620 basehttp 17320 17804 "GET / HTTP/1.1" 200 4269
+WARNING 2023-10-11 16:37:22,753 log 17320 4708 Not Found: /media/static/image/profile_img/img.png
+WARNING 2023-10-11 16:37:22,753 basehttp 17320 4708 "GET /media/static/image/profile_img/img.png HTTP/1.1" 404 2901
+INFO 2023-10-11 16:37:22,757 basehttp 17320 17804 "GET /media/users/images/75927-ksyu_jt8G665.jpg HTTP/1.1" 200 531462
+WARNING 2023-10-11 16:37:23,301 log 17320 17804 Not Found: /favicon.ico
+WARNING 2023-10-11 16:37:23,302 basehttp 17320 17804 "GET /favicon.ico HTTP/1.1" 404 2694
+INFO 2023-10-11 16:39:09,670 autoreload 10888 2488 Watching for file changes with StatReloader
+ERROR 2023-10-11 16:39:14,783 log 10888 6524 Internal Server Error: /
+Traceback (most recent call last):
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\profileapp\views.py", line 20, in index
+    return render(request, 'profileapp/profile/index.html', context=context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\defaulttags.py", line 953, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 22: 'static', expected 'elif', 'else' or 'endif'. Did you forget to register or load this tag?
+ERROR 2023-10-11 16:39:14,791 basehttp 10888 6524 "GET / HTTP/1.1" 500 223506
+INFO 2023-10-11 16:39:39,002 autoreload 10184 9824 Watching for file changes with StatReloader
+ERROR 2023-10-11 16:39:40,758 log 10184 9776 Internal Server Error: /
+Traceback (most recent call last):
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\profileapp\views.py", line 20, in index
+    return render(request, 'profileapp/profile/index.html', context=context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\defaulttags.py", line 953, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 22: 'static', expected 'elif', 'else' or 'endif'. Did you forget to register or load this tag?
+ERROR 2023-10-11 16:39:40,765 basehttp 10184 9776 "GET / HTTP/1.1" 500 224278
+ERROR 2023-10-11 16:39:43,495 log 10184 9776 Internal Server Error: /
+Traceback (most recent call last):
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\profileapp\views.py", line 20, in index
+    return render(request, 'profileapp/profile/index.html', context=context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\defaulttags.py", line 953, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 22: 'static', expected 'elif', 'else' or 'endif'. Did you forget to register or load this tag?
+ERROR 2023-10-11 16:39:43,498 basehttp 10184 9776 "GET / HTTP/1.1" 500 224278
+ERROR 2023-10-11 16:39:45,105 log 10184 9776 Internal Server Error: /
+Traceback (most recent call last):
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\profileapp\views.py", line 20, in index
+    return render(request, 'profileapp/profile/index.html', context=context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\defaulttags.py", line 953, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 22: 'static', expected 'elif', 'else' or 'endif'. Did you forget to register or load this tag?
+ERROR 2023-10-11 16:39:45,110 basehttp 10184 9776 "GET / HTTP/1.1" 500 224278
+ERROR 2023-10-11 16:39:46,869 log 10184 9776 Internal Server Error: /
+Traceback (most recent call last):
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\profileapp\views.py", line 20, in index
+    return render(request, 'profileapp/profile/index.html', context=context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\defaulttags.py", line 953, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 22: 'static', expected 'elif', 'else' or 'endif'. Did you forget to register or load this tag?
+ERROR 2023-10-11 16:39:46,873 basehttp 10184 9776 "GET / HTTP/1.1" 500 224278
+INFO 2023-10-11 16:40:07,631 autoreload 2604 14332 Watching for file changes with StatReloader
+INFO 2023-10-11 16:40:16,133 basehttp 2604 18284 "GET / HTTP/1.1" 200 4271
+WARNING 2023-10-11 16:40:16,199 log 2604 9884 Not Found: /}/media/static/image/profile_img/img.png
+WARNING 2023-10-11 16:40:16,200 log 2604 18284 Not Found: /}/media/users/images/75927-ksyu_jt8G665.jpg
+WARNING 2023-10-11 16:40:16,200 basehttp 2604 9884 "GET /%7D/media/static/image/profile_img/img.png HTTP/1.1" 404 2783
+WARNING 2023-10-11 16:40:16,201 basehttp 2604 18284 "GET /%7D/media/users/images/75927-ksyu_jt8G665.jpg HTTP/1.1" 404 2792
+INFO 2023-10-11 16:40:24,906 basehttp 2604 18284 "GET /profile/tag/1/ HTTP/1.1" 200 3294
+WARNING 2023-10-11 16:40:24,939 log 2604 18284 Not Found: /profile/tag/1/}/media/users/images/75927-ksyu_jt8G665.jpg
+WARNING 2023-10-11 16:40:24,939 basehttp 2604 18284 "GET /profile/tag/1/%7D/media/users/images/75927-ksyu_jt8G665.jpg HTTP/1.1" 404 3650
+INFO 2023-10-11 16:40:25,589 basehttp 2604 18284 "GET / HTTP/1.1" 200 4271
+WARNING 2023-10-11 16:40:25,623 log 2604 9884 Not Found: /}/media/static/image/profile_img/img.png
+WARNING 2023-10-11 16:40:25,625 basehttp 2604 9884 "GET /%7D/media/static/image/profile_img/img.png HTTP/1.1" 404 2783
+WARNING 2023-10-11 16:40:25,627 log 2604 18284 Not Found: /}/media/users/images/75927-ksyu_jt8G665.jpg
+WARNING 2023-10-11 16:40:25,627 basehttp 2604 18284 "GET /%7D/media/users/images/75927-ksyu_jt8G665.jpg HTTP/1.1" 404 2792
+INFO 2023-10-11 16:40:29,304 basehttp 2604 18284 "GET / HTTP/1.1" 200 4271
+WARNING 2023-10-11 16:40:29,456 log 2604 9884 Not Found: /}/media/static/image/profile_img/img.png
+WARNING 2023-10-11 16:40:29,457 basehttp 2604 9884 "GET /%7D/media/static/image/profile_img/img.png HTTP/1.1" 404 2783
+WARNING 2023-10-11 16:40:29,458 log 2604 18284 Not Found: /}/media/users/images/75927-ksyu_jt8G665.jpg
+WARNING 2023-10-11 16:40:29,458 basehttp 2604 18284 "GET /%7D/media/users/images/75927-ksyu_jt8G665.jpg HTTP/1.1" 404 2792
+WARNING 2023-10-11 16:40:30,017 log 2604 18284 Not Found: /favicon.ico
+WARNING 2023-10-11 16:40:30,017 basehttp 2604 18284 "GET /favicon.ico HTTP/1.1" 404 2694
+INFO 2023-10-11 16:40:53,184 autoreload 15540 1872 Watching for file changes with StatReloader
+INFO 2023-10-11 16:40:55,771 basehttp 15540 15120 "GET / HTTP/1.1" 200 4271
+WARNING 2023-10-11 16:40:55,802 log 15540 15984 Not Found: /}/media/static/image/profile_img/img.png
+WARNING 2023-10-11 16:40:55,803 log 15540 15120 Not Found: /}/media/users/images/75927-ksyu_jt8G665.jpg
+WARNING 2023-10-11 16:40:55,803 basehttp 15540 15984 "GET /%7D/media/static/image/profile_img/img.png HTTP/1.1" 404 2783
+WARNING 2023-10-11 16:40:55,805 basehttp 15540 15120 "GET /%7D/media/users/images/75927-ksyu_jt8G665.jpg HTTP/1.1" 404 2792
+INFO 2023-10-11 16:40:57,108 basehttp 15540 15120 "GET / HTTP/1.1" 200 4271
+WARNING 2023-10-11 16:40:57,135 log 15540 15120 Not Found: /}/media/users/images/75927-ksyu_jt8G665.jpg
+WARNING 2023-10-11 16:40:57,137 log 15540 15984 Not Found: /}/media/static/image/profile_img/img.png
+WARNING 2023-10-11 16:40:57,137 basehttp 15540 15984 "GET /%7D/media/static/image/profile_img/img.png HTTP/1.1" 404 2783
+WARNING 2023-10-11 16:40:57,138 basehttp 15540 15120 "GET /%7D/media/users/images/75927-ksyu_jt8G665.jpg HTTP/1.1" 404 2792
+INFO 2023-10-11 16:40:58,087 basehttp 15540 15120 "GET / HTTP/1.1" 200 4271
+WARNING 2023-10-11 16:40:58,118 log 15540 15120 Not Found: /}/media/users/images/75927-ksyu_jt8G665.jpg
+WARNING 2023-10-11 16:40:58,119 log 15540 15984 Not Found: /}/media/static/image/profile_img/img.png
+WARNING 2023-10-11 16:40:58,120 basehttp 15540 15120 "GET /%7D/media/users/images/75927-ksyu_jt8G665.jpg HTTP/1.1" 404 2792
+WARNING 2023-10-11 16:40:58,120 basehttp 15540 15984 "GET /%7D/media/static/image/profile_img/img.png HTTP/1.1" 404 2783
+INFO 2023-10-11 16:41:48,459 autoreload 13884 10880 Watching for file changes with StatReloader
+INFO 2023-10-11 16:41:51,171 basehttp 13884 5276 "GET / HTTP/1.1" 200 4264
+WARNING 2023-10-11 16:41:51,200 log 13884 5276 Not Found: /}/media/users/images/75927-ksyu_jt8G665.jpg
+WARNING 2023-10-11 16:41:51,200 basehttp 13884 5276 "GET /%7D/media/users/images/75927-ksyu_jt8G665.jpg HTTP/1.1" 404 2792
+INFO 2023-10-11 16:41:51,233 basehttp 13884 17476 "GET /static/image/profile_img/img.png HTTP/1.1" 200 3549
+INFO 2023-10-11 16:41:59,877 basehttp 13884 17476 "GET / HTTP/1.1" 200 4264
+WARNING 2023-10-11 16:41:59,903 log 13884 17476 Not Found: /}/media/users/images/75927-ksyu_jt8G665.jpg
+WARNING 2023-10-11 16:41:59,903 basehttp 13884 17476 "GET /%7D/media/users/images/75927-ksyu_jt8G665.jpg HTTP/1.1" 404 2792
+INFO 2023-10-11 16:42:12,494 autoreload 13884 10880 F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\profileapp\models.py changed, reloading.
+INFO 2023-10-11 16:42:13,105 autoreload 320 8660 Watching for file changes with StatReloader
+INFO 2023-10-11 16:42:25,598 autoreload 15264 17516 Watching for file changes with StatReloader
+INFO 2023-10-11 16:42:28,481 basehttp 15264 10332 "GET / HTTP/1.1" 200 4264
+WARNING 2023-10-11 16:42:28,508 log 15264 10332 Not Found: /}/media/users/images/75927-ksyu_jt8G665.jpg
+WARNING 2023-10-11 16:42:28,508 basehttp 15264 10332 "GET /%7D/media/users/images/75927-ksyu_jt8G665.jpg HTTP/1.1" 404 2792
+INFO 2023-10-11 16:42:30,084 basehttp 15264 10332 "GET / HTTP/1.1" 200 4264
+WARNING 2023-10-11 16:42:30,110 log 15264 10332 Not Found: /}/media/users/images/75927-ksyu_jt8G665.jpg
+WARNING 2023-10-11 16:42:30,111 basehttp 15264 10332 "GET /%7D/media/users/images/75927-ksyu_jt8G665.jpg HTTP/1.1" 404 2792
+INFO 2023-10-11 16:42:31,632 basehttp 15264 10332 "GET / HTTP/1.1" 200 4264
+INFO 2023-10-11 16:42:31,997 basehttp 15264 10332 "GET / HTTP/1.1" 200 4264
+WARNING 2023-10-11 16:42:32,002 log 15264 3584 Not Found: /}/media/users/images/75927-ksyu_jt8G665.jpg
+WARNING 2023-10-11 16:42:32,003 basehttp 15264 3584 "GET /%7D/media/users/images/75927-ksyu_jt8G665.jpg HTTP/1.1" 404 2792
+WARNING 2023-10-11 16:42:32,027 log 15264 3584 Not Found: /}/media/users/images/75927-ksyu_jt8G665.jpg
+WARNING 2023-10-11 16:42:32,028 basehttp 15264 3584 "GET /%7D/media/users/images/75927-ksyu_jt8G665.jpg HTTP/1.1" 404 2792
+INFO 2023-10-11 16:42:32,044 basehttp 15264 2840 - Broken pipe from ('127.0.0.1', 56267)
+INFO 2023-10-11 16:42:32,059 basehttp 15264 10332 "GET /static/image/profile_img/img.png HTTP/1.1" 200 3549
+WARNING 2023-10-11 16:42:32,142 log 15264 10332 Not Found: /favicon.ico
+WARNING 2023-10-11 16:42:32,143 basehttp 15264 10332 "GET /favicon.ico HTTP/1.1" 404 2694
+INFO 2023-10-11 16:42:32,171 basehttp 15264 10332 "GET / HTTP/1.1" 200 4264
+INFO 2023-10-11 16:42:32,191 basehttp 15264 3584 "GET /static/image/profile_img/img.png HTTP/1.1" 200 3549
+WARNING 2023-10-11 16:42:32,194 log 15264 10332 Not Found: /}/media/users/images/75927-ksyu_jt8G665.jpg
+WARNING 2023-10-11 16:42:32,195 basehttp 15264 10332 "GET /%7D/media/users/images/75927-ksyu_jt8G665.jpg HTTP/1.1" 404 2792
+WARNING 2023-10-11 16:42:32,658 log 15264 10332 Not Found: /favicon.ico
+WARNING 2023-10-11 16:42:32,659 basehttp 15264 10332 "GET /favicon.ico HTTP/1.1" 404 2694
+INFO 2023-10-11 16:43:01,919 autoreload 3596 3572 Watching for file changes with StatReloader
+ERROR 2023-10-11 16:43:07,842 log 3596 5152 Internal Server Error: /
+Traceback (most recent call last):
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+TypeError: 'ImageFieldFile' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\profileapp\views.py", line 20, in index
+    return render(request, 'profileapp/profile/index.html', context=context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\db\models\fields\files.py", line 66, in url
+    self._require_file()
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\db\models\fields\files.py", line 41, in _require_file
+    raise ValueError(
+ValueError: The 'images' attribute has no file associated with it.
+ERROR 2023-10-11 16:43:07,850 basehttp 3596 5152 "GET / HTTP/1.1" 500 216237
+WARNING 2023-10-11 16:43:38,897 log 3596 5152 Not Found: /admin/Learn/user/
+WARNING 2023-10-11 16:43:38,897 basehttp 3596 5152 "GET /admin/Learn/user/ HTTP/1.1" 404 6179
+INFO 2023-10-11 16:43:42,298 basehttp 3596 5152 "GET /admin/ HTTP/1.1" 200 13967
+INFO 2023-10-11 16:43:44,081 basehttp 3596 5152 "GET /admin/profileapp/user/ HTTP/1.1" 200 14131
+INFO 2023-10-11 16:43:44,113 basehttp 3596 5152 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-11 16:43:45,799 basehttp 3596 5152 "GET /admin/profileapp/user/1/change/ HTTP/1.1" 200 32845
+INFO 2023-10-11 16:43:45,833 basehttp 3596 5152 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-11 16:43:48,127 basehttp 3596 5152 "GET /media/users/images/75927-ksyu_jt8G665.jpg HTTP/1.1" 304 0
+INFO 2023-10-11 16:43:50,156 basehttp 3596 5152 "GET /admin/profileapp/user/1/change/ HTTP/1.1" 200 32845
+INFO 2023-10-11 16:44:42,117 autoreload 14052 17648 Watching for file changes with StatReloader
+INFO 2023-10-11 16:44:48,639 basehttp 14052 2088 "GET /profile/tag/1/ HTTP/1.1" 200 3287
+WARNING 2023-10-11 16:44:48,673 log 14052 2088 Not Found: /profile/tag/1/}users/images/75927-ksyu_jt8G665.jpg
+WARNING 2023-10-11 16:44:48,673 basehttp 14052 2088 "GET /profile/tag/1/%7Dusers/images/75927-ksyu_jt8G665.jpg HTTP/1.1" 404 3629
+INFO 2023-10-11 16:44:50,478 basehttp 14052 2088 "GET /profile/tag/1/ HTTP/1.1" 200 3287
+WARNING 2023-10-11 16:44:50,506 log 14052 2088 Not Found: /profile/tag/1/}users/images/75927-ksyu_jt8G665.jpg
+WARNING 2023-10-11 16:44:50,506 basehttp 14052 2088 "GET /profile/tag/1/%7Dusers/images/75927-ksyu_jt8G665.jpg HTTP/1.1" 404 3629
+INFO 2023-10-11 16:44:54,479 basehttp 14052 2088 "GET /static HTTP/1.1" 301 0
+WARNING 2023-10-11 16:44:54,490 basehttp 14052 8700 "GET /static/ HTTP/1.1" 404 1926
+WARNING 2023-10-11 16:44:56,483 basehttp 14052 9428 "GET /static/ HTTP/1.1" 404 1926
+INFO 2023-10-11 16:44:59,026 basehttp 14052 7988 "GET / HTTP/1.1" 200 4257
+INFO 2023-10-11 16:44:59,104 basehttp 14052 18168 "GET /static/image/profile_img/img.png HTTP/1.1" 304 0
+WARNING 2023-10-11 16:44:59,109 log 14052 7988 Not Found: /}users/images/75927-ksyu_jt8G665.jpg
+WARNING 2023-10-11 16:44:59,109 basehttp 14052 7988 "GET /%7Dusers/images/75927-ksyu_jt8G665.jpg HTTP/1.1" 404 2771
+INFO 2023-10-11 16:45:03,435 basehttp 14052 7988 "GET / HTTP/1.1" 200 4257
+WARNING 2023-10-11 16:45:03,459 log 14052 7988 Not Found: /}users/images/75927-ksyu_jt8G665.jpg
+WARNING 2023-10-11 16:45:03,460 basehttp 14052 7988 "GET /%7Dusers/images/75927-ksyu_jt8G665.jpg HTTP/1.1" 404 2771
+INFO 2023-10-11 16:45:05,163 basehttp 14052 7988 "GET / HTTP/1.1" 200 4257
+WARNING 2023-10-11 16:45:05,186 log 14052 7988 Not Found: /}users/images/75927-ksyu_jt8G665.jpg
+WARNING 2023-10-11 16:45:05,186 basehttp 14052 7988 "GET /%7Dusers/images/75927-ksyu_jt8G665.jpg HTTP/1.1" 404 2771
+INFO 2023-10-11 16:45:07,334 basehttp 14052 7988 "GET /profile/blog/1/ HTTP/1.1" 200 1783
+INFO 2023-10-11 16:46:12,898 autoreload 15716 15120 Watching for file changes with StatReloader
+INFO 2023-10-11 16:46:15,757 basehttp 15716 5408 "GET / HTTP/1.1" 200 4256
+INFO 2023-10-11 16:46:15,788 basehttp 15716 17916 "GET /static/image/profile_img/img.png HTTP/1.1" 304 0
+WARNING 2023-10-11 16:46:15,791 log 15716 5408 Not Found: /users/images/75927-ksyu_jt8G665.jpg
+WARNING 2023-10-11 16:46:15,792 basehttp 15716 5408 "GET /users/images/75927-ksyu_jt8G665.jpg HTTP/1.1" 404 2766
+INFO 2023-10-11 16:46:17,260 basehttp 15716 5408 "GET / HTTP/1.1" 200 4256
+WARNING 2023-10-11 16:46:17,284 log 15716 5408 Not Found: /users/images/75927-ksyu_jt8G665.jpg
+WARNING 2023-10-11 16:46:17,285 basehttp 15716 5408 "GET /users/images/75927-ksyu_jt8G665.jpg HTTP/1.1" 404 2766
+INFO 2023-10-11 16:46:20,826 basehttp 15716 5408 "GET / HTTP/1.1" 200 4256
+WARNING 2023-10-11 16:46:20,875 log 15716 5408 Not Found: /users/images/75927-ksyu_jt8G665.jpg
+WARNING 2023-10-11 16:46:20,875 basehttp 15716 5408 "GET /users/images/75927-ksyu_jt8G665.jpg HTTP/1.1" 404 2766
+INFO 2023-10-11 16:46:37,033 autoreload 18400 7228 Watching for file changes with StatReloader
+INFO 2023-10-11 16:46:38,856 basehttp 18400 17852 "GET / HTTP/1.1" 200 4263
+INFO 2023-10-11 16:46:38,877 basehttp 18400 17852 "GET /media/users/images/75927-ksyu_jt8G665.jpg HTTP/1.1" 304 0

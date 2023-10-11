@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    "profileapp",
+    "profileapp.apps.ProfileappConfig",
     'Cabinet.apps.CabinetConfig',
 ]
 

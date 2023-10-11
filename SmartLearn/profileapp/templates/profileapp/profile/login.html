@@ -2,7 +2,7 @@
 
 
 {% block content %}
-    <form method="POST" action="{% url 'profileapp:login' %}">
+    <form method="POST" action="{% url 'profile:login' %}">
     {% csrf_token %}
         {{ form.as_p }}
         <input type="submit" value="Login">
