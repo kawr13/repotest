@@ -3060,3 +3060,757 @@ WARNING 2023-10-11 16:46:20,875 basehttp 15716 5408 "GET /users/images/75927-ksy
 INFO 2023-10-11 16:46:37,033 autoreload 18400 7228 Watching for file changes with StatReloader
 INFO 2023-10-11 16:46:38,856 basehttp 18400 17852 "GET / HTTP/1.1" 200 4263
 INFO 2023-10-11 16:46:38,877 basehttp 18400 17852 "GET /media/users/images/75927-ksyu_jt8G665.jpg HTTP/1.1" 304 0
+INFO 2023-10-12 02:32:01,100 autoreload 4916 7740 Watching for file changes with StatReloader
+INFO 2023-10-12 02:32:14,829 basehttp 4916 17064 "GET / HTTP/1.1" 200 4263
+INFO 2023-10-12 02:32:14,861 basehttp 4916 17064 "GET /media/users/images/75927-ksyu_jt8G665.jpg HTTP/1.1" 304 0
+INFO 2023-10-12 02:32:14,862 basehttp 4916 15316 "GET /static/image/profile_img/img.png HTTP/1.1" 304 0
+INFO 2023-10-12 02:32:28,673 basehttp 4916 15316 "GET /profile/register HTTP/1.1" 301 0
+INFO 2023-10-12 02:32:28,764 basehttp 4916 17064 "GET /profile/register/ HTTP/1.1" 200 11968
+INFO 2023-10-12 02:33:05,290 autoreload 16340 4884 Watching for file changes with StatReloader
+INFO 2023-10-12 02:33:07,180 basehttp 16340 2156 "GET /profile/register/ HTTP/1.1" 200 3395
+INFO 2023-10-12 02:37:17,702 autoreload 16904 1080 Watching for file changes with StatReloader
+INFO 2023-10-12 02:38:00,355 autoreload 18488 7632 Watching for file changes with StatReloader
+INFO 2023-10-12 02:38:07,302 basehttp 18488 16556 "GET /profile/register/ HTTP/1.1" 200 3429
+INFO 2023-10-12 02:38:47,193 basehttp 18488 16556 "POST /profile/login/ HTTP/1.1" 200 2604
+INFO 2023-10-12 02:40:07,229 autoreload 9372 17320 Watching for file changes with StatReloader
+INFO 2023-10-12 02:40:12,303 basehttp 9372 17872 "GET /profile/login/ HTTP/1.1" 200 2604
+INFO 2023-10-12 02:40:13,588 basehttp 9372 17872 "GET /profile/login/ HTTP/1.1" 200 2604
+INFO 2023-10-12 02:40:18,315 basehttp 9372 17872 "POST /profile/login/ HTTP/1.1" 200 2604
+INFO 2023-10-12 02:40:27,394 autoreload 11748 2580 Watching for file changes with StatReloader
+INFO 2023-10-12 02:40:32,245 basehttp 11748 6768 "GET /profile/register/ HTTP/1.1" 200 3432
+WARNING 2023-10-12 02:40:32,431 log 11748 6768 Not Found: /favicon.ico
+WARNING 2023-10-12 02:40:32,432 basehttp 11748 6768 "GET /favicon.ico HTTP/1.1" 404 2694
+INFO 2023-10-12 02:40:56,102 basehttp 11748 6768 "POST /profile/register/ HTTP/1.1" 302 0
+INFO 2023-10-12 02:40:56,114 basehttp 11748 6768 "GET / HTTP/1.1" 200 5239
+INFO 2023-10-12 02:41:59,594 autoreload 14500 3576 Watching for file changes with StatReloader
+INFO 2023-10-12 02:42:15,577 basehttp 14500 16340 "GET /profile/register/ HTTP/1.1" 200 3618
+WARNING 2023-10-12 02:42:15,761 log 14500 16340 Not Found: /favicon.ico
+WARNING 2023-10-12 02:42:15,763 basehttp 14500 16340 "GET /favicon.ico HTTP/1.1" 404 2694
+INFO 2023-10-12 02:42:47,554 basehttp 14500 16340 "POST /profile/register/ HTTP/1.1" 200 3794
+INFO 2023-10-12 02:44:53,536 basehttp 14500 16340 "POST /profile/register/ HTTP/1.1" 200 3800
+INFO 2023-10-12 02:45:24,128 autoreload 7292 17012 Watching for file changes with StatReloader
+INFO 2023-10-12 02:45:50,582 basehttp 7292 19404 "POST /profile/register/ HTTP/1.1" 200 3802
+INFO 2023-10-12 02:52:34,311 autoreload 11040 17316 Watching for file changes with StatReloader
+INFO 2023-10-12 02:52:56,983 basehttp 11040 2796 "POST /profile/register/ HTTP/1.1" 200 3802
+INFO 2023-10-12 02:53:27,994 basehttp 11040 2796 "POST /profile/register/ HTTP/1.1" 200 3802
+INFO 2023-10-12 02:53:32,191 basehttp 11040 2796 "POST /profile/register/ HTTP/1.1" 200 3802
+WARNING 2023-10-12 02:53:32,374 log 11040 2796 Not Found: /favicon.ico
+WARNING 2023-10-12 02:53:32,375 basehttp 11040 2796 "GET /favicon.ico HTTP/1.1" 404 2694
+INFO 2023-10-12 02:53:38,216 basehttp 11040 2796 "GET /profile/register/ HTTP/1.1" 200 3618
+INFO 2023-10-12 02:54:06,064 basehttp 11040 2796 "POST /profile/register/ HTTP/1.1" 200 3802
+INFO 2023-10-12 03:05:46,746 autoreload 4680 18956 Watching for file changes with StatReloader
+INFO 2023-10-12 03:05:48,922 basehttp 4680 18940 "GET / HTTP/1.1" 200 4263
+INFO 2023-10-12 03:06:13,731 basehttp 4680 18940 "GET /profile/register/ HTTP/1.1" 200 3618
+INFO 2023-10-12 03:06:42,198 basehttp 4680 18940 "POST /profile/register/ HTTP/1.1" 200 3799
+INFO 2023-10-12 03:08:26,234 autoreload 4680 18956 F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\profileapp\views.py changed, reloading.
+INFO 2023-10-12 03:08:26,721 autoreload 1020 15468 Watching for file changes with StatReloader
+INFO 2023-10-12 03:09:48,868 autoreload 17120 14248 Watching for file changes with StatReloader
+INFO 2023-10-12 03:10:11,301 basehttp 17120 8884 "POST /profile/register/ HTTP/1.1" 200 3923
+WARNING 2023-10-12 03:10:26,234 log 17120 8884 Forbidden (CSRF token missing.): /profile/register/
+WARNING 2023-10-12 03:10:26,235 basehttp 17120 8884 "POST /profile/register/ HTTP/1.1" 403 2548
+INFO 2023-10-12 03:10:43,730 basehttp 17120 8884 "POST /profile/register/ HTTP/1.1" 200 3923
+WARNING 2023-10-12 03:10:43,898 log 17120 8884 Not Found: /favicon.ico
+WARNING 2023-10-12 03:10:43,899 basehttp 17120 8884 "GET /favicon.ico HTTP/1.1" 404 2694
+INFO 2023-10-12 03:10:47,380 basehttp 17120 8884 "POST /profile/register/ HTTP/1.1" 200 3923
+WARNING 2023-10-12 03:10:49,542 log 17120 8884 Not Found: /favicon.ico
+WARNING 2023-10-12 03:10:49,542 basehttp 17120 8884 "GET /favicon.ico HTTP/1.1" 404 2694
+WARNING 2023-10-12 03:11:08,542 log 17120 8884 Forbidden (CSRF token missing.): /profile/register/
+WARNING 2023-10-12 03:11:08,542 basehttp 17120 8884 "POST /profile/register/ HTTP/1.1" 403 2548
+INFO 2023-10-12 03:12:23,357 autoreload 5296 5380 Watching for file changes with StatReloader
+WARNING 2023-10-12 03:12:42,132 log 5296 18836 Forbidden (CSRF token missing.): /profile/register/
+WARNING 2023-10-12 03:12:42,133 basehttp 5296 18836 "POST /profile/register/ HTTP/1.1" 403 2548
+WARNING 2023-10-12 03:12:46,132 log 5296 18836 Forbidden (CSRF token missing.): /profile/register/
+WARNING 2023-10-12 03:12:46,132 basehttp 5296 18836 "POST /profile/register/ HTTP/1.1" 403 2548
+INFO 2023-10-12 03:12:50,219 basehttp 5296 18836 "GET /profile/register/ HTTP/1.1" 200 3651
+WARNING 2023-10-12 03:13:18,632 log 5296 18836 Forbidden (CSRF token missing.): /profile/register/
+WARNING 2023-10-12 03:13:18,633 basehttp 5296 18836 "POST /profile/register/ HTTP/1.1" 403 2548
+INFO 2023-10-12 03:13:50,687 autoreload 17148 17260 Watching for file changes with StatReloader
+WARNING 2023-10-12 03:14:05,227 log 17148 17580 Forbidden (CSRF token missing.): /profile/register/
+WARNING 2023-10-12 03:14:05,228 basehttp 17148 17580 "POST /profile/register/ HTTP/1.1" 403 2548
+INFO 2023-10-12 03:14:16,244 autoreload 18624 3048 Watching for file changes with StatReloader
+INFO 2023-10-12 03:14:19,088 basehttp 18624 18940 "GET /profile/register/ HTTP/1.1" 200 3648
+INFO 2023-10-12 03:14:42,170 basehttp 18624 18940 "POST /profile/register/ HTTP/1.1" 302 0
+INFO 2023-10-12 03:14:42,178 basehttp 18624 18940 "GET /profile/login/ HTTP/1.1" 200 2604
+INFO 2023-10-12 03:14:58,066 basehttp 18624 18940 "GET /static HTTP/1.1" 301 0
+WARNING 2023-10-12 03:14:58,079 basehttp 18624 4580 "GET /static/ HTTP/1.1" 404 1926
+INFO 2023-10-12 03:15:02,284 basehttp 18624 18056 "GET / HTTP/1.1" 200 5229
+INFO 2023-10-12 03:15:02,379 basehttp 18624 18056 "GET /media/users/images/images.jfif HTTP/1.1" 200 7240
+INFO 2023-10-12 03:15:25,453 basehttp 18624 18056 "GET /profile/blog/5/ HTTP/1.1" 200 1781
+INFO 2023-10-12 03:15:30,490 basehttp 18624 18056 "GET /profile/tag/1/ HTTP/1.1" 200 3293
+INFO 2023-10-12 03:15:31,825 basehttp 18624 18056 "GET / HTTP/1.1" 200 5229
+INFO 2023-10-12 03:15:31,846 basehttp 18624 18056 "GET /media/users/images/images.jfif HTTP/1.1" 304 0
+INFO 2023-10-12 03:17:37,042 autoreload 17816 8660 Watching for file changes with StatReloader
+ERROR 2023-10-12 03:17:46,412 log 17816 14920 Internal Server Error: /profile/register/
+Traceback (most recent call last):
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'extends' cannot appear more than once in the same template
+ERROR 2023-10-12 03:17:46,414 basehttp 17816 14920 "GET /profile/register/ HTTP/1.1" 500 147282
+ERROR 2023-10-12 03:17:54,067 log 17816 14920 Internal Server Error: /profile/register/
+Traceback (most recent call last):
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'extends' cannot appear more than once in the same template
+ERROR 2023-10-12 03:17:54,068 basehttp 17816 14920 "GET /profile/register/ HTTP/1.1" 500 147419
+INFO 2023-10-12 03:18:06,457 autoreload 18228 13516 Watching for file changes with StatReloader
+INFO 2023-10-12 03:18:08,148 basehttp 18228 13656 "GET /profile/register/ HTTP/1.1" 200 3895
+INFO 2023-10-12 03:18:12,614 basehttp 18228 13656 "GET /profile/register/ HTTP/1.1" 200 3895
+INFO 2023-10-12 03:19:20,802 autoreload 15060 16552 Watching for file changes with StatReloader
+INFO 2023-10-12 03:19:22,973 basehttp 15060 2628 "GET /profile/register/ HTTP/1.1" 200 4019
+INFO 2023-10-12 03:19:25,461 basehttp 15060 2628 "GET /profile/register/ HTTP/1.1" 200 4019
+INFO 2023-10-12 03:21:24,322 autoreload 9504 16036 Watching for file changes with StatReloader
+INFO 2023-10-12 03:21:29,494 basehttp 9504 13376 "GET /profile/register/ HTTP/1.1" 200 4094
+INFO 2023-10-12 03:22:03,357 basehttp 9504 13376 "POST /profile/register/ HTTP/1.1" 200 4215
+INFO 2023-10-12 03:24:13,497 autoreload 13980 7612 Watching for file changes with StatReloader
+INFO 2023-10-12 03:24:17,886 basehttp 13980 18112 "POST /profile/register/ HTTP/1.1" 200 3827
+INFO 2023-10-12 03:24:36,547 basehttp 13980 18112 "POST /profile/register/ HTTP/1.1" 200 3827
+INFO 2023-10-12 03:24:55,221 basehttp 13980 18112 "POST /profile/register/ HTTP/1.1" 200 3829
+INFO 2023-10-12 03:26:59,093 basehttp 13980 18112 "POST /profile/register/ HTTP/1.1" 302 0
+INFO 2023-10-12 03:26:59,100 basehttp 13980 18112 "GET /profile/login/ HTTP/1.1" 200 2604
+INFO 2023-10-12 03:27:06,770 basehttp 13980 18112 "GET / HTTP/1.1" 200 6215
+INFO 2023-10-12 03:27:06,793 basehttp 13980 18112 "GET /media/users/images/images.jfif HTTP/1.1" 304 0
+INFO 2023-10-12 03:27:06,841 basehttp 13980 18112 "GET /media/users/images/images_voxxC67.jfif HTTP/1.1" 200 7240
+INFO 2023-10-12 03:27:11,762 basehttp 13980 18112 "GET /profile/tag/1/ HTTP/1.1" 200 3293
+INFO 2023-10-12 03:27:12,372 basehttp 13980 18112 "GET / HTTP/1.1" 200 6215
+INFO 2023-10-12 03:27:12,391 basehttp 13980 18112 "GET /media/users/images/images_voxxC67.jfif HTTP/1.1" 304 0
+INFO 2023-10-12 03:27:12,827 basehttp 13980 18112 "GET /profile/tag/1/ HTTP/1.1" 200 3293
+INFO 2023-10-12 03:27:13,444 basehttp 13980 18112 "GET / HTTP/1.1" 200 6215
+INFO 2023-10-12 03:27:13,461 basehttp 13980 18112 "GET /media/users/images/images_voxxC67.jfif HTTP/1.1" 304 0
+INFO 2023-10-12 03:32:51,056 autoreload 7964 5084 Watching for file changes with StatReloader
+INFO 2023-10-12 03:32:58,123 basehttp 7964 17520 "GET / HTTP/1.1" 200 6531
+INFO 2023-10-12 03:32:58,143 basehttp 7964 17520 "GET /media/users/images/75927-ksyu_jt8G665.jpg HTTP/1.1" 304 0
+INFO 2023-10-12 03:32:58,150 basehttp 7964 17520 "GET /static/image/profile_img/img.png HTTP/1.1" 304 0
+INFO 2023-10-12 03:32:58,179 basehttp 7964 17520 "GET /media/users/images/images.jfif HTTP/1.1" 304 0
+INFO 2023-10-12 03:32:58,180 basehttp 7964 17916 "GET /media/users/images/images_voxxC67.jfif HTTP/1.1" 304 0
+INFO 2023-10-12 03:33:00,836 basehttp 7964 17916 "GET /profile/register/ HTTP/1.1" 200 4022
+INFO 2023-10-12 03:33:36,511 autoreload 13148 11704 Watching for file changes with StatReloader
+INFO 2023-10-12 03:33:43,412 basehttp 13148 5408 "GET / HTTP/1.1" 200 6514
+INFO 2023-10-12 03:33:43,432 basehttp 13148 5408 "GET /media/users/images/images_voxxC67.jfif HTTP/1.1" 304 0
+INFO 2023-10-12 03:33:44,895 basehttp 13148 5408 "GET /profile/login/ HTTP/1.1" 200 2903
+INFO 2023-10-12 03:34:23,073 autoreload 18768 17420 Watching for file changes with StatReloader
+INFO 2023-10-12 03:34:28,285 basehttp 18768 15556 "GET / HTTP/1.1" 200 6568
+INFO 2023-10-12 03:34:28,303 basehttp 18768 15556 "GET /media/users/images/images_voxxC67.jfif HTTP/1.1" 304 0
+INFO 2023-10-12 03:34:29,738 basehttp 18768 15556 "GET / HTTP/1.1" 200 6568
+INFO 2023-10-12 03:34:31,532 basehttp 18768 15556 "GET / HTTP/1.1" 200 6568
+INFO 2023-10-12 03:34:57,630 autoreload 12932 18012 Watching for file changes with StatReloader
+INFO 2023-10-12 03:34:59,658 basehttp 12932 17380 "GET / HTTP/1.1" 200 6568
+INFO 2023-10-12 03:34:59,680 basehttp 12932 17380 "GET /media/users/images/images.jfif HTTP/1.1" 304 0
+INFO 2023-10-12 03:35:01,631 basehttp 12932 17380 "GET /profile/logout/ HTTP/1.1" 302 0
+INFO 2023-10-12 03:35:01,638 basehttp 12932 17380 "GET / HTTP/1.1" 200 6384
+INFO 2023-10-12 03:35:03,219 basehttp 12932 17380 "GET / HTTP/1.1" 200 6384
+INFO 2023-10-12 03:35:04,533 basehttp 12932 17380 "GET /profile/login/ HTTP/1.1" 200 2773
+INFO 2023-10-12 03:35:09,643 basehttp 12932 17380 "POST /profile/login/ HTTP/1.1" 200 2773
+INFO 2023-10-12 03:35:11,414 basehttp 12932 17380 "POST /profile/login/ HTTP/1.1" 200 2773
+INFO 2023-10-12 03:35:12,365 basehttp 12932 17380 "POST /profile/login/ HTTP/1.1" 200 2773
+INFO 2023-10-12 03:35:13,373 basehttp 12932 17380 "POST /profile/login/ HTTP/1.1" 200 2773
+INFO 2023-10-12 03:35:53,604 basehttp 12932 17380 "POST /profile/login/ HTTP/1.1" 302 0
+INFO 2023-10-12 03:35:53,613 basehttp 12932 17380 "GET / HTTP/1.1" 200 6568
+INFO 2023-10-12 03:35:53,646 basehttp 12932 17380 "GET /media/users/images/images_voxxC67.jfif HTTP/1.1" 304 0
+INFO 2023-10-12 03:39:16,861 autoreload 9888 14952 Watching for file changes with StatReloader
+INFO 2023-10-12 03:39:19,704 basehttp 9888 10968 "GET / HTTP/1.1" 200 6861
+INFO 2023-10-12 03:39:19,730 basehttp 9888 10968 "GET /media/users/images/images.jfif HTTP/1.1" 304 0
+INFO 2023-10-12 03:39:19,730 basehttp 9888 19120 "GET /media/users/images/images_voxxC67.jfif HTTP/1.1" 304 0
+INFO 2023-10-12 03:39:21,492 basehttp 9888 19120 "GET / HTTP/1.1" 200 6861
+INFO 2023-10-12 03:39:26,537 basehttp 9888 19120 "GET / HTTP/1.1" 200 6861
+INFO 2023-10-12 03:39:26,669 basehttp 9888 10968 "GET /static/image/profile_img/img.png HTTP/1.1" 200 3549
+INFO 2023-10-12 03:39:26,673 basehttp 9888 10968 "GET /media/users/images/images.jfif HTTP/1.1" 200 7240
+INFO 2023-10-12 03:39:26,680 basehttp 9888 19120 "GET /media/users/images/75927-ksyu_jt8G665.jpg HTTP/1.1" 200 531462
+INFO 2023-10-12 03:39:26,680 basehttp 9888 10968 "GET /media/users/images/images_voxxC67.jfif HTTP/1.1" 200 7240
+WARNING 2023-10-12 03:39:26,832 log 9888 10968 Not Found: /favicon.ico
+WARNING 2023-10-12 03:39:26,832 basehttp 9888 10968 "GET /favicon.ico HTTP/1.1" 404 2694
+INFO 2023-10-12 03:39:28,048 basehttp 9888 10968 "GET /profile/logout/ HTTP/1.1" 302 0
+INFO 2023-10-12 03:39:28,055 basehttp 9888 10968 "GET / HTTP/1.1" 200 6661
+INFO 2023-10-12 03:39:29,133 basehttp 9888 10968 "GET /profile/login/ HTTP/1.1" 200 3050
+INFO 2023-10-12 03:39:41,558 basehttp 9888 10968 "POST /profile/login/ HTTP/1.1" 302 0
+INFO 2023-10-12 03:39:41,566 basehttp 9888 10968 "GET / HTTP/1.1" 200 6861
+INFO 2023-10-12 03:40:13,663 autoreload 10676 18248 Watching for file changes with StatReloader
+INFO 2023-10-12 03:40:17,434 basehttp 10676 18908 "GET / HTTP/1.1" 200 6803
+INFO 2023-10-12 03:42:55,304 autoreload 14660 2588 Watching for file changes with StatReloader
+INFO 2023-10-12 03:42:57,742 basehttp 14660 5288 "GET / HTTP/1.1" 200 6861
+INFO 2023-10-12 03:42:57,764 basehttp 14660 5288 "GET /media/users/images/images.jfif HTTP/1.1" 304 0
+INFO 2023-10-12 03:42:57,768 basehttp 14660 5288 "GET /media/users/images/images_voxxC67.jfif HTTP/1.1" 304 0
+INFO 2023-10-12 03:42:59,538 basehttp 14660 5288 "GET / HTTP/1.1" 200 6861
+INFO 2023-10-12 03:43:00,957 basehttp 14660 5288 "GET /profile/logout/ HTTP/1.1" 302 0
+INFO 2023-10-12 03:43:00,966 basehttp 14660 5288 "GET / HTTP/1.1" 200 6661
+INFO 2023-10-12 03:43:40,286 autoreload 13376 17192 Watching for file changes with StatReloader
+INFO 2023-10-12 03:43:43,544 basehttp 13376 17924 "GET / HTTP/1.1" 200 6711
+INFO 2023-10-12 03:43:46,086 basehttp 13376 17924 "GET / HTTP/1.1" 200 6711
+INFO 2023-10-12 03:45:34,340 autoreload 7628 3884 Watching for file changes with StatReloader
+INFO 2023-10-12 03:45:40,902 basehttp 7628 18800 "GET / HTTP/1.1" 200 6637
+INFO 2023-10-12 03:45:40,919 basehttp 7628 18800 "GET /media/users/images/images_voxxC67.jfif HTTP/1.1" 304 0
+INFO 2023-10-12 03:45:42,325 basehttp 7628 18800 "GET / HTTP/1.1" 200 6637
+INFO 2023-10-12 03:47:41,159 autoreload 8164 17468 Watching for file changes with StatReloader
+INFO 2023-10-12 03:47:44,581 basehttp 8164 3672 "GET / HTTP/1.1" 200 6640
+INFO 2023-10-12 03:47:44,600 basehttp 8164 3672 "GET /media/users/images/images.jfif HTTP/1.1" 304 0
+INFO 2023-10-12 03:47:44,601 basehttp 8164 18176 "GET /media/users/images/images_voxxC67.jfif HTTP/1.1" 304 0
+WARNING 2023-10-12 03:47:46,150 log 8164 18176 Not Found: /contact/
+WARNING 2023-10-12 03:47:46,150 basehttp 8164 18176 "GET /contact/ HTTP/1.1" 404 2685
+INFO 2023-10-12 03:47:49,783 basehttp 8164 18176 "GET /profile/login/ HTTP/1.1" 200 3029
+INFO 2023-10-12 03:48:12,476 autoreload 17552 13980 Watching for file changes with StatReloader
+INFO 2023-10-12 03:48:18,056 basehttp 17552 4416 "GET / HTTP/1.1" 200 6725
+INFO 2023-10-12 03:48:20,104 basehttp 17552 4416 "GET /profile/login/ HTTP/1.1" 200 3114
+INFO 2023-10-12 03:48:32,967 autoreload 18236 7492 Watching for file changes with StatReloader
+INFO 2023-10-12 03:48:36,132 basehttp 18236 16352 "GET / HTTP/1.1" 200 6722
+INFO 2023-10-12 03:48:46,619 autoreload 10520 8084 Watching for file changes with StatReloader
+INFO 2023-10-12 03:48:48,700 basehttp 10520 18604 "GET / HTTP/1.1" 200 6725
+INFO 2023-10-12 03:48:55,906 autoreload 3556 9572 Watching for file changes with StatReloader
+INFO 2023-10-12 03:48:57,878 basehttp 3556 3048 "GET / HTTP/1.1" 200 6726
+INFO 2023-10-12 03:49:07,598 autoreload 18388 16824 Watching for file changes with StatReloader
+INFO 2023-10-12 03:49:15,385 basehttp 18388 10504 "GET / HTTP/1.1" 200 6727
+INFO 2023-10-12 03:49:20,344 autoreload 17800 17232 Watching for file changes with StatReloader
+INFO 2023-10-12 03:49:22,728 basehttp 17800 14352 "GET / HTTP/1.1" 200 6727
+INFO 2023-10-12 03:49:35,459 autoreload 18820 3824 Watching for file changes with StatReloader
+INFO 2023-10-12 03:49:37,996 basehttp 18820 8364 "GET / HTTP/1.1" 200 6727
+INFO 2023-10-12 03:49:40,221 basehttp 18820 8364 "GET / HTTP/1.1" 200 6727
+INFO 2023-10-12 03:49:42,206 basehttp 18820 8364 "GET / HTTP/1.1" 200 6727
+INFO 2023-10-12 03:49:42,292 basehttp 18820 13896 "GET /static/image/profile_img/img.png HTTP/1.1" 200 3549
+INFO 2023-10-12 03:49:42,294 basehttp 18820 8364 "GET /media/users/images/75927-ksyu_jt8G665.jpg HTTP/1.1" 200 531462
+INFO 2023-10-12 03:49:42,301 basehttp 18820 13896 "GET /media/users/images/images_voxxC67.jfif HTTP/1.1" 200 7240
+INFO 2023-10-12 03:49:42,301 basehttp 18820 8364 "GET /media/users/images/images.jfif HTTP/1.1" 200 7240
+WARNING 2023-10-12 03:49:42,587 log 18820 8364 Not Found: /favicon.ico
+WARNING 2023-10-12 03:49:42,588 basehttp 18820 8364 "GET /favicon.ico HTTP/1.1" 404 2694
+INFO 2023-10-12 03:49:50,354 autoreload 19404 2152 Watching for file changes with StatReloader
+INFO 2023-10-12 03:49:52,513 basehttp 19404 13040 "GET / HTTP/1.1" 200 6727
+INFO 2023-10-12 03:51:53,630 autoreload 18056 17356 Watching for file changes with StatReloader
+INFO 2023-10-12 03:51:56,182 basehttp 18056 19156 "GET / HTTP/1.1" 200 6746
+INFO 2023-10-12 03:52:14,880 autoreload 17440 9960 Watching for file changes with StatReloader
+INFO 2023-10-12 03:52:19,019 basehttp 17440 9888 "GET / HTTP/1.1" 200 6746
+INFO 2023-10-12 03:52:19,038 basehttp 17440 9888 "GET /media/users/images/images_voxxC67.jfif HTTP/1.1" 304 0
+INFO 2023-10-12 03:52:21,918 basehttp 17440 9888 "GET /profile/login/ HTTP/1.1" 200 3135
+INFO 2023-10-12 03:52:32,634 basehttp 17440 9888 "POST /profile/login/ HTTP/1.1" 302 0
+INFO 2023-10-12 03:52:32,643 basehttp 17440 9888 "GET / HTTP/1.1" 200 6930
+INFO 2023-10-12 03:53:10,998 autoreload 12768 15556 Watching for file changes with StatReloader
+INFO 2023-10-12 03:53:14,889 basehttp 12768 8352 "GET / HTTP/1.1" 200 7075
+INFO 2023-10-12 03:53:14,911 basehttp 12768 8352 "GET /media/users/images/images.jfif HTTP/1.1" 304 0
+INFO 2023-10-12 03:53:43,011 basehttp 12768 8352 "GET /profile/tag/1/ HTTP/1.1" 200 4153
+INFO 2023-10-12 03:53:43,730 basehttp 12768 8352 "GET / HTTP/1.1" 200 7075
+INFO 2023-10-12 03:54:59,185 autoreload 8884 17872 Watching for file changes with StatReloader
+INFO 2023-10-12 03:55:03,199 basehttp 8884 19436 "GET / HTTP/1.1" 200 6944
+INFO 2023-10-12 03:55:03,213 basehttp 8884 19436 "GET /media/users/images/images_voxxC67.jfif HTTP/1.1" 304 0
+INFO 2023-10-12 03:55:05,074 basehttp 8884 19436 "GET / HTTP/1.1" 200 6944
+INFO 2023-10-12 03:55:06,790 basehttp 8884 19436 "GET /profile/logout/ HTTP/1.1" 302 0
+INFO 2023-10-12 03:55:06,797 basehttp 8884 19436 "GET / HTTP/1.1" 200 6780
+INFO 2023-10-12 03:55:08,470 basehttp 8884 19436 "GET /profile/login/ HTTP/1.1" 200 3169
+INFO 2023-10-12 03:55:16,657 basehttp 8884 19436 "POST /profile/login/ HTTP/1.1" 302 0
+INFO 2023-10-12 03:55:16,666 basehttp 8884 19436 "GET / HTTP/1.1" 200 6944
+INFO 2023-10-12 03:56:00,448 basehttp 8884 19436 "GET /profile/blog/1/ HTTP/1.1" 200 2512
+INFO 2023-10-12 03:56:41,159 autoreload 8884 17872 F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\profileapp\views.py changed, reloading.
+INFO 2023-10-12 03:56:41,673 autoreload 3280 12272 Watching for file changes with StatReloader
+INFO 2023-10-12 03:57:17,769 autoreload 3280 12272 F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\profileapp\views.py changed, reloading.
+INFO 2023-10-12 03:57:18,199 autoreload 4596 18820 Watching for file changes with StatReloader
+INFO 2023-10-12 03:58:02,514 autoreload 4596 18820 F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\profileapp\views.py changed, reloading.
+INFO 2023-10-12 03:58:02,998 autoreload 10168 11560 Watching for file changes with StatReloader
+INFO 2023-10-12 03:58:09,411 autoreload 10168 11560 F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\profileapp\views.py changed, reloading.
+INFO 2023-10-12 03:58:09,913 autoreload 17796 9952 Watching for file changes with StatReloader
+INFO 2023-10-12 03:58:26,603 autoreload 17796 9952 F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\profileapp\views.py changed, reloading.
+INFO 2023-10-12 03:58:27,169 autoreload 15468 5352 Watching for file changes with StatReloader
+INFO 2023-10-12 03:58:46,934 autoreload 15468 5352 F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\profileapp\views.py changed, reloading.
+INFO 2023-10-12 03:58:47,489 autoreload 4588 7216 Watching for file changes with StatReloader
+INFO 2023-10-12 04:00:24,019 autoreload 4588 7216 F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\profileapp\views.py changed, reloading.
+INFO 2023-10-12 04:00:24,494 autoreload 17472 16928 Watching for file changes with StatReloader
+INFO 2023-10-12 04:00:44,119 autoreload 17472 16928 F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\profileapp\views.py changed, reloading.
+INFO 2023-10-12 04:00:44,543 autoreload 10212 596 Watching for file changes with StatReloader
+INFO 2023-10-12 04:02:45,704 autoreload 19156 8768 Watching for file changes with StatReloader
+INFO 2023-10-12 04:02:56,884 basehttp 19156 3492 "GET / HTTP/1.1" 200 6962
+INFO 2023-10-12 04:02:56,926 basehttp 19156 3492 "GET /media/users/images/images.jfif HTTP/1.1" 304 0
+INFO 2023-10-12 04:02:56,926 basehttp 19156 17360 "GET /media/users/images/images_voxxC67.jfif HTTP/1.1" 304 0
+ERROR 2023-10-12 04:02:58,136 log 19156 17360 Internal Server Error: /profile/profils/1/
+Traceback (most recent call last):
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\views\generic\edit.py", line 203, in get
+    self.object = self.get_object()
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\views\generic\detail.py", line 46, in get_object
+    raise AttributeError(
+AttributeError: Generic detail view UserUpdateViews must be called with either an object pk or a slug in the URLconf.
+ERROR 2023-10-12 04:02:58,137 basehttp 19156 17360 "GET /profile/profils/1/ HTTP/1.1" 500 90617
+INFO 2023-10-12 04:05:03,823 autoreload 19156 8768 F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\profileapp\urls.py changed, reloading.
+INFO 2023-10-12 04:05:04,271 autoreload 15284 14804 Watching for file changes with StatReloader
+INFO 2023-10-12 04:05:26,477 autoreload 9200 4580 Watching for file changes with StatReloader
+ERROR 2023-10-12 04:05:32,258 log 9200 16496 Internal Server Error: /profile/profils/1/
+Traceback (most recent call last):
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\views\generic\edit.py", line 204, in get
+    return super().get(request, *args, **kwargs)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\views\generic\edit.py", line 144, in get
+    return self.render_to_response(self.get_context_data())
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\profileapp\views.py", line 98, in get_context_data
+    context = super(UserUpdateViews, self).get_context_data()
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\views\generic\edit.py", line 74, in get_context_data
+    kwargs["form"] = self.get_form()
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\views\generic\edit.py", line 39, in get_form
+    return form_class(**self.get_form_kwargs())
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\contrib\auth\forms.py", line 227, in __init__
+    super().__init__(*args, **kwargs)
+TypeError: BaseForm.__init__() got an unexpected keyword argument 'instance'
+ERROR 2023-10-12 04:05:32,259 basehttp 9200 16496 "GET /profile/profils/1/ HTTP/1.1" 500 107280
+INFO 2023-10-12 04:06:48,668 autoreload 3348 13980 Watching for file changes with StatReloader
+ERROR 2023-10-12 04:06:54,426 log 3348 5504 Internal Server Error: /
+Traceback (most recent call last):
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\profileapp\views.py", line 21, in index
+    return render(request, 'profileapp/profile/index.html', context=context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'updateViews' with keyword arguments '{'user_id': 1}' not found. 1 pattern(s) tried: ['profile/profils/(?P<pk>[0-9]+)/\\Z']
+ERROR 2023-10-12 04:06:54,433 basehttp 3348 5504 "GET / HTTP/1.1" 500 175601
+ERROR 2023-10-12 04:06:59,152 log 3348 5504 Internal Server Error: /profile/login/
+Traceback (most recent call last):
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\profileapp\views.py", line 76, in login
+    return render(request, 'profileapp/profile/login.html', context=context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'updateViews' with keyword arguments '{'user_id': 1}' not found. 1 pattern(s) tried: ['profile/profils/(?P<pk>[0-9]+)/\\Z']
+ERROR 2023-10-12 04:06:59,153 basehttp 3348 5504 "GET /profile/login/ HTTP/1.1" 500 173030
+INFO 2023-10-12 04:07:26,566 autoreload 2960 3564 Watching for file changes with StatReloader
+ERROR 2023-10-12 04:07:28,858 log 2960 16460 Internal Server Error: /
+Traceback (most recent call last):
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\profileapp\views.py", line 21, in index
+    return render(request, 'profileapp/profile/index.html', context=context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'updateViews' with no arguments not found. 1 pattern(s) tried: ['profile/profils/(?P<pk>[0-9]+)/\\Z']
+ERROR 2023-10-12 04:07:28,864 basehttp 2960 16460 "GET / HTTP/1.1" 500 174842
+INFO 2023-10-12 04:08:10,716 autoreload 1932 14300 Watching for file changes with StatReloader
+ERROR 2023-10-12 04:08:12,817 log 1932 8288 Internal Server Error: /
+Traceback (most recent call last):
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\profileapp\views.py", line 21, in index
+    return render(request, 'profileapp/profile/index.html', context=context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'з' not found. 'з' is not a valid view function or pattern name.
+ERROR 2023-10-12 04:08:12,822 basehttp 1932 8288 "GET / HTTP/1.1" 500 171994
+INFO 2023-10-12 04:08:33,913 autoreload 15388 6052 Watching for file changes with StatReloader
+INFO 2023-10-12 04:08:35,521 basehttp 15388 4564 "GET / HTTP/1.1" 200 6962
+INFO 2023-10-12 04:08:35,569 basehttp 15388 4564 "GET /media/users/images/images.jfif HTTP/1.1" 304 0
+INFO 2023-10-12 04:08:35,569 basehttp 15388 17476 "GET /media/users/images/images_voxxC67.jfif HTTP/1.1" 304 0
+ERROR 2023-10-12 04:08:37,756 log 15388 17476 Internal Server Error: /profile/profils/1/
+Traceback (most recent call last):
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\views\generic\edit.py", line 204, in get
+    return super().get(request, *args, **kwargs)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\views\generic\edit.py", line 144, in get
+    return self.render_to_response(self.get_context_data())
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\profileapp\views.py", line 99, in get_context_data
+    context = super(UserUpdateViews, self).get_context_data()
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\views\generic\edit.py", line 74, in get_context_data
+    kwargs["form"] = self.get_form()
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\views\generic\edit.py", line 39, in get_form
+    return form_class(**self.get_form_kwargs())
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\contrib\auth\forms.py", line 227, in __init__
+    super().__init__(*args, **kwargs)
+TypeError: BaseForm.__init__() got an unexpected keyword argument 'instance'
+ERROR 2023-10-12 04:08:37,758 basehttp 15388 17476 "GET /profile/profils/1/ HTTP/1.1" 500 107267
+INFO 2023-10-12 04:10:24,158 autoreload 14792 5152 Watching for file changes with StatReloader
+ERROR 2023-10-12 04:10:29,257 log 14792 18208 Internal Server Error: /profile/profils/1/
+Traceback (most recent call last):
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: profiluser() got an unexpected keyword argument 'pk'
+ERROR 2023-10-12 04:10:29,258 basehttp 14792 18208 "GET /profile/profils/1/ HTTP/1.1" 500 72439
+INFO 2023-10-12 04:10:55,929 autoreload 10880 15004 Watching for file changes with StatReloader
+INFO 2023-10-12 04:10:59,369 basehttp 10880 7908 "GET /profile/profils/1/ HTTP/1.1" 200 0
+INFO 2023-10-12 04:11:02,340 basehttp 10880 7908 "GET /profile/profils/1/ HTTP/1.1" 200 0
+INFO 2023-10-12 04:19:24,362 autoreload 17548 3296 Watching for file changes with StatReloader
+INFO 2023-10-12 04:19:30,233 basehttp 17548 14492 "GET /static HTTP/1.1" 301 0
+WARNING 2023-10-12 04:19:30,241 basehttp 17548 17936 "GET /static/ HTTP/1.1" 404 1926
+INFO 2023-10-12 04:19:46,271 basehttp 17548 5260 "GET / HTTP/1.1" 200 6956
+INFO 2023-10-12 04:19:46,357 basehttp 17548 18456 "GET /static/image/profile_img/img.png HTTP/1.1" 200 3549
+INFO 2023-10-12 04:19:46,365 basehttp 17548 18456 "GET /media/users/images/images.jfif HTTP/1.1" 200 7240
+INFO 2023-10-12 04:19:46,371 basehttp 17548 5260 "GET /media/users/images/75927-ksyu_jt8G665.jpg HTTP/1.1" 200 531462
+INFO 2023-10-12 04:19:46,372 basehttp 17548 18456 "GET /media/users/images/images_voxxC67.jfif HTTP/1.1" 200 7240
+WARNING 2023-10-12 04:19:46,497 log 17548 18456 Not Found: /favicon.ico
+WARNING 2023-10-12 04:19:46,498 basehttp 17548 18456 "GET /favicon.ico HTTP/1.1" 404 2694
+INFO 2023-10-12 04:19:48,113 basehttp 17548 18456 "GET / HTTP/1.1" 200 6956
+INFO 2023-10-12 04:19:49,119 basehttp 17548 18456 "GET / HTTP/1.1" 200 6956
+INFO 2023-10-12 04:19:49,321 basehttp 17548 18456 "GET / HTTP/1.1" 200 6956
+INFO 2023-10-12 04:19:49,511 basehttp 17548 18456 "GET / HTTP/1.1" 200 6956
+INFO 2023-10-12 04:19:49,729 basehttp 17548 18456 "GET / HTTP/1.1" 200 6956
+INFO 2023-10-12 04:19:49,929 basehttp 17548 18456 "GET / HTTP/1.1" 200 6956
+INFO 2023-10-12 04:19:50,151 basehttp 17548 18456 "GET / HTTP/1.1" 200 6956
+INFO 2023-10-12 04:19:50,352 basehttp 17548 18456 "GET / HTTP/1.1" 200 6956
+WARNING 2023-10-12 04:19:51,670 basehttp 17548 18456 "GET /static/ HTTP/1.1" 404 1926
+INFO 2023-10-12 04:20:59,593 basehttp 17548 5260 "GET /profile/profils/1/ HTTP/1.1" 200 0
+INFO 2023-10-12 04:21:33,070 autoreload 16212 12016 Watching for file changes with StatReloader
+INFO 2023-10-12 04:21:39,885 basehttp 16212 9284 "GET / HTTP/1.1" 200 6956
+INFO 2023-10-12 04:21:42,040 basehttp 16212 9284 "GET /profile/profils/1/ HTTP/1.1" 200 2508
+INFO 2023-10-12 04:21:46,061 basehttp 16212 9284 "GET / HTTP/1.1" 200 6956
+INFO 2023-10-12 04:21:48,215 basehttp 16212 9284 "GET /profile/profils/1/ HTTP/1.1" 200 2508
+INFO 2023-10-12 04:24:04,668 basehttp 16212 9284 "GET /profile/profils/1/ HTTP/1.1" 200 2508
+INFO 2023-10-12 04:24:06,500 basehttp 16212 9284 "GET /profile/profils/1/ HTTP/1.1" 200 2508
+INFO 2023-10-12 04:24:07,772 basehttp 16212 9284 "GET / HTTP/1.1" 200 6956
+WARNING 2023-10-12 04:24:11,395 log 16212 9284 Not Found: /contact/
+WARNING 2023-10-12 04:24:11,395 basehttp 16212 9284 "GET /contact/ HTTP/1.1" 404 2685
+INFO 2023-10-12 04:28:27,381 autoreload 18268 612 Watching for file changes with StatReloader
+INFO 2023-10-12 04:28:31,059 basehttp 18268 17168 "GET / HTTP/1.1" 200 7064
+INFO 2023-10-12 04:28:31,082 basehttp 18268 17168 "GET /media/users/images/images.jfif HTTP/1.1" 304 0
+INFO 2023-10-12 04:28:31,083 basehttp 18268 17660 "GET /media/users/images/images_voxxC67.jfif HTTP/1.1" 304 0
+INFO 2023-10-12 04:28:53,463 autoreload 6420 14300 Watching for file changes with StatReloader
+INFO 2023-10-12 04:28:57,757 basehttp 6420 12912 "GET / HTTP/1.1" 200 7076
+INFO 2023-10-12 04:29:42,391 autoreload 19144 18752 Watching for file changes with StatReloader
+INFO 2023-10-12 04:29:46,213 basehttp 19144 9080 "GET / HTTP/1.1" 200 7108
+INFO 2023-10-12 04:29:48,071 basehttp 19144 9080 "GET / HTTP/1.1" 200 7108
+INFO 2023-10-12 04:31:16,729 autoreload 15140 17596 Watching for file changes with StatReloader
+INFO 2023-10-12 04:31:20,469 basehttp 15140 16864 "GET / HTTP/1.1" 200 7136
+INFO 2023-10-12 04:31:22,484 basehttp 15140 16864 "GET / HTTP/1.1" 200 7136
+INFO 2023-10-12 04:31:40,661 autoreload 18888 19036 Watching for file changes with StatReloader
+INFO 2023-10-12 04:31:45,105 basehttp 18888 18556 "GET / HTTP/1.1" 200 7116
+INFO 2023-10-12 04:32:24,142 autoreload 15292 17080 Watching for file changes with StatReloader
+INFO 2023-10-12 04:32:28,212 basehttp 15292 3492 "GET / HTTP/1.1" 200 7199
+INFO 2023-10-12 04:32:54,130 autoreload 17368 16020 Watching for file changes with StatReloader
+INFO 2023-10-12 04:32:56,673 basehttp 17368 16972 "GET / HTTP/1.1" 200 7223
+INFO 2023-10-12 04:33:17,673 autoreload 4908 9512 Watching for file changes with StatReloader
+INFO 2023-10-12 04:33:20,184 basehttp 4908 2160 "GET / HTTP/1.1" 200 7219
+INFO 2023-10-12 04:35:07,289 autoreload 19316 17904 Watching for file changes with StatReloader
+INFO 2023-10-12 04:35:10,540 basehttp 19316 2152 "GET / HTTP/1.1" 200 7335
+INFO 2023-10-12 04:35:10,554 basehttp 19316 2152 "GET /media/users/images/images_voxxC67.jfif HTTP/1.1" 304 0
+INFO 2023-10-12 04:35:12,427 basehttp 19316 2152 "GET / HTTP/1.1" 200 7335
+INFO 2023-10-12 04:35:38,271 autoreload 4928 15104 Watching for file changes with StatReloader
+INFO 2023-10-12 04:35:40,883 basehttp 4928 9876 "GET / HTTP/1.1" 200 7391
+INFO 2023-10-12 04:36:05,950 autoreload 16260 8364 Watching for file changes with StatReloader
+INFO 2023-10-12 04:36:09,280 basehttp 16260 13376 "GET / HTTP/1.1" 200 7590
+INFO 2023-10-12 04:36:09,300 basehttp 16260 13376 "GET /media/users/images/images.jfif HTTP/1.1" 304 0
+INFO 2023-10-12 04:42:48,373 autoreload 18032 18780 Watching for file changes with StatReloader
+INFO 2023-10-12 04:42:56,022 basehttp 18032 17316 "GET / HTTP/1.1" 200 7590
+INFO 2023-10-12 04:42:56,037 basehttp 18032 17316 "GET /media/users/images/images_voxxC67.jfif HTTP/1.1" 304 0
+INFO 2023-10-12 04:43:20,021 autoreload 14588 18680 Watching for file changes with StatReloader
+INFO 2023-10-12 04:43:22,013 basehttp 14588 11928 "GET / HTTP/1.1" 200 7486
+INFO 2023-10-12 04:43:27,617 basehttp 14588 11928 "GET /profile/blog/1/ HTTP/1.1" 200 2858
+INFO 2023-10-12 04:49:50,174 autoreload 8832 2204 Watching for file changes with StatReloader
+INFO 2023-10-12 04:49:53,909 basehttp 8832 6460 "GET / HTTP/1.1" 200 7407
+INFO 2023-10-12 04:49:53,929 basehttp 8832 6460 "GET /media/users/images/images.jfif HTTP/1.1" 304 0
+INFO 2023-10-12 04:49:55,672 basehttp 8832 6460 "GET / HTTP/1.1" 200 7407
+INFO 2023-10-12 04:51:41,777 autoreload 16436 15940 Watching for file changes with StatReloader
+INFO 2023-10-12 04:51:44,873 basehttp 16436 16600 "GET / HTTP/1.1" 200 7429
+INFO 2023-10-12 04:51:44,892 basehttp 16436 16600 "GET /media/users/images/images_voxxC67.jfif HTTP/1.1" 304 0
+INFO 2023-10-12 04:52:03,759 autoreload 3884 3536 Watching for file changes with StatReloader
+INFO 2023-10-12 04:52:05,668 basehttp 3884 17496 "GET / HTTP/1.1" 200 7471
+INFO 2023-10-12 04:52:51,522 autoreload 9512 18260 Watching for file changes with StatReloader
+INFO 2023-10-12 04:52:55,636 basehttp 9512 11760 "GET / HTTP/1.1" 200 7473
+INFO 2023-10-12 04:53:27,211 autoreload 9516 1620 Watching for file changes with StatReloader
+INFO 2023-10-12 04:53:30,893 basehttp 9516 2432 "GET / HTTP/1.1" 200 7609
+INFO 2023-10-12 04:53:52,322 autoreload 14080 11768 Watching for file changes with StatReloader
+INFO 2023-10-12 04:53:55,392 basehttp 14080 16436 "GET / HTTP/1.1" 200 7551
+INFO 2023-10-12 04:54:09,291 autoreload 7972 6768 Watching for file changes with StatReloader
+INFO 2023-10-12 04:54:12,243 basehttp 7972 14588 "GET / HTTP/1.1" 200 7515
+INFO 2023-10-12 04:55:54,210 basehttp 7972 14588 "GET /profile/tag/1/ HTTP/1.1" 200 4365
+INFO 2023-10-12 04:55:55,241 basehttp 7972 14588 "GET / HTTP/1.1" 200 7515
+INFO 2023-10-12 04:55:57,045 basehttp 7972 14588 "GET /profile/profils/1/ HTTP/1.1" 200 2763
+WARNING 2023-10-12 04:55:59,847 log 7972 14588 Not Found: /contact/
+WARNING 2023-10-12 04:55:59,849 basehttp 7972 14588 "GET /contact/ HTTP/1.1" 404 2685
+WARNING 2023-10-12 04:56:01,971 log 7972 14588 Not Found: /about/
+WARNING 2023-10-12 04:56:01,972 basehttp 7972 14588 "GET /about/ HTTP/1.1" 404 2679
+INFO 2023-10-12 04:56:03,765 basehttp 7972 14588 "GET / HTTP/1.1" 200 7515
+WARNING 2023-10-12 04:56:04,714 basehttp 7972 14588 "GET /static/ HTTP/1.1" 404 1926
+INFO 2023-10-12 05:03:51,123 basehttp 7972 16424 "GET / HTTP/1.1" 200 7515
+INFO 2023-10-12 05:03:51,139 basehttp 7972 16424 "GET /media/users/images/images.jfif HTTP/1.1" 304 0
+INFO 2023-10-12 05:03:51,142 basehttp 7972 16424 "GET /media/users/images/images_voxxC67.jfif HTTP/1.1" 304 0
+INFO 2023-10-12 05:07:46,341 autoreload 5136 18268 Watching for file changes with StatReloader
+INFO 2023-10-12 05:07:54,916 basehttp 5136 2436 "GET / HTTP/1.1" 200 7515
+INFO 2023-10-12 05:07:56,047 basehttp 5136 2436 "GET /profile/profils/1/ HTTP/1.1" 200 4296
+INFO 2023-10-12 05:09:52,671 autoreload 3532 17880 Watching for file changes with StatReloader
+INFO 2023-10-12 05:09:55,541 basehttp 3532 18952 "GET /profile/profils/1/ HTTP/1.1" 200 4191
+INFO 2023-10-12 05:09:57,099 basehttp 3532 18952 "GET /profile/profils/1/ HTTP/1.1" 200 4191
+INFO 2023-10-12 05:09:58,453 basehttp 3532 18952 "GET /profile/profils/1/ HTTP/1.1" 200 4191
+WARNING 2023-10-12 05:09:58,677 log 3532 18952 Not Found: /favicon.ico
+WARNING 2023-10-12 05:09:58,677 basehttp 3532 18952 "GET /favicon.ico HTTP/1.1" 404 2694
+INFO 2023-10-12 05:09:59,535 basehttp 3532 18952 "GET /profile/profils/1/ HTTP/1.1" 200 4191
+WARNING 2023-10-12 05:09:59,715 log 3532 18952 Not Found: /favicon.ico
+WARNING 2023-10-12 05:09:59,715 basehttp 3532 18952 "GET /favicon.ico HTTP/1.1" 404 2694
+INFO 2023-10-12 05:10:03,884 basehttp 3532 18952 "GET / HTTP/1.1" 200 7410
+INFO 2023-10-12 05:10:05,622 basehttp 3532 18952 "GET /profile/profils/1/ HTTP/1.1" 200 4191
+INFO 2023-10-12 05:11:00,589 autoreload 18060 7700 Watching for file changes with StatReloader
+INFO 2023-10-12 05:11:02,460 basehttp 18060 12912 "GET /profile/profils/1/ HTTP/1.1" 200 4195
+INFO 2023-10-12 05:11:10,958 autoreload 17232 8324 Watching for file changes with StatReloader
+INFO 2023-10-12 05:11:12,894 basehttp 17232 17628 "GET /profile/profils/1/ HTTP/1.1" 200 4195
+INFO 2023-10-12 05:11:32,499 autoreload 5508 18008 Watching for file changes with StatReloader
+INFO 2023-10-12 05:11:34,358 basehttp 5508 17900 "GET /profile/profils/1/ HTTP/1.1" 200 4191
+INFO 2023-10-12 05:12:54,737 autoreload 14468 7268 Watching for file changes with StatReloader
+INFO 2023-10-12 05:12:57,987 basehttp 14468 6052 "GET /profile/profils/1/ HTTP/1.1" 200 4218
+INFO 2023-10-12 05:13:54,288 autoreload 14032 17576 Watching for file changes with StatReloader
+INFO 2023-10-12 05:13:58,292 basehttp 14032 16440 "GET /profile/profils/1/ HTTP/1.1" 200 4218
+INFO 2023-10-12 05:15:51,891 autoreload 18444 14048 Watching for file changes with StatReloader
+INFO 2023-10-12 05:15:56,267 basehttp 18444 10368 "GET /profile/profils/1/ HTTP/1.1" 200 4320
+INFO 2023-10-12 05:15:57,977 basehttp 18444 10368 "GET /profile/profils/1/ HTTP/1.1" 200 4320
+INFO 2023-10-12 05:16:26,175 autoreload 6108 3272 Watching for file changes with StatReloader
+INFO 2023-10-12 05:16:29,066 basehttp 6108 18020 "GET /profile/profils/1/ HTTP/1.1" 200 4320
+INFO 2023-10-12 05:18:01,499 autoreload 7200 16816 Watching for file changes with StatReloader
+INFO 2023-10-12 05:18:05,130 basehttp 7200 10748 "GET /profile/profils/1/ HTTP/1.1" 200 4307
+INFO 2023-10-12 05:19:14,618 autoreload 10368 18508 Watching for file changes with StatReloader
+INFO 2023-10-12 05:19:18,265 basehttp 10368 17280 "GET /profile/profils/1/ HTTP/1.1" 200 4248
+INFO 2023-10-12 05:19:24,545 basehttp 10368 17280 "GET / HTTP/1.1" 200 6816
+INFO 2023-10-12 05:19:24,565 basehttp 10368 17280 "GET /media/users/images/images.jfif HTTP/1.1" 304 0
+INFO 2023-10-12 05:19:24,566 basehttp 10368 13864 "GET /media/users/images/images_voxxC67.jfif HTTP/1.1" 304 0
+INFO 2023-10-12 05:19:25,939 basehttp 10368 13864 "GET / HTTP/1.1" 200 6816
+INFO 2023-10-12 05:19:27,500 basehttp 10368 13864 "GET / HTTP/1.1" 200 6816
+INFO 2023-10-12 05:20:44,364 autoreload 344 17308 Watching for file changes with StatReloader
+INFO 2023-10-12 05:20:46,846 basehttp 344 13212 "GET / HTTP/1.1" 200 7322
+INFO 2023-10-12 05:20:48,554 basehttp 344 13212 "GET / HTTP/1.1" 200 7322
+INFO 2023-10-12 05:20:49,939 basehttp 344 13212 "GET /profile/profils/1/ HTTP/1.1" 200 3742
+INFO 2023-10-12 12:09:45,928 basehttp 344 2212 "GET /profile/profils/1/ HTTP/1.1" 200 3742
+INFO 2023-10-12 13:33:54,638 basehttp 344 19444 "GET /profile/profils/1/ HTTP/1.1" 200 3742
+INFO 2023-10-12 13:34:20,204 basehttp 344 19444 "GET /profile/logout/ HTTP/1.1" 302 0
+INFO 2023-10-12 13:34:20,211 basehttp 344 19444 "GET / HTTP/1.1" 200 7140
+INFO 2023-10-12 13:34:20,230 basehttp 344 19444 "GET /media/users/images/75927-ksyu_jt8G665.jpg HTTP/1.1" 304 0
+INFO 2023-10-12 13:34:20,235 basehttp 344 19444 "GET /static/image/profile_img/img.png HTTP/1.1" 304 0
+INFO 2023-10-12 13:34:20,244 basehttp 344 10456 "GET /media/users/images/images_voxxC67.jfif HTTP/1.1" 304 0
+INFO 2023-10-12 13:34:20,244 basehttp 344 19444 "GET /media/users/images/images.jfif HTTP/1.1" 304 0
+INFO 2023-10-12 13:34:22,204 basehttp 344 19444 "GET /profile/login/ HTTP/1.1" 200 3225
+INFO 2023-10-12 13:34:23,813 basehttp 344 19444 "GET /profile/login/ HTTP/1.1" 200 3225
+INFO 2023-10-12 13:34:26,261 basehttp 344 19444 "GET /profile/login/ HTTP/1.1" 200 3225
+INFO 2023-10-12 13:34:27,036 basehttp 344 19444 "GET /profile/login/ HTTP/1.1" 200 3225
+INFO 2023-10-12 13:34:27,508 basehttp 344 19444 "GET /profile/login/ HTTP/1.1" 200 3225
+INFO 2023-10-12 13:34:29,963 basehttp 344 19444 "GET /profile/login/ HTTP/1.1" 200 3225
+INFO 2023-10-12 13:35:04,173 autoreload 2512 15976 Watching for file changes with StatReloader
+INFO 2023-10-12 13:35:07,075 basehttp 2512 15160 "GET /profile/login/ HTTP/1.1" 200 3243
+INFO 2023-10-12 13:35:08,956 basehttp 2512 15160 "GET /profile/login/ HTTP/1.1" 200 3243
+INFO 2023-10-12 13:35:09,674 basehttp 2512 15160 "GET /profile/register/ HTTP/1.1" 200 4327

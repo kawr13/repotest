@@ -1,10 +1,31 @@
 {% extends 'profileapp/profile/base_home.html' %}
 
-
 {% block content %}
-    <form method="POST" action="{% url 'profile:login' %}">
-    {% csrf_token %}
-        {{ form.as_p }}
-        <input type="submit" value="Register">
-    </form>
+  <div class="register-container d-flex justify-content-center align-items-center">
+    <div class="register-box p-4 rounded">
+      <h2 class="mb-4">Registration</h2>
+      <form class="register-form" method="POST" action="{% url 'profile:register' %}" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.username.label_tag }}
+        {{ form.username }}
+        {{ form.first_name.label_tag }}
+        {{ form.first_name }}
+        {{ form.last_name.label_tag }}
+        {{ form.last_name }}
+        {{ form.email.label_tag }}
+        {{ form.email }}
+        {{ form.phone_number.label_tag }}
+        {{ form.phone_number }}
+        {{ form.password1.label_tag }}
+        {{ form.password1 }}
+        {{ form.password2.label_tag }}
+        {{ form.password2 }}
+        {{ form.is_teacher.label_tag }}
+        {{ form.is_teacher }}
+        {{ form.images.label_tag }}
+        {{ form.images }}
+        <button type="submit" class="btn btn-primary">Register</button>
+      </form>
+    </div>
+  </div>
 {% endblock %}
