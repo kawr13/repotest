@@ -37,21 +37,6 @@ def sort_category(request: HttpRequest, tag_id: int=None) -> render:
     return render(request, 'profileapp/profile/index.html', context=context)
 
 
-def get_events(request: HttpRequest) -> JsonResponse:
-    events = Schedule.objects.all().values('date_create')
-    events = [
-        {
-            'start': event['date_create'].strftime('%Y-%m-%d %H:%M:%S')
-        }
-        for event in events
-    ]
-
-    return JsonResponse(events, safe=False)
-
-
-def calendar_view(request: HttpRequest) -> render:
-    return render(request, 'profileapp/profile/calend.html')
-
 
 def blog(request: HttpRequest, user_id: int) -> render:
     context = {

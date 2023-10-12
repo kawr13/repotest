@@ -1,10 +1,12 @@
 {% extends 'profileapp/profile/base_home.html' %}
+
+
 {% load static %}
 
 {% block scripts %}
-    <script src='{% static "fullcalendar-6.1.9\dist\index.global.min.js" %}'></script>
+    <script src="{% static 'fullcalendar/dist/index.global.js' %}"></script>
     <script>
-        var getEventsURL = "{% url 'profile:get_events' %}";
+        var getEventsURL = "{% url 'cabinet:get_events' %}";
     </script>
 {% endblock %}
 
@@ -47,7 +49,7 @@
                         center: 'title',
                         right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
                     },
-                    initialDate: '2023-01-12',
+                    initialDate: new Date(),
                     navLinks: true,
                     editable: true,
                     dayMaxEvents: true,

@@ -23,7 +23,7 @@ from profileapp.views import index
 urlpatterns = [
     path('', index, name='index'),
     path('admin/', admin.site.urls),
-    path('cabinet/', include('Cabinet.urls', namespace='Cabinet')),
+    path('cabinet/', include('Cabinet.urls', namespace='сabinet')),
     path('profile/', include('profileapp.urls', namespace='profile')),
 ]
 

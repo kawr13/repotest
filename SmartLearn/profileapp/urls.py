@@ -16,14 +16,12 @@ Including another URLconf
 """
 from django.urls import path
 
-from .views import sort_category, blog, login, calendar_view, get_events, UserRegisterViews, logout, profiluser
+from .views import sort_category, blog, login, UserRegisterViews, logout, profiluser
 
 app_name = 'profile'
 
 urlpatterns = [
     path('tag/<int:tag_id>/', sort_category, name='tag'),
-    path('get_events/', get_events, name='get_events'),
-    path('calendar/', calendar_view, name='calendar'),
     path('blog/<int:user_id>/', blog, name='blog'),
     path('login/', login, name='login'),
     path('register/', UserRegisterViews.as_view(), name='register'),
