@@ -41,7 +41,6 @@ class Tag(models.Model):
         return self.name
 
 
-
 class Cabinet(models.Model):
     name = models.CharField(max_length=100)
     teachers = models.ManyToManyField(Teacher, related_name='cabinets')
@@ -69,6 +68,7 @@ class Cabinet(models.Model):
 #     teacher = models.ManyToManyField(Teacher, related_name='service_teacher')
 #     cabinet = models.OneToOneField('Cabinet', on_delete=models.CASCADE, related_name='service_cabinet')
 #     date_create = models.DateTimeField(auto_now_add=True)
+
 
 
 class Service(models.Model):
