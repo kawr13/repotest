@@ -60,7 +60,7 @@
                     </li>
                 {% endif %}
                     {% if user.is_authenticated %}
-                        {% if title == 'Профиль' %}
+                        {% if title == 'Кабинеты' %}
                             <li class="nav-item">
                                 <button data-toggle="modal" data-target="#addCabinetModal">
                                   Добавить кабинет
@@ -68,10 +68,10 @@
                             </li>
                             <div class="modal fade" id="addCabinetModal" tabindex="-1" role="dialog" aria-labelledby="addCabinetModalLabel" aria-hidden="true">
                                 <div class="modal-dialog" role="document">
-                                    <div class="modal fade" id="addCabinetModal" tabindex="-1" role="dialog" aria-labelledby="addCabinetModalLabel" aria-hidden="true">
-                                        <!-- Здесь можно разместить вашу форму пост-запроса -->
-                                        <form method="post" action="#">
-                                            {% csrf_token %}
+                                    <!-- Здесь можно разместить вашу форму пост-запроса -->
+                                    <form method="post" action="{% url 'profile:profil_cabinet' user.id %}">
+                                        {% csrf_token %}
+                                        <div class="modal-content">
                                             <div class="modal-header">
                                                 <h5 class="modal-title" id="addCabinetModalLabel">Добавить кабинет</h5>
                                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -79,14 +79,14 @@
                                                 </button>
                                             </div>
                                             <div class="modal-body">
-                                                <!-- Здесь разместите элементы формы -->
+                                                {{ form.as_p }}
                                             </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
                                                 <button type="submit" class="btn btn-success">Добавить</button>
                                             </div>
-                                        </form>
-                                    </div>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
                         {% endif %}

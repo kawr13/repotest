@@ -5,8 +5,8 @@ from django.shortcuts import render
 from django.urls import reverse, reverse_lazy
 from django.views.generic import CreateView, UpdateView
 
-from Cabinet.models import Schedule
-from profileapp.forms import UserForm, UserRegisterForm
+from Cabinet.models import Schedule, Cabinet
+from profileapp.forms import UserForm, UserRegisterForm, CabinetForm
 from profileapp.models import Teacher, User, Category, Tag
 # from Cabinet.models import Schedule
 from django.contrib import auth
@@ -81,6 +81,29 @@ def profiluser(request: HttpRequest, user_id: int) -> render:
         'user': User.objects.select_related('teacher').get(id=user_id),
     }
     return render(request, 'profileapp/profile/profile.html', context=context)
+
+
+def profilusercabinet(request: HttpRequest, user_id: int) -> render:
+    if request.method == 'POST':
+        form = CabinetForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return HttpResponseRedirect(reverse('profile:profil_cabinet', kwargs={'user_id': user_id}))
+
+    teach = User.objects.get(id=user_id).teacher
+    cabinets = Cabinet.objects.filter(teachers=teach)
+    users_by_cabinet = {}
+
+    for cabinet in cabinets:
+        users_by_cabinet[cabinet] = cabinet.users.filter(is_teacher=False)
+    context = {
+        'title': 'Кабинеты',
+        'teach': User.objects.get(id=user_id),
+
+        'users_by_cab': users_by_cabinet,
+        'form': CabinetForm(),
+    }
+    return render(request, 'profileapp/profile/profile_cabinet.html', context=context)
 
 
 def logout(request):

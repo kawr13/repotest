@@ -1,6 +1,7 @@
 from django.contrib.auth.forms import AuthenticationForm, UserCreationForm
 from django import forms
 
+from Cabinet.models import Cabinet
 from profileapp.models import User
 
 
@@ -24,3 +25,10 @@ class UserRegisterForm(UserCreationForm):
     class Meta:
         model = User
         fields = ['username', 'password1', 'password2', 'first_name', 'last_name', 'email', 'phone_number', 'is_teacher', 'images']
+
+
+class CabinetForm(forms.ModelForm):
+
+    class Meta:
+        model = Cabinet
+        fields = '__all__'

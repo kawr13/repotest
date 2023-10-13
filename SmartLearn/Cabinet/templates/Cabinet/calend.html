@@ -1,41 +1,4 @@
-{% extends 'profileapp/profile/base_home.html' %}
 
-
-{% load static %}
-
-{% block scripts %}
-    <script src="{% static 'fullcalendar/dist/index.global.js' %}"></script>
-    <script>
-        var getEventsURL = "{% url 'cabinet:get_events' %}";
-    </script>
-{% endblock %}
-
-{% block styles %}
-    <style>
-        body {
-            margin: 40px 10px;
-            padding: 0;
-            font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
-            font-size: 14px;
-        }
-
-                #calendar {
-            border-radius: 10px;
-            box-shadow: 0 0 10px #ccc;
-        }
-
-            .fc-header-toolbar {
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-        }
-
-            .fc-button {
-            border-radius: 30px;
-        }
-    </style>
-{% endblock %}
-
-{% block content %}
     <div class="container my-4">
         <div id='calendar' class="p-3"></div>
     </div>
@@ -64,5 +27,3 @@
                 calendar.render();
             });
         </script>
-{% endblock %}
-{% block script %}<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>{% endblock %}

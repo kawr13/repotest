@@ -4,6 +4,12 @@
 {% block title %}
 {{ title }}
 {% endblock %}
+{% block scripts %}
+    <script src="{% static 'fullcalendar/dist/index.global.js' %}"></script>
+    <script>
+        var getEventsURL = "{% url 'cabinet:get_events' cabinet_id %}";
+    </script>
+{% endblock %}
 {% block styles %}
     <style>
         .sidenav {
@@ -37,7 +43,43 @@
             padding: 20px;
             z-index: 1; /* Устанавливаем z-index для контента */
         }
+
+                .sidenav {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #333; /* Цвет фона */
+            padding-top: 20px;
+            z-index: 1; /* Устанавливаем z-index для боковой панели */
+        }
+
+        /* Стили для пунктов меню */
+        .sidenav a {
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #fff; /* Цвет текста */
+            display: block;
+        }
+
+        /* Стили для активного пункта меню */
+        .sidenav a.active {
+            background-color: #4CAF50; /* Цвет активного пункта */
+        }
+
+        /* Стили для контента, сдвигаемого вправо */
+        .content {
+            margin-left: 250px; /* Ширина боковой панели */
+            padding: 20px;
+            z-index: 1; /* Устанавливаем z-index для контента */
+        }
     </style>
+{% endblock %}
+
+{% block modals %}
+
 {% endblock %}
 
 {% block content %}
@@ -50,7 +92,10 @@
 
     <!-- Основной контент -->
     <div class="content">
-        <h1>Добро пожаловать в ваш кабинет</h1>
-        <!-- Здесь будет отображаться контент для выбранного пункта меню -->
+        <div class="container my-4">
+        <div id='calendar' class="p-3"></div>
+    </div>
+        {% include 'Cabinet/calend.html' %}
     </div>
 {% endblock %}
+{% block script %}<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>{% endblock %}

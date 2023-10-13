@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.urls import path
 
-from .views import sort_category, blog, login, UserRegisterViews, logout, profiluser
+from .views import sort_category, blog, login, UserRegisterViews, logout, profiluser, profilusercabinet
 
 app_name = 'profile'
 
@@ -27,4 +27,5 @@ urlpatterns = [
     path('register/', UserRegisterViews.as_view(), name='register'),
     path('logout/', logout, name='logout'),
     path('profils/<int:user_id>/', profiluser, name='updateViews'),
+    path('profils/cabinet/<int:user_id>/', profilusercabinet, name='profil_cabinet'),
 ]

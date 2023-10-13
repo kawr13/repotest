@@ -49,13 +49,25 @@
     <div class="sidenav">
         <a href="#" class="active">Статистика</a>
         <a href="#">Услуги</a>
-        <a href="#">Кабинеты</a>
+        <a href="{%  url 'profile:profil_cabinet' user.id %}">Кабинеты</a>
     </div>
 
     <!-- Основной контент -->
     <div class="content">
         <h1>Добро пожаловать в ваш кабинет</h1>
-        <!-- Здесь будет отображаться контент для выбранного пункта меню -->
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Имя: {{ teach.username }}</h5>
+                <p class="card-text">Учитель: {{ teach.teacher.description }}</p>
+                {% for cabinet, users in users_by_cab.items %}
+                    <a href="{% url 'cabinet:cabinet' cab_id=cabinet.id %}" class="card-text">Кабинет: {{ cabinet.name }}</a>
+                    {% for user in users %}
+                        <p class="card-text">Пользователь: {{ user.username }}</p>
+                    {% endfor %}
+                {% endfor %}
+
+            </div>
+        </div>
     </div>
 
 
