@@ -7,16 +7,23 @@ from django.views.generic import CreateView, UpdateView
 
 from Cabinet.models import Schedule, Cabinet
 from profileapp.forms import UserForm, UserRegisterForm, CabinetForm
-from profileapp.models import Teacher, User, Category, Tag
+from profileapp.models import Teacher, User, Category, Tag, Post
 # from Cabinet.models import Schedule
 from django.contrib import auth
 from django.shortcuts import render
 
 
 def index(request: HttpRequest) -> render:
+    if request.user.id:
+        pers = User.objects.get(id=request.user.id).is_authenticated
+    else:
+        pers = False
+    print(pers)
     context = {
         'title': 'Список учителей',
         'users': User.objects.select_related('teacher'),
+        'regis': request.user,
+        'autentic': pers,
         'categories': Tag.objects.all(),
     }
     return render(request, 'profileapp/profile/index.html', context=context)
@@ -37,11 +44,19 @@ def sort_category(request: HttpRequest, tag_id: int=None) -> render:
     return render(request, 'profileapp/profile/index.html', context=context)
 
 
-
 def blog(request: HttpRequest, user_id: int) -> render:
+    user = User.objects.select_related('teacher').get(id=user_id)
+
+    if request.user.id:
+        pers = User.objects.get(id=request.user.id).is_authenticated
+    else:
+        pers = False
+    teacher = user.teacher
     context = {
         'title': 'Блог',
-        'user': User.objects.select_related('teacher').get(id=user_id),
+        'user': user,
+        'autentic': pers,
+        'posts': Post.objects.filter(teacher=teacher),
     }
     return render(request, 'profileapp/profile/blog.html', context=context)
 
@@ -76,9 +91,15 @@ class UserRegisterViews(CreateView):
 
 
 def profiluser(request: HttpRequest, user_id: int) -> render:
+    if request.user.id:
+        pers = User.objects.get(id=request.user.id).is_authenticated
+    else:
+        pers = False
     context = {
         'title': 'Профиль',
-        'user': User.objects.select_related('teacher').get(id=user_id),
+        'user': User.objects.get(id=user_id),
+        'autentic': pers,
+        'teacher': User.objects.select_related('teacher').get(id=user_id),
     }
     return render(request, 'profileapp/profile/profile.html', context=context)
 
@@ -89,9 +110,18 @@ def profilusercabinet(request: HttpRequest, user_id: int) -> render:
         if form.is_valid():
             form.save()
             return HttpResponseRedirect(reverse('profile:profil_cabinet', kwargs={'user_id': user_id}))
-
+    if request.user.id:
+        pers = User.objects.get(id=request.user.id).is_authenticated
+    else:
+        pers = False
     teach = User.objects.get(id=user_id).teacher
-    cabinets = Cabinet.objects.filter(teachers=teach)
+    if teach:
+        cabinets = Cabinet.objects.filter(teachers=teach)
+    else:
+        user = User.objects.get(id=user_id)
+        teach = Cabinet.objects.filter(users=user)
+        cabinets = Cabinet.objects.filter(users=user)
+
     users_by_cabinet = {}
 
     for cabinet in cabinets:
@@ -99,7 +129,7 @@ def profilusercabinet(request: HttpRequest, user_id: int) -> render:
     context = {
         'title': 'Кабинеты',
         'teach': User.objects.get(id=user_id),
-
+        'autentic': pers,
         'users_by_cab': users_by_cabinet,
         'form': CabinetForm(),
     }

@@ -3,18 +3,19 @@ from django.contrib.admin import TabularInline
 from .models import *
 
 
-# Register your models here.
+
 @admin.register(Schedule)
-class ScheduleAdmin(admin.ModelAdmin):
-    list_display = ('date_create',)
+class ScheduleViewAdmin(admin.ModelAdmin):
+    list_display = ('title',)
 
 
 class ScheduleAdmin(TabularInline):
-    model = Cabinet.schedules.through
+    model = Schedule
     extra = 0
+
 
 @admin.register(Cabinet)
 class CabinetAdmin(admin.ModelAdmin):
     list_display = ('name',)
-    fields = ('name', 'teachers', 'users', 'schedules')
+    fields = ('name', 'teachers', 'users')
     inlines = [ScheduleAdmin]

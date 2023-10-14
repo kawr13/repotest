@@ -1,5 +1,152 @@
 {% extends 'profileapp/profile/base_home.html' %}
+{% load static %}
 
+{% block title %}
+{{ title }}
+{% endblock %}
+{% block styles %}
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .blog-header {
+            background-color: #f5f5f5;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        .header-wrapper {
+            height: 5cm; /* Задайте высоту в сантиметрах */
+            overflow: hidden; /* Обрезать содержимое, которое не умещается */
+        }
+
+        .header-wrapper img {
+            width: 100%; /* Чтобы изображение занимало 100% ширины обертки */
+        }
+
+        .user-profile {
+            display: flex;
+            align-items: center;
+            margin: 20px;
+        }
+
+        .user-profile img {
+            max-width: 200px;
+            max-height: 150px;
+            object-fit: cover; /* Обрезать изображение, если оно не соответствует прямоугольному формату */
+            margin-right: 20px;
+        }
+
+        .blog-post {
+            display: flex;
+            margin: 20px;
+        }
+
+        .blog-post img {
+            max-width: 150px;
+            max-height: 100px;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .form-group input[type="file"] {
+            display: none; /* Скрываем стандартную кнопку выбора файла */
+        }
+
+        /* Стилизация кнопки загрузки изображения */
+        .form-group input[type="file"] + label {
+            display: inline-block;
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        /* Стилизация кнопки "Сохранить пост" */
+        button[type="submit"] {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+{% endblock %}
 {% block content %}
-{{ user.last_name }}
+
+</head>
+<body>
+    <div class="blog-header">
+        <div class="header-wrapper">
+            <img src="{{ user.images.url }}" alt="Заголовочное изображение">
+        </div>
+    </div>
+    <div class="blog-header">
+        <div class="user-profile">
+            <img src="{{ user.images.url }}" alt="Фото профиля">
+            <div>
+                <h2>{{ user.username }}</h2>
+                <p>{{ user.teacher.description }}</p>
+            </div>
+        </div>
+    </div>
+    {% if user_un.is_teacher %}
+        <div class="blog-header">
+
+            <form>
+                <div class="form-group">
+                    <label for="post-title">Заголовок поста:</label>
+                    <input type="text" id="post-title" placeholder="Заголовок поста">
+                </div>
+                <div class="form-group">
+                    <label for="post-text">Текст поста:</label>
+                    <textarea id="post-text" placeholder="Текст поста"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="image-upload">Загрузить изображение:</label>
+                    <input type="file" id="image-upload" accept="image/*"> <!-- Кнопка для загрузки изображения -->
+                </div>
+                <button type="submit">Сохранить пост</button>
+            </form>
+        </div>
+    {% endif %}
+    <div class="blog-header">
+        {% for post in posts %}
+            <div class="blog-post">
+                <img src="{% if post.images %}{{ post.images.url }}{% else %}{% static 'image/profile_img/img.png' %}{% endif %}" alt="Изображение поста">
+                <div>
+                    <h3>{{ post.title }}</h3>
+                    <p>{{ post.content }}</p>
+                </div>
+
+            </div>
+            <p>{{ post.date_create }}</p>
+        {% endfor %}
+    </div>
+    <!-- Добавьте больше блоков постов при необходимости -->
+
+</body>
 {% endblock %}

@@ -3,6 +3,8 @@ from django.contrib import admin
 # Register your models here.
 from django.contrib import admin
 from django.contrib.admin import TabularInline
+from django.utils.safestring import mark_safe
+
 from .models import *
 # Register your models here.
 
@@ -32,8 +34,16 @@ class RequisitesAdmin(admin.ModelAdmin):
 
 @admin.register(User)
 class UserAdmin(admin.ModelAdmin):
-    list_display = ('username', 'password', 'first_name', 'last_name','phone_number', 'is_teacher', 'requisites')
+    list_display = ('username', 'password', 'first_name', 'last_name','phone_number', 'is_teacher', 'display_image')
 
+    def display_image(self, obj):
+        # Здесь вы можете создать HTML-код для отображения изображения
+        if obj.images:
+            return mark_safe(f'<img src="{obj.images.url}" width="50" height="50" />')
+        else:
+            return 'Нет изображения'
+
+    display_image.short_description = 'Изображение'
 
 @admin.register(Service)
 class ServiceAdmin(admin.ModelAdmin):

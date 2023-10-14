@@ -13,7 +13,7 @@ class Requisites(models.Model):
 
 class User(AbstractUser):
     phone_number = models.CharField(max_length=15, unique=True)
-    is_teacher = models.BooleanField(default=False)
+    is_teacher = models.BooleanField(default=False, blank=True, null=True)
     teacher = models.OneToOneField('Teacher', on_delete=models.CASCADE, related_name='user_teacher', null=True, blank=True)
     images = models.ImageField(upload_to='users/images', null=True, blank=True)
     requisites = models.OneToOneField('Requisites', on_delete=models.CASCADE, related_name='user_requisites', null=True, blank=True)

@@ -19,7 +19,8 @@ class UserRegisterForm(UserCreationForm):
     phone_number = forms.CharField(label='Номер телефона', widget=forms.TextInput(attrs={'class': 'form-control'}))
     password1 = forms.CharField(label='Пароль', widget=forms.PasswordInput(attrs={'class': 'form-control'}))
     password2 = forms.CharField(label='Повторите пароль', widget=forms.PasswordInput(attrs={'class': 'form-control'}))
-    is_teacher = forms.BooleanField(label='Преподаватель', widget=forms.CheckboxInput(attrs={'class': 'form-check'}))
+    is_teacher = forms.BooleanField(label='Преподаватель', widget=forms.CheckboxInput(attrs={'class': 'form-check'}),
+                                     required=False)
     images = forms.ImageField(label='Изображение', widget=forms.FileInput(attrs={'class': 'form-control'}))
 
     class Meta:

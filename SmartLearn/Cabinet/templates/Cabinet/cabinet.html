@@ -5,9 +5,11 @@
 {{ title }}
 {% endblock %}
 {% block scripts %}
+    <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/core/main.js"></script>
     <script src="{% static 'fullcalendar/dist/index.global.js' %}"></script>
     <script>
         var getEventsURL = "{% url 'cabinet:get_events' cabinet_id %}";
+        var getUrl = "{% url 'cabinet:get_update' cabinet_id %}";
     </script>
 {% endblock %}
 {% block styles %}
