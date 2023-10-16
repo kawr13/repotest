@@ -30,7 +30,7 @@ class Teacher(models.Model):
     tags = models.ManyToManyField('Tag', related_name='teachers')
 
     def __str__(self):
-        return self.description
+        return f'{self.description} {self.pk}'
 
 
 class Tag(models.Model):

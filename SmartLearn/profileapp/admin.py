@@ -19,7 +19,7 @@ class TagTabular(TabularInline):
 @admin.register(Teacher)
 class TeacherUsAdmin(admin.ModelAdmin):
     inlines = [TagTabular]
-    list_display = ('description',)
+    list_display = ('id', 'description',)
     fields = ('description',)
 
 @admin.register(Tag)

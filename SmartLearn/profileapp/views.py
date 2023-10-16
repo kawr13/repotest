@@ -104,6 +104,22 @@ class UserRegisterViews(CreateView):
     template_name = 'profileapp/profile/register.html'
     success_url = reverse_lazy('profile:login')
 
+    def form_valid(self, form):
+        user = form.save()
+
+        # Проверяем, установлена ли галочка "Преподаватель"
+        is_teacher = form.cleaned_data.get('is_teacher')
+        if is_teacher:
+            # Создаем связанную запись Teacher и привязываем к пользователю
+            teacher = Teacher.objects.create(description='', )  # Добавьте нужные атрибуты
+            user.is_teacher = True
+            user.teacher = teacher
+            user.save()
+            return HttpResponseRedirect(reverse('profile:login'))
+        else:
+            return HttpResponseRedirect(reverse('profile:login'))
+
+
     def get_context_data(self, **kwargs):
         context = super(UserRegisterViews, self).get_context_data()
         return context
