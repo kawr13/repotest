@@ -26,7 +26,7 @@ class User(AbstractUser):
 
 
 class Teacher(models.Model):
-    description = models.TextField()
+    description = models.TextField(blank=True, null=True)
     tags = models.ManyToManyField('Tag', related_name='teachers')
 
     def __str__(self):
