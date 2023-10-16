@@ -9,7 +9,6 @@ from .models import *
 # Register your models here.
 
 
-
 class TagTabular(TabularInline):
     model = Teacher.tags.through
     list_display = ('name',)
@@ -21,6 +20,7 @@ class TeacherUsAdmin(admin.ModelAdmin):
     inlines = [TagTabular]
     list_display = ('description',)
     fields = ('description',)
+
 
 @admin.register(Tag)
 class TagAdmin(admin.ModelAdmin):
@@ -45,14 +45,10 @@ class UserAdmin(admin.ModelAdmin):
 
     display_image.short_description = 'Изображение'
 
+
 @admin.register(Service)
 class ServiceAdmin(admin.ModelAdmin):
     list_display = ('name',)
-
-
-# @admin.register(Category)
-# class CategoryAdmin(admin.ModelAdmin):
-#     list_display = ('name', 'category_teacher')
 
 
 @admin.register(Post)
@@ -69,9 +65,3 @@ class CommentAdmin(admin.ModelAdmin):
 class RecordAdmin(admin.ModelAdmin):
     list_display = ('url', 'teacher', 'date_create')
 
-
-# @admin.register(EmailVerification)
-# class EmailVerificationAdmin(admin.ModelAdmin):
-#     list_display = ('code', 'user', 'expirations')
-#     fields = ('code', 'user', 'expirations', 'created')
-#     readonly_fields = ('created',)

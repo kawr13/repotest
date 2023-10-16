@@ -1,7 +1,7 @@
 from django.http import HttpRequest, JsonResponse
 from django.shortcuts import render, redirect
 
-from Cabinet.models import Cabinet, Schedule
+from .models import Cabinet, Schedule
 from profileapp.models import User
 
 
@@ -54,6 +54,5 @@ def update_calend(request: HttpRequest, cabinet_id) -> render:
             )
             schedule.save()
             # Создайте новый объект Schedule и свяжите его с Cabinet
-
 
             return redirect('cabinet:cabinet', cab_id=cabinet_id)

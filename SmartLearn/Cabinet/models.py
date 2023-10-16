@@ -1,10 +1,7 @@
 from django.db import models
 
 from profileapp.models import Teacher, User
-
-
 # Create your models here.
-
 
 
 class Cabinet(models.Model):

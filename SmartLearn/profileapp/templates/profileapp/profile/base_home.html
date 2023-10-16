@@ -72,7 +72,7 @@
                             <div class="modal fade" id="addCabinetModal" tabindex="-1" role="dialog" aria-labelledby="addCabinetModalLabel" aria-hidden="true">
                                 <div class="modal-dialog" role="document">
                                     <!-- Здесь можно разместить вашу форму пост-запроса -->
-                                    <form method="post" action="{% url 'profile:profil_cabinet' user.id %}">
+                                    <form method="post" action="{% url 'profile:profile_cabinet' user.id %}">
                                         {% csrf_token %}
                                         <div class="modal-content">
                                             <div class="modal-header">

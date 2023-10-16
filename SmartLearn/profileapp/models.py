@@ -29,9 +29,6 @@ class Teacher(models.Model):
     description = models.TextField()
     tags = models.ManyToManyField('Tag', related_name='teachers')
 
-    def __str__(self):
-        return self.description
-
 
 class Tag(models.Model):
     name = models.CharField(max_length=100)

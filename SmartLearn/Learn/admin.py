@@ -5,17 +5,18 @@ from .models import *
 # Register your models here.
 
 
-
 class TagTabular(admin.TabularInline):
     model = Teacher.tags.through
     list_display = ('name',)
     extra = 0
+
 
 @admin.register(Teacher)
 class TeacherUsAdmin(admin.ModelAdmin):
     inlines = [TagTabular]
     list_display = ('description',)
     fields = ('description',)
+
 
 @admin.register(Tag)
 class TagAdmin(admin.ModelAdmin):
@@ -29,7 +30,7 @@ class RequisitesAdmin(admin.ModelAdmin):
 
 @admin.register(User)
 class UserAdmin(admin.ModelAdmin):
-    list_display = ('username', 'password', 'first_name', 'last_name','phone_number', 'is_teacher', 'requisites')
+    list_display = ('username', 'password', 'first_name', 'last_name', 'phone_number', 'is_teacher', 'requisites')
 
 
 @admin.register(Schedule)
@@ -40,7 +41,6 @@ class ScheduleAdmin(admin.ModelAdmin):
 class ScheduleAdmin(TabularInline):
     model = Cabinet.schedules.through
     extra = 0
-
 
 
 @admin.register(Cabinet)

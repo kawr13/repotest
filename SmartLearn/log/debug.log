@@ -13729,3 +13729,2168 @@ INFO 2023-10-16 13:40:36,284 basehttp 3644 14432 "GET /cabinet/cabinets/1/ HTTP/
 INFO 2023-10-16 13:40:36,292 basehttp 3644 14432 "GET /cabinet/get_events/1/?start=2023-10-01T00%3A00%3A00%2B05%3A00&end=2023-11-12T00%3A00%3A00%2B05%3A00 HTTP/1.1" 200 1012
 INFO 2023-10-16 13:41:55,482 autoreload 3644 20260 F:\projects_1\repair_proj\SmartLearn-Squad\SmartLearn\Cabinet\models.py changed, reloading.
 INFO 2023-10-16 13:41:55,947 autoreload 15524 15732 Watching for file changes with StatReloader
+INFO 2023-10-16 16:27:39,508 autoreload 6264 10892 Watching for file changes with StatReloader
+ERROR 2023-10-16 16:27:41,207 log 6264 1380 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 187, in _get_session
+    return self._session_cache
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: django_session
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn\profileapp\views.py", line 17, in index
+    if request.user.id:
+       ^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\utils\functional.py", line 266, in inner
+    self._setup()
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\utils\functional.py", line 419, in _setup
+    self._wrapped = self._setupfunc()
+                    ^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\contrib\auth\middleware.py", line 25, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+                                            ^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\contrib\auth\middleware.py", line 11, in get_user
+    request._cached_user = auth.get_user(request)
+                           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 191, in get_user
+    user_id = _get_user_session_key(request)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 60, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+                                               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 53, in __getitem__
+    return self._session[key]
+           ^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 192, in _get_session
+    self._session_cache = self.load()
+                          ^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\contrib\sessions\backends\db.py", line 42, in load
+    s = self._get_session_from_db()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\contrib\sessions\backends\db.py", line 32, in _get_session_from_db
+    return self.model.objects.get(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: django_session
+ERROR 2023-10-16 16:27:41,225 basehttp 6264 1380 "GET / HTTP/1.1" 500 181010
+WARNING 2023-10-16 16:27:41,466 log 6264 1380 Not Found: /favicon.ico
+WARNING 2023-10-16 16:27:41,469 basehttp 6264 1380 "GET /favicon.ico HTTP/1.1" 404 2694
+WARNING 2023-10-16 16:27:46,735 log 6264 1380 Not Found: /product_form/
+WARNING 2023-10-16 16:27:46,736 basehttp 6264 1380 "GET /product_form/ HTTP/1.1" 404 2700
+WARNING 2023-10-16 16:27:48,025 log 6264 1380 Not Found: /profile
+WARNING 2023-10-16 16:27:48,025 basehttp 6264 1380 "GET /profile HTTP/1.1" 404 2682
+WARNING 2023-10-16 16:28:09,592 log 6264 1380 Not Found: /cabinet
+WARNING 2023-10-16 16:28:09,592 basehttp 6264 1380 "GET /cabinet HTTP/1.1" 404 2682
+WARNING 2023-10-16 16:28:15,079 log 6264 1380 Not Found: /profile
+WARNING 2023-10-16 16:28:15,080 basehttp 6264 1380 "GET /profile HTTP/1.1" 404 2682
+ERROR 2023-10-16 16:29:02,470 log 6264 1380 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 187, in _get_session
+    return self._session_cache
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: django_session
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn\profileapp\views.py", line 17, in index
+    if request.user.id:
+       ^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\utils\functional.py", line 266, in inner
+    self._setup()
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\utils\functional.py", line 419, in _setup
+    self._wrapped = self._setupfunc()
+                    ^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\contrib\auth\middleware.py", line 25, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+                                            ^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\contrib\auth\middleware.py", line 11, in get_user
+    request._cached_user = auth.get_user(request)
+                           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 191, in get_user
+    user_id = _get_user_session_key(request)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 60, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+                                               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 53, in __getitem__
+    return self._session[key]
+           ^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 192, in _get_session
+    self._session_cache = self.load()
+                          ^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\contrib\sessions\backends\db.py", line 42, in load
+    s = self._get_session_from_db()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\contrib\sessions\backends\db.py", line 32, in _get_session_from_db
+    return self.model.objects.get(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: django_session
+ERROR 2023-10-16 16:29:02,477 basehttp 6264 1380 "GET / HTTP/1.1" 500 181008
+ERROR 2023-10-16 16:29:10,530 log 6264 1380 Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 187, in _get_session
+    return self._session_cache
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: django_session
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\contrib\admin\sites.py", line 261, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\contrib\admin\sites.py", line 230, in inner
+    if not self.has_permission(request):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\contrib\admin\sites.py", line 203, in has_permission
+    return request.user.is_active and request.user.is_staff
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\utils\functional.py", line 266, in inner
+    self._setup()
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\utils\functional.py", line 419, in _setup
+    self._wrapped = self._setupfunc()
+                    ^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\contrib\auth\middleware.py", line 25, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+                                            ^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\contrib\auth\middleware.py", line 11, in get_user
+    request._cached_user = auth.get_user(request)
+                           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 191, in get_user
+    user_id = _get_user_session_key(request)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 60, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+                                               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 53, in __getitem__
+    return self._session[key]
+           ^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 192, in _get_session
+    self._session_cache = self.load()
+                          ^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\contrib\sessions\backends\db.py", line 42, in load
+    s = self._get_session_from_db()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\contrib\sessions\backends\db.py", line 32, in _get_session_from_db
+    return self.model.objects.get(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: django_session
+ERROR 2023-10-16 16:29:10,540 basehttp 6264 1380 "GET /admin/ HTTP/1.1" 500 200175
+ERROR 2023-10-16 16:29:11,306 log 6264 1380 Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 187, in _get_session
+    return self._session_cache
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: django_session
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\contrib\admin\sites.py", line 261, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\contrib\admin\sites.py", line 230, in inner
+    if not self.has_permission(request):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\contrib\admin\sites.py", line 203, in has_permission
+    return request.user.is_active and request.user.is_staff
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\utils\functional.py", line 266, in inner
+    self._setup()
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\utils\functional.py", line 419, in _setup
+    self._wrapped = self._setupfunc()
+                    ^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\contrib\auth\middleware.py", line 25, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+                                            ^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\contrib\auth\middleware.py", line 11, in get_user
+    request._cached_user = auth.get_user(request)
+                           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 191, in get_user
+    user_id = _get_user_session_key(request)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 60, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+                                               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 53, in __getitem__
+    return self._session[key]
+           ^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 192, in _get_session
+    self._session_cache = self.load()
+                          ^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\contrib\sessions\backends\db.py", line 42, in load
+    s = self._get_session_from_db()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\contrib\sessions\backends\db.py", line 32, in _get_session_from_db
+    return self.model.objects.get(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: django_session
+ERROR 2023-10-16 16:29:11,316 basehttp 6264 1380 "GET /admin/ HTTP/1.1" 500 199901
+INFO 2023-10-16 16:29:58,327 autoreload 12460 6172 Watching for file changes with StatReloader
+INFO 2023-10-16 16:30:00,954 basehttp 12460 8520 "GET / HTTP/1.1" 200 3282
+INFO 2023-10-16 16:30:04,532 basehttp 12460 8520 "GET /admin/ HTTP/1.1" 302 0
+INFO 2023-10-16 16:30:04,634 basehttp 12460 8520 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4267
+INFO 2023-10-16 16:30:04,800 basehttp 12460 8520 "GET /static/admin/css/login.css HTTP/1.1" 200 958
+INFO 2023-10-16 16:30:05,319 basehttp 12460 8520 "GET /admin/ HTTP/1.1" 302 0
+INFO 2023-10-16 16:30:05,327 basehttp 12460 8520 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4267
+INFO 2023-10-16 16:30:33,851 autoreload 13000 932 Watching for file changes with StatReloader
+INFO 2023-10-16 16:30:37,189 basehttp 13000 12480 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2023-10-16 16:30:37,270 basehttp 13000 12480 "GET /admin/ HTTP/1.1" 200 10471
+INFO 2023-10-16 16:30:37,319 basehttp 13000 12480 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2023-10-16 16:30:37,331 basehttp 13000 12480 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2023-10-16 16:30:40,356 basehttp 13000 12480 "GET / HTTP/1.1" 200 3490
+WARNING 2023-10-16 16:30:44,368 log 13000 12480 Not Found: /cabinet
+WARNING 2023-10-16 16:30:44,369 basehttp 13000 12480 "GET /cabinet HTTP/1.1" 404 2682
+INFO 2023-10-16 16:31:00,792 basehttp 13000 12480 "GET /profile/profils/1/ HTTP/1.1" 200 4230
+INFO 2023-10-16 16:31:02,819 basehttp 13000 12480 "GET /profile/profils/cabinet/1/ HTTP/1.1" 200 4894
+INFO 2023-10-16 16:31:04,641 basehttp 13000 12480 "GET /profile/services/ HTTP/1.1" 200 9263
+INFO 2023-10-16 16:31:06,253 basehttp 13000 12480 "GET /profile/services/ HTTP/1.1" 200 9263
+INFO 2023-10-16 16:31:07,000 basehttp 13000 12480 "GET /profile/profils/cabinet/1/ HTTP/1.1" 200 4894
+INFO 2023-10-16 16:31:09,320 basehttp 13000 12480 "GET /profile/profils/cabinet/1/ HTTP/1.1" 200 4894
+INFO 2023-10-16 16:31:10,009 basehttp 13000 12480 "GET /profile/services/ HTTP/1.1" 200 9263
+INFO 2023-10-16 16:31:11,912 basehttp 13000 12480 "GET /profile/services/ HTTP/1.1" 200 9263
+INFO 2023-10-16 16:31:13,403 basehttp 13000 12480 "GET /profile/profils/cabinet/1/ HTTP/1.1" 200 4894
+INFO 2023-10-16 16:31:13,589 basehttp 13000 12480 "GET /profile/profils/cabinet/1/ HTTP/1.1" 200 4894
+INFO 2023-10-16 16:31:15,076 basehttp 13000 12480 "GET /profile/services/ HTTP/1.1" 200 9263
+INFO 2023-10-16 16:31:16,099 basehttp 13000 12480 "GET /profile/profils/cabinet/1/ HTTP/1.1" 200 4894
+INFO 2023-10-16 16:31:51,199 basehttp 13000 12480 "GET /admin/Cabinet/schedule/ HTTP/1.1" 200 10608
+INFO 2023-10-16 16:31:51,249 basehttp 13000 12480 "GET /static/admin/css/changelists.css HTTP/1.1" 200 6566
+INFO 2023-10-16 16:31:51,258 basehttp 13000 11236 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2023-10-16 16:31:51,276 basehttp 13000 7664 "GET /static/admin/js/core.js HTTP/1.1" 200 5682
+INFO 2023-10-16 16:31:51,278 basehttp 13000 12480 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2023-10-16 16:31:51,289 basehttp 13000 7964 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8943
+INFO 2023-10-16 16:31:51,294 basehttp 13000 11236 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2023-10-16 16:31:51,311 basehttp 13000 7840 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 292458
+INFO 2023-10-16 16:31:51,331 basehttp 13000 12480 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-16 16:31:51,331 basehttp 13000 5936 "GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+INFO 2023-10-16 16:31:51,376 basehttp 13000 7840 "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2023-10-16 16:31:51,385 basehttp 13000 7664 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+INFO 2023-10-16 16:31:51,402 basehttp 13000 7664 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2023-10-16 16:31:53,163 basehttp 13000 7664 "GET /admin/Cabinet/schedule/add/ HTTP/1.1" 200 15447
+INFO 2023-10-16 16:31:53,190 basehttp 13000 5936 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-16 16:31:53,199 basehttp 13000 7664 "GET /static/admin/css/forms.css HTTP/1.1" 200 9047
+INFO 2023-10-16 16:31:53,204 basehttp 13000 12480 "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+INFO 2023-10-16 16:31:53,209 basehttp 13000 7840 "GET /static/admin/js/calendar.js HTTP/1.1" 200 8466
+INFO 2023-10-16 16:31:53,214 basehttp 13000 7664 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11900
+INFO 2023-10-16 16:31:53,225 basehttp 13000 7840 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2023-10-16 16:31:53,234 basehttp 13000 7664 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO 2023-10-16 16:31:53,252 basehttp 13000 7664 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2023-10-16 16:31:53,305 basehttp 13000 7664 "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+INFO 2023-10-16 16:31:53,305 basehttp 13000 7840 "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+INFO 2023-10-16 16:31:56,013 basehttp 13000 7840 "GET /admin/Cabinet/cabinet/ HTTP/1.1" 200 10601
+INFO 2023-10-16 16:31:56,025 basehttp 13000 7840 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-16 16:31:57,182 basehttp 13000 7840 "GET /admin/Cabinet/cabinet/add/ HTTP/1.1" 200 17830
+INFO 2023-10-16 16:31:57,194 basehttp 13000 7840 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-16 16:31:57,214 basehttp 13000 7664 "GET /static/admin/js/inlines.js HTTP/1.1" 200 15526
+INFO 2023-10-16 16:32:05,150 basehttp 13000 7664 "POST /admin/Cabinet/cabinet/add/ HTTP/1.1" 200 18091
+INFO 2023-10-16 16:32:05,170 basehttp 13000 7664 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-16 16:32:07,242 basehttp 13000 7664 "GET /admin/profileapp/teacher/add/?_to_field=id&_popup=1 HTTP/1.1" 200 7792
+INFO 2023-10-16 16:32:07,256 basehttp 13000 7664 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-16 16:32:11,734 basehttp 13000 7664 "GET /admin/profileapp/teacher/add/?_to_field=id&_popup=1 HTTP/1.1" 200 7792
+INFO 2023-10-16 16:32:11,747 basehttp 13000 7664 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-16 16:32:16,194 basehttp 13000 7664 "POST /admin/profileapp/teacher/add/?_to_field=id&_popup=1 HTTP/1.1" 200 7946
+INFO 2023-10-16 16:32:16,208 basehttp 13000 7664 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-16 16:32:48,789 basehttp 13000 7664 "GET /profile/logout/ HTTP/1.1" 302 0
+INFO 2023-10-16 16:32:48,796 basehttp 13000 7664 "GET / HTTP/1.1" 200 3312
+WARNING 2023-10-16 16:32:52,713 log 13000 7664 Not Found: /login
+WARNING 2023-10-16 16:32:52,713 basehttp 13000 7664 "GET /login HTTP/1.1" 404 2676
+INFO 2023-10-16 16:33:06,612 basehttp 13000 7664 "GET /admin/profileapp/user/ HTTP/1.1" 302 0
+INFO 2023-10-16 16:33:06,622 basehttp 13000 7664 "GET /admin/login/?next=/admin/profileapp/user/ HTTP/1.1" 200 4299
+INFO 2023-10-16 16:33:13,329 basehttp 13000 7664 "POST /admin/login/?next=/admin/profileapp/user/ HTTP/1.1" 302 0
+INFO 2023-10-16 16:33:13,363 basehttp 13000 7664 "GET /admin/profileapp/user/ HTTP/1.1" 200 13266
+INFO 2023-10-16 16:33:13,380 basehttp 13000 7664 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-16 16:33:13,391 basehttp 13000 7664 "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+INFO 2023-10-16 16:33:19,015 basehttp 13000 7664 "GET /admin/profileapp/user/add/ HTTP/1.1" 200 32494
+INFO 2023-10-16 16:33:19,030 basehttp 13000 7664 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-16 16:34:06,649 basehttp 13000 7664 "POST /admin/profileapp/user/add/ HTTP/1.1" 302 0
+INFO 2023-10-16 16:34:06,668 basehttp 13000 7664 "GET /admin/profileapp/user/ HTTP/1.1" 200 14085
+INFO 2023-10-16 16:34:06,686 basehttp 13000 7664 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-16 16:34:06,717 basehttp 13000 7664 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2023-10-16 16:34:06,721 basehttp 13000 7840 "GET /media/users/images/IMG_20190805_124159.jpg HTTP/1.1" 200 1751932
+INFO 2023-10-16 16:34:09,232 basehttp 13000 7840 "GET /admin/Cabinet/cabinet/ HTTP/1.1" 200 10601
+INFO 2023-10-16 16:34:09,245 basehttp 13000 7840 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-16 16:34:10,433 basehttp 13000 7840 "GET /admin/Cabinet/cabinet/add/ HTTP/1.1" 200 17866
+INFO 2023-10-16 16:34:10,450 basehttp 13000 7840 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-16 16:34:12,025 basehttp 13000 7840 "GET /admin/profileapp/teacher/add/?_to_field=id&_popup=1 HTTP/1.1" 200 7792
+INFO 2023-10-16 16:34:12,038 basehttp 13000 7840 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-16 16:34:21,678 basehttp 13000 7840 "GET /admin/profileapp/teacher/add/?_to_field=id&_popup=1 HTTP/1.1" 200 7792
+INFO 2023-10-16 16:34:21,690 basehttp 13000 7840 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-16 16:34:24,243 basehttp 13000 7840 "POST /admin/profileapp/teacher/add/?_to_field=id&_popup=1 HTTP/1.1" 200 364
+INFO 2023-10-16 16:34:24,263 basehttp 13000 7840 "GET /static/admin/js/popup_response.js HTTP/1.1" 200 551
+INFO 2023-10-16 16:34:29,304 basehttp 13000 7840 "GET /admin/profileapp/user/ HTTP/1.1" 200 13860
+INFO 2023-10-16 16:34:29,319 basehttp 13000 7840 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-16 16:34:29,328 basehttp 13000 7840 "GET /media/users/images/IMG_20190805_124159.jpg HTTP/1.1" 304 0
+INFO 2023-10-16 16:34:35,829 basehttp 13000 7840 "GET /admin/profileapp/user/1/change/ HTTP/1.1" 200 32881
+INFO 2023-10-16 16:34:35,849 basehttp 13000 7840 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-16 16:34:43,170 basehttp 13000 7840 "GET /admin/profileapp/user/ HTTP/1.1" 200 13860
+INFO 2023-10-16 16:34:44,785 basehttp 13000 7840 "GET /admin/profileapp/user/?o=1 HTTP/1.1" 200 14248
+INFO 2023-10-16 16:34:44,799 basehttp 13000 7840 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-16 16:34:44,799 basehttp 13000 7664 "GET /media/users/images/IMG_20190805_124159.jpg HTTP/1.1" 304 0
+INFO 2023-10-16 16:34:44,831 basehttp 13000 7840 "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+INFO 2023-10-16 16:34:50,010 basehttp 13000 7840 "GET /admin/profileapp/teacher/ HTTP/1.1" 200 11891
+INFO 2023-10-16 16:34:50,022 basehttp 13000 7840 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-16 16:34:57,536 basehttp 13000 7840 "GET /admin/profileapp/user/ HTTP/1.1" 200 13860
+INFO 2023-10-16 16:34:57,567 basehttp 13000 7664 "GET /media/users/images/IMG_20190805_124159.jpg HTTP/1.1" 304 0
+INFO 2023-10-16 16:34:57,570 basehttp 13000 7840 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-16 16:34:58,667 basehttp 13000 7840 "GET /admin/profileapp/teacher/ HTTP/1.1" 200 11891
+INFO 2023-10-16 16:34:58,680 basehttp 13000 7840 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-16 16:34:59,322 basehttp 13000 7840 "GET /admin/profileapp/user/ HTTP/1.1" 200 13860
+INFO 2023-10-16 16:34:59,337 basehttp 13000 7840 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-16 16:35:09,011 basehttp 13000 7840 "GET /admin/profileapp/user/2/change/ HTTP/1.1" 200 33181
+INFO 2023-10-16 16:35:09,027 basehttp 13000 7840 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-16 16:35:26,646 basehttp 13000 7840 "POST /admin/profileapp/user/2/change/ HTTP/1.1" 302 0
+INFO 2023-10-16 16:35:26,665 basehttp 13000 7840 "GET /admin/profileapp/user/ HTTP/1.1" 200 14087
+INFO 2023-10-16 16:35:26,681 basehttp 13000 7840 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-16 16:35:26,698 basehttp 13000 7840 "GET /media/users/images/IMG_20190805_124159.jpg HTTP/1.1" 304 0
+INFO 2023-10-16 16:36:16,600 basehttp 13000 7840 "GET /admin/Cabinet/cabinet/ HTTP/1.1" 200 10601
+INFO 2023-10-16 16:36:16,615 basehttp 13000 7840 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-16 16:36:18,066 basehttp 13000 7840 "GET /admin/profileapp/teacher/ HTTP/1.1" 200 11891
+INFO 2023-10-16 16:36:18,078 basehttp 13000 7840 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-16 16:36:20,140 basehttp 13000 7840 "GET /admin/profileapp/user/ HTTP/1.1" 200 13860
+INFO 2023-10-16 16:36:20,153 basehttp 13000 7840 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-16 16:36:20,155 basehttp 13000 7664 "GET /media/users/images/IMG_20190805_124159.jpg HTTP/1.1" 304 0
+INFO 2023-10-16 16:36:25,757 basehttp 13000 7840 "GET /admin/profileapp/user/2/change/ HTTP/1.1" 200 33181
+INFO 2023-10-16 16:36:25,777 basehttp 13000 7840 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-16 16:55:08,227 basehttp 13000 8668 "GET / HTTP/1.1" 200 4653
+INFO 2023-10-16 16:55:08,303 basehttp 13000 8668 "GET /media/users/images/IMG_20190805_124159.jpg HTTP/1.1" 304 0
+INFO 2023-10-16 16:55:20,199 basehttp 13000 8668 "GET / HTTP/1.1" 200 4653
+INFO 2023-10-16 16:55:25,331 basehttp 13000 8668 "GET /admin/ HTTP/1.1" 200 11394
+INFO 2023-10-16 16:55:26,066 basehttp 13000 8668 "GET /admin/ HTTP/1.1" 200 11394
+INFO 2023-10-16 16:55:30,678 basehttp 13000 8668 "GET /admin/profileapp/user/ HTTP/1.1" 200 13860
+INFO 2023-10-16 16:55:30,716 basehttp 13000 8668 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-16 16:55:35,531 basehttp 13000 8668 "GET /admin/profileapp/teacher/ HTTP/1.1" 200 11891
+INFO 2023-10-16 16:55:35,548 basehttp 13000 8668 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-16 16:55:36,947 basehttp 13000 8668 "GET /admin/profileapp/user/ HTTP/1.1" 200 13860
+INFO 2023-10-16 16:56:37,340 basehttp 13000 8668 "GET /admin/profileapp/teacher/ HTTP/1.1" 200 11891
+INFO 2023-10-16 16:56:37,356 basehttp 13000 8668 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-16 16:56:39,017 basehttp 13000 8668 "GET /admin/profileapp/user/ HTTP/1.1" 200 13860
+INFO 2023-10-16 16:56:39,030 basehttp 13000 8668 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-16 16:56:42,824 basehttp 13000 8668 "GET /admin/profileapp/user/add/ HTTP/1.1" 200 32528
+INFO 2023-10-16 16:56:42,847 basehttp 13000 8668 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-16 16:59:06,373 autoreload 13000 932 C:\PythonProject\SmartLearn-Squad\SmartLearn\Cabinet\models.py changed, reloading.
+INFO 2023-10-16 17:03:54,816 autoreload 4624 12512 Watching for file changes with StatReloader
+INFO 2023-10-16 17:03:57,355 basehttp 4624 11144 "GET /admin/profileapp/teacher/ HTTP/1.1" 200 11891
+INFO 2023-10-16 17:03:57,385 basehttp 4624 11144 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-16 17:04:00,664 basehttp 4624 11144 "GET /admin/profileapp/user/ HTTP/1.1" 200 13860
+INFO 2023-10-16 17:04:00,676 basehttp 4624 11144 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-16 17:04:00,684 basehttp 4624 11144 "GET /media/users/images/IMG_20190805_124159.jpg HTTP/1.1" 304 0
+INFO 2023-10-16 17:04:03,068 basehttp 4624 11144 "GET /admin/profileapp/user/add/ HTTP/1.1" 200 32528
+INFO 2023-10-16 17:04:03,092 basehttp 4624 11144 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-16 17:04:29,664 autoreload 4624 12512 C:\PythonProject\SmartLearn-Squad\SmartLearn\Cabinet\models.py changed, reloading.
+INFO 2023-10-16 17:04:30,591 autoreload 12472 12564 Watching for file changes with StatReloader
+INFO 2023-10-16 17:44:21,273 autoreload 12432 5520 Watching for file changes with StatReloader
+INFO 2023-10-16 17:44:22,799 basehttp 12432 12492 "GET / HTTP/1.1" 200 4653
+INFO 2023-10-16 17:44:22,858 basehttp 12432 12492 "GET /media/users/images/IMG_20190805_124159.jpg HTTP/1.1" 304 0
+INFO 2023-10-16 17:44:25,755 basehttp 12432 12492 "GET /profile/profils/1/ HTTP/1.1" 200 4230
+INFO 2023-10-16 17:44:51,255 basehttp 12432 12492 "GET /profile/profils/1/ HTTP/1.1" 200 4230
+INFO 2023-10-16 17:45:07,977 basehttp 12432 12492 "GET /profile/services/ HTTP/1.1" 200 9263
+INFO 2023-10-16 17:45:09,224 basehttp 12432 12492 "GET /profile/profils/cabinet/1/ HTTP/1.1" 200 4894
+INFO 2023-10-16 17:45:24,162 basehttp 12432 12492 "GET /admin/ HTTP/1.1" 200 11394
+INFO 2023-10-16 17:45:24,896 basehttp 12432 12492 "GET /admin/ HTTP/1.1" 200 11394
+INFO 2023-10-16 17:45:26,667 basehttp 12432 12492 "GET /admin/Cabinet/cabinet/ HTTP/1.1" 200 10601
+INFO 2023-10-16 17:45:26,688 basehttp 12432 12492 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-16 17:45:28,279 basehttp 12432 12492 "GET /admin/Cabinet/cabinet/add/ HTTP/1.1" 200 17915
+INFO 2023-10-16 17:45:28,295 basehttp 12432 12492 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-16 17:45:47,005 autoreload 12432 5520 C:\PythonProject\SmartLearn-Squad\SmartLearn\profileapp\views.py changed, reloading.
+INFO 2023-10-16 17:45:47,845 autoreload 1444 6996 Watching for file changes with StatReloader
+INFO 2023-10-16 17:46:38,277 autoreload 1444 6996 C:\PythonProject\SmartLearn-Squad\SmartLearn\profileapp\models.py changed, reloading.
+INFO 2023-10-16 17:46:39,196 autoreload 12364 5728 Watching for file changes with StatReloader
+INFO 2023-10-16 17:47:43,009 autoreload 12364 5728 C:\PythonProject\SmartLearn-Squad\SmartLearn\profileapp\models.py changed, reloading.
+INFO 2023-10-16 17:47:43,896 autoreload 10228 6808 Watching for file changes with StatReloader
+INFO 2023-10-16 17:47:49,317 autoreload 10228 6808 C:\PythonProject\SmartLearn-Squad\SmartLearn\profileapp\models.py changed, reloading.
+INFO 2023-10-16 17:47:50,255 autoreload 2600 9936 Watching for file changes with StatReloader
+INFO 2023-10-16 17:47:54,608 autoreload 2600 9936 C:\PythonProject\SmartLearn-Squad\SmartLearn\profileapp\models.py changed, reloading.
+INFO 2023-10-16 17:47:55,294 autoreload 5396 11692 Watching for file changes with StatReloader
+INFO 2023-10-16 17:48:36,604 autoreload 5396 11692 C:\PythonProject\SmartLearn-Squad\SmartLearn\profileapp\models.py changed, reloading.
+INFO 2023-10-16 17:48:38,034 autoreload 12868 4824 Watching for file changes with StatReloader
+INFO 2023-10-16 17:52:20,644 autoreload 12868 4824 C:\PythonProject\SmartLearn-Squad\SmartLearn\profileapp\models.py changed, reloading.
+INFO 2023-10-16 17:52:21,928 autoreload 8012 11676 Watching for file changes with StatReloader
+INFO 2023-10-16 17:52:25,914 basehttp 8012 5776 "GET /admin/Cabinet/cabinet/add/ HTTP/1.1" 200 17915
+INFO 2023-10-16 17:52:25,933 basehttp 8012 5776 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+WARNING 2023-10-16 17:52:40,993 log 8012 5776 Not Found: /cabinet
+WARNING 2023-10-16 17:52:40,993 basehttp 8012 5776 "GET /cabinet HTTP/1.1" 404 2682
+INFO 2023-10-16 17:52:46,375 autoreload 8012 11676 C:\PythonProject\SmartLearn-Squad\SmartLearn\profileapp\models.py changed, reloading.
+INFO 2023-10-16 17:52:47,680 autoreload 4268 13068 Watching for file changes with StatReloader
+INFO 2023-10-16 17:52:49,932 basehttp 4268 1124 "GET / HTTP/1.1" 200 4653
+INFO 2023-10-16 17:52:49,996 basehttp 4268 1124 "GET /media/users/images/IMG_20190805_124159.jpg HTTP/1.1" 304 0
+INFO 2023-10-16 17:53:14,939 basehttp 4268 1124 "GET /admin/ HTTP/1.1" 200 11394
+INFO 2023-10-16 17:53:15,984 basehttp 4268 1124 "GET /admin/ HTTP/1.1" 200 11394
+INFO 2023-10-16 17:53:25,589 basehttp 4268 1124 "GET /profile/profils/1/ HTTP/1.1" 200 4230
+INFO 2023-10-16 17:55:19,922 autoreload 4268 13068 C:\PythonProject\SmartLearn-Squad\SmartLearn\profileapp\urls.py changed, reloading.
+INFO 2023-10-16 17:55:20,938 autoreload 11504 5036 Watching for file changes with StatReloader
+INFO 2023-10-16 17:56:00,272 autoreload 11504 5036 C:\PythonProject\SmartLearn-Squad\SmartLearn\profileapp\urls.py changed, reloading.
+INFO 2023-10-16 17:56:03,788 autoreload 12800 11908 Watching for file changes with StatReloader
+INFO 2023-10-16 17:56:05,619 basehttp 12800 6280 "GET / HTTP/1.1" 200 4653
+INFO 2023-10-16 17:56:07,219 basehttp 12800 6280 "GET /profile/profils/1/ HTTP/1.1" 200 4230
+ERROR 2023-10-16 17:56:13,042 log 12800 6280 Internal Server Error: /profile/profils/cabinet/1/
+Traceback (most recent call last):
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn\profileapp\views.py", line 155, in profilusercabinet
+    return render(request, 'profileapp/profile/profile_cabinet.html', context=context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'profil_info' with arguments '(1,)' not found. 1 pattern(s) tried: ['profile/profils/cabinet/info/\\Z']
+ERROR 2023-10-16 17:56:13,051 basehttp 12800 6280 "GET /profile/profils/cabinet/1/ HTTP/1.1" 500 172929
+ERROR 2023-10-16 17:56:24,506 log 12800 6280 Internal Server Error: /profile/profils/cabinet/1/
+Traceback (most recent call last):
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn\profileapp\views.py", line 155, in profilusercabinet
+    return render(request, 'profileapp/profile/profile_cabinet.html', context=context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'profil_info' with arguments '(1,)' not found. 1 pattern(s) tried: ['profile/profils/cabinet/info/\\Z']
+ERROR 2023-10-16 17:56:24,514 basehttp 12800 6280 "GET /profile/profils/cabinet/1/ HTTP/1.1" 500 172964
+INFO 2023-10-16 17:56:33,466 basehttp 12800 6280 "GET /profile/profils/cabinet/1/ HTTP/1.1" 200 4895
+INFO 2023-10-16 17:56:34,792 basehttp 12800 6280 "GET /profile/profils/cabinet/1/ HTTP/1.1" 200 4895
+INFO 2023-10-16 17:56:42,478 basehttp 12800 6280 "GET /profile/services/ HTTP/1.1" 200 9263
+INFO 2023-10-16 17:56:46,618 basehttp 12800 6280 "GET /profile/profils/cabinet/1/ HTTP/1.1" 200 4895
+INFO 2023-10-16 18:00:09,521 autoreload 12800 11908 C:\PythonProject\SmartLearn-Squad\SmartLearn\profileapp\views.py changed, reloading.
+INFO 2023-10-16 18:00:10,404 autoreload 8472 11348 Watching for file changes with StatReloader
+INFO 2023-10-16 18:00:42,993 autoreload 8472 11348 C:\PythonProject\SmartLearn-Squad\SmartLearn\profileapp\views.py changed, reloading.
+INFO 2023-10-16 18:00:44,420 autoreload 1612 11548 Watching for file changes with StatReloader
+INFO 2023-10-16 18:03:23,738 basehttp 1612 2380 "GET / HTTP/1.1" 200 4653
+INFO 2023-10-16 18:03:23,810 basehttp 1612 2380 "GET /media/users/images/IMG_20190805_124159.jpg HTTP/1.1" 304 0
+INFO 2023-10-16 18:03:24,559 autoreload 1612 11548 C:\PythonProject\SmartLearn-Squad\SmartLearn\profileapp\urls.py changed, reloading.
+INFO 2023-10-16 18:03:25,316 autoreload 12932 12120 Watching for file changes with StatReloader
+ERROR 2023-10-16 18:03:25,824 log 12932 8772 Internal Server Error: /profile/profils/1/
+Traceback (most recent call last):
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn\profileapp\views.py", line 123, in profiluser
+    return render(request, 'profileapp/profile/profile.html', context=context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'profil_cabinet' not found. 'profil_cabinet' is not a valid view function or pattern name.
+ERROR 2023-10-16 18:03:25,833 basehttp 12932 8772 "GET /profile/profils/1/ HTTP/1.1" 500 166647
+ERROR 2023-10-16 18:03:43,003 log 12932 8772 Internal Server Error: /profile/profils/1/
+Traceback (most recent call last):
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn\profileapp\views.py", line 123, in profiluser
+    return render(request, 'profileapp/profile/profile.html', context=context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'profil_cabinet' not found. 'profil_cabinet' is not a valid view function or pattern name.
+ERROR 2023-10-16 18:03:43,010 basehttp 12932 8772 "GET /profile/profils/1/ HTTP/1.1" 500 166784
+ERROR 2023-10-16 18:03:44,202 log 12932 8772 Internal Server Error: /profile/profils/1/
+Traceback (most recent call last):
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn\profileapp\views.py", line 123, in profiluser
+    return render(request, 'profileapp/profile/profile.html', context=context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'profil_cabinet' not found. 'profil_cabinet' is not a valid view function or pattern name.
+ERROR 2023-10-16 18:03:44,208 basehttp 12932 8772 "GET /profile/profils/1/ HTTP/1.1" 500 166784
+INFO 2023-10-16 18:04:12,308 autoreload 11608 12764 Watching for file changes with StatReloader
+INFO 2023-10-16 18:04:44,694 autoreload 11608 12764 C:\PythonProject\SmartLearn-Squad\SmartLearn\profileapp\urls.py changed, reloading.
+INFO 2023-10-16 18:04:45,460 autoreload 12468 1968 Watching for file changes with StatReloader
+ERROR 2023-10-16 18:04:53,787 log 12468 11012 Internal Server Error: /profile/profils/1/
+Traceback (most recent call last):
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn\profileapp\views.py", line 123, in profiluser
+    return render(request, 'profileapp/profile/profile.html', context=context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'profil_cabinet' not found. 'profil_cabinet' is not a valid view function or pattern name.
+ERROR 2023-10-16 18:04:53,801 basehttp 12468 11012 "GET /profile/profils/1/ HTTP/1.1" 500 166784
+INFO 2023-10-16 18:05:27,488 autoreload 12468 1968 C:\PythonProject\SmartLearn-Squad\SmartLearn\profileapp\urls.py changed, reloading.
+INFO 2023-10-16 18:05:28,373 autoreload 5388 1128 Watching for file changes with StatReloader
+ERROR 2023-10-16 18:05:28,811 log 5388 11608 Internal Server Error: /profile/profils/1/
+Traceback (most recent call last):
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn\profileapp\views.py", line 123, in profiluser
+    return render(request, 'profileapp/profile/profile.html', context=context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'profil_cabinet' not found. 'profil_cabinet' is not a valid view function or pattern name.
+ERROR 2023-10-16 18:05:28,823 basehttp 5388 11608 "GET /profile/profils/1/ HTTP/1.1" 500 166784
+ERROR 2023-10-16 18:05:54,306 log 5388 11608 Internal Server Error: /profile/profils/1/
+Traceback (most recent call last):
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn\profileapp\views.py", line 123, in profiluser
+    return render(request, 'profileapp/profile/profile.html', context=context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'profil_cabinet' not found. 'profil_cabinet' is not a valid view function or pattern name.
+ERROR 2023-10-16 18:05:54,314 basehttp 5388 11608 "GET /profile/profils/1/ HTTP/1.1" 500 166647
+ERROR 2023-10-16 18:07:09,969 log 5388 11608 Internal Server Error: /profile/profils/1/
+Traceback (most recent call last):
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn\profileapp\views.py", line 123, in profiluser
+    return render(request, 'profileapp/profile/profile.html', context=context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'profil_cabinet' not found. 'profil_cabinet' is not a valid view function or pattern name.
+ERROR 2023-10-16 18:07:09,976 basehttp 5388 11608 "GET /profile/profils/1/ HTTP/1.1" 500 166784
+INFO 2023-10-16 18:07:56,646 basehttp 5388 11608 "GET /profile/profils/1/ HTTP/1.1" 200 4230
+ERROR 2023-10-16 18:07:59,143 log 5388 11608 Internal Server Error: /profile/services/
+Traceback (most recent call last):
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn\profileapp\views.py", line 201, in services
+    return render(request, 'profileapp/profile/services.html', context=context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'profil_cabinet' not found. 'profil_cabinet' is not a valid view function or pattern name.
+ERROR 2023-10-16 18:07:59,148 basehttp 5388 11608 "GET /profile/services/ HTTP/1.1" 500 170833
+ERROR 2023-10-16 18:08:01,310 log 5388 11608 Internal Server Error: /profile/services/
+Traceback (most recent call last):
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn\profileapp\views.py", line 201, in services
+    return render(request, 'profileapp/profile/services.html', context=context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'profil_cabinet' not found. 'profil_cabinet' is not a valid view function or pattern name.
+ERROR 2023-10-16 18:08:01,318 basehttp 5388 11608 "GET /profile/services/ HTTP/1.1" 500 170833
+INFO 2023-10-16 18:08:18,419 basehttp 5388 11608 "GET /profile/services/ HTTP/1.1" 200 9263
+INFO 2023-10-16 18:08:19,559 basehttp 5388 11608 "GET /profile/services/ HTTP/1.1" 200 9263
+INFO 2023-10-16 18:08:20,241 basehttp 5388 11608 "GET /profile/profils/cabinet/1/ HTTP/1.1" 200 4978
+INFO 2023-10-16 18:08:22,289 basehttp 5388 11608 "GET /profile/services/ HTTP/1.1" 200 9263
+INFO 2023-10-16 18:08:25,262 basehttp 5388 11608 "GET /profile/profils/cabinet/1/ HTTP/1.1" 200 4978
+ERROR 2023-10-16 18:08:29,593 log 5388 11608 Internal Server Error: /profile/profils/cabinet/info_teacher/1/
+Traceback (most recent call last):
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn\profileapp\views.py", line 224, in profile_info_teacher
+    posts = Post.objects.filter(teacher=user, is_private=True)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\models\sql\query.py", line 1545, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\models\sql\query.py", line 1576, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\models\sql\query.py", line 1464, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\models\sql\query.py", line 1275, in check_related_objects
+    self.check_query_object_type(value, opts, field)
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\models\sql\query.py", line 1252, in check_query_object_type
+    raise ValueError(
+ValueError: Cannot query "tooliy": Must be "Teacher" instance.
+ERROR 2023-10-16 18:08:29,597 basehttp 5388 11608 "GET /profile/profils/cabinet/info_teacher/1/ HTTP/1.1" 500 112377
+INFO 2023-10-16 18:08:32,518 basehttp 5388 11608 "GET /profile/services/ HTTP/1.1" 200 9263
+INFO 2023-10-16 18:08:33,404 basehttp 5388 11608 "GET /profile/services/ HTTP/1.1" 200 9263
+INFO 2023-10-16 18:08:33,707 basehttp 5388 11608 "GET /profile/services/ HTTP/1.1" 200 9263
+INFO 2023-10-16 18:08:33,950 basehttp 5388 11608 "GET /profile/services/ HTTP/1.1" 200 9263
+INFO 2023-10-16 18:08:36,249 basehttp 5388 11608 "GET /profile/profils/cabinet/1/ HTTP/1.1" 200 4978
+INFO 2023-10-16 18:08:40,967 basehttp 5388 11608 "GET /profile/services/ HTTP/1.1" 200 9263
+INFO 2023-10-16 18:08:51,998 basehttp 5388 11608 "GET /profile/profils/cabinet/1/ HTTP/1.1" 200 4978
+ERROR 2023-10-16 18:08:53,561 log 5388 11608 Internal Server Error: /profile/profils/cabinet/info_teacher/1/
+Traceback (most recent call last):
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn\profileapp\views.py", line 224, in profile_info_teacher
+    posts = Post.objects.filter(teacher=user, is_private=True)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\models\sql\query.py", line 1545, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\models\sql\query.py", line 1576, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\models\sql\query.py", line 1464, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\models\sql\query.py", line 1275, in check_related_objects
+    self.check_query_object_type(value, opts, field)
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\models\sql\query.py", line 1252, in check_query_object_type
+    raise ValueError(
+ValueError: Cannot query "tooliy": Must be "Teacher" instance.
+ERROR 2023-10-16 18:08:53,565 basehttp 5388 11608 "GET /profile/profils/cabinet/info_teacher/1/ HTTP/1.1" 500 112377
+INFO 2023-10-16 18:09:14,735 basehttp 5388 11608 "GET /admin/ HTTP/1.1" 200 11394
+INFO 2023-10-16 18:09:15,837 basehttp 5388 11608 "GET /admin/ HTTP/1.1" 200 11394
+INFO 2023-10-16 18:09:19,552 basehttp 5388 11608 "GET /admin/profileapp/user/ HTTP/1.1" 200 13860
+INFO 2023-10-16 18:09:19,572 basehttp 5388 11608 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-16 18:09:28,012 basehttp 5388 11608 "GET /admin/profileapp/user/2/change/ HTTP/1.1" 200 33196
+INFO 2023-10-16 18:09:28,035 basehttp 5388 11608 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-16 18:09:36,315 basehttp 5388 11608 "POST /admin/profileapp/user/2/change/ HTTP/1.1" 302 0
+INFO 2023-10-16 18:09:36,337 basehttp 5388 11608 "GET /admin/profileapp/user/ HTTP/1.1" 200 14087
+INFO 2023-10-16 18:09:36,352 basehttp 5388 11608 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+ERROR 2023-10-16 18:09:40,038 log 5388 11608 Internal Server Error: /profile/profils/cabinet/info_teacher/1/
+Traceback (most recent call last):
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn\profileapp\views.py", line 224, in profile_info_teacher
+    posts = Post.objects.filter(teacher=user, is_private=True)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\models\sql\query.py", line 1545, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\models\sql\query.py", line 1576, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\models\sql\query.py", line 1464, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\models\sql\query.py", line 1275, in check_related_objects
+    self.check_query_object_type(value, opts, field)
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\models\sql\query.py", line 1252, in check_query_object_type
+    raise ValueError(
+ValueError: Cannot query "tooliy": Must be "Teacher" instance.
+ERROR 2023-10-16 18:09:40,042 basehttp 5388 11608 "GET /profile/profils/cabinet/info_teacher/1/ HTTP/1.1" 500 112377
+INFO 2023-10-16 18:12:54,218 autoreload 5388 1128 C:\PythonProject\SmartLearn-Squad\SmartLearn\profileapp\views.py changed, reloading.
+INFO 2023-10-16 18:12:54,991 autoreload 13136 7576 Watching for file changes with StatReloader
+INFO 2023-10-16 18:13:46,318 basehttp 13136 5400 "GET /profile/profils/cabinet/1/ HTTP/1.1" 200 4978
+INFO 2023-10-16 18:13:48,551 basehttp 13136 5400 "GET /profile/profils/cabinet/1/ HTTP/1.1" 200 4978
+INFO 2023-10-16 18:13:51,983 basehttp 13136 5400 "GET /profile/profils/cabinet/1/ HTTP/1.1" 200 4978
+INFO 2023-10-16 18:13:52,413 basehttp 13136 5400 "GET /profile/profils/cabinet/1/ HTTP/1.1" 200 4978
+INFO 2023-10-16 18:13:52,962 basehttp 13136 5400 "GET /profile/profils/cabinet/1/ HTTP/1.1" 200 4978
+INFO 2023-10-16 18:13:53,135 basehttp 13136 5400 "GET /profile/profils/cabinet/1/ HTTP/1.1" 200 4978
+INFO 2023-10-16 18:13:53,315 basehttp 13136 5400 "GET /profile/profils/cabinet/1/ HTTP/1.1" 200 4978
+INFO 2023-10-16 18:13:53,502 basehttp 13136 5400 "GET /profile/profils/cabinet/1/ HTTP/1.1" 200 4978
+INFO 2023-10-16 18:13:53,673 basehttp 13136 5400 "GET /profile/profils/cabinet/1/ HTTP/1.1" 200 4978
+INFO 2023-10-16 18:13:53,851 basehttp 13136 5400 "GET /profile/profils/cabinet/1/ HTTP/1.1" 200 4978
+INFO 2023-10-16 18:13:56,716 basehttp 13136 5400 "GET /profile/profils/cabinet/1/ HTTP/1.1" 200 4978
+INFO 2023-10-16 18:14:07,973 basehttp 13136 5400 "GET /profile/profils/cabinet/1/ HTTP/1.1" 200 4978
+INFO 2023-10-16 18:15:04,302 basehttp 13136 5400 "GET /profile/logout/ HTTP/1.1" 302 0
+INFO 2023-10-16 18:15:04,311 basehttp 13136 5400 "GET / HTTP/1.1" 200 4475
+INFO 2023-10-16 18:15:04,320 basehttp 13136 5400 "GET /media/users/images/IMG_20190805_124159.jpg HTTP/1.1" 304 0
+INFO 2023-10-16 18:15:05,739 basehttp 13136 5400 "GET /profile/login/ HTTP/1.1" 200 3920
+INFO 2023-10-16 18:15:19,921 basehttp 13136 5400 "POST /profile/login/ HTTP/1.1" 200 3920
+INFO 2023-10-16 18:15:30,049 basehttp 13136 5400 "GET /admin/profileapp/user/ HTTP/1.1" 302 0
+INFO 2023-10-16 18:15:30,087 basehttp 13136 5400 "GET /admin/login/?next=/admin/profileapp/user/ HTTP/1.1" 200 4299
+INFO 2023-10-16 18:15:34,798 basehttp 13136 5400 "POST /admin/login/?next=/admin/profileapp/user/ HTTP/1.1" 200 4565
+INFO 2023-10-16 18:15:39,596 basehttp 13136 5400 "POST /admin/login/?next=/admin/profileapp/user/ HTTP/1.1" 302 0
+INFO 2023-10-16 18:15:39,640 basehttp 13136 5400 "GET /admin/profileapp/user/ HTTP/1.1" 200 13860
+INFO 2023-10-16 18:15:39,663 basehttp 13136 5400 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+WARNING 2023-10-16 18:15:48,820 log 13136 5400 Forbidden (CSRF token from POST incorrect.): /profile/login/
+WARNING 2023-10-16 18:15:48,822 basehttp 13136 5400 "POST /profile/login/ HTTP/1.1" 403 2560
+INFO 2023-10-16 18:15:54,045 basehttp 13136 5400 "GET /profile/login/ HTTP/1.1" 200 3920
+INFO 2023-10-16 18:15:56,074 basehttp 13136 5400 "GET /profile/login/ HTTP/1.1" 200 3920
+INFO 2023-10-16 18:16:00,430 basehttp 13136 5400 "POST /profile/login/ HTTP/1.1" 200 3920
+INFO 2023-10-16 18:16:18,509 basehttp 13136 5400 "POST /profile/login/ HTTP/1.1" 200 3920
+INFO 2023-10-16 18:16:42,795 basehttp 13136 5400 "GET /admin/profileapp/user/?o=2 HTTP/1.1" 200 14248
+INFO 2023-10-16 18:16:42,817 basehttp 13136 5776 "GET /media/users/images/IMG_20190805_124159.jpg HTTP/1.1" 304 0
+INFO 2023-10-16 18:16:42,821 basehttp 13136 5400 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-16 18:16:44,264 basehttp 13136 5400 "GET /admin/profileapp/user/?o=1.2 HTTP/1.1" 200 14742
+INFO 2023-10-16 18:16:44,277 basehttp 13136 5400 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-16 18:16:45,777 basehttp 13136 5400 "GET /admin/profileapp/user/2/change/?_changelist_filters=o%3D1.2 HTTP/1.1" 200 33290
+INFO 2023-10-16 18:16:45,801 basehttp 13136 5400 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-16 18:16:57,388 basehttp 13136 5400 "POST /admin/profileapp/user/2/change/?_changelist_filters=o%3D1.2 HTTP/1.1" 302 0
+INFO 2023-10-16 18:16:57,409 basehttp 13136 5400 "GET /admin/profileapp/user/?o=1.2 HTTP/1.1" 200 14963
+INFO 2023-10-16 18:16:57,430 basehttp 13136 5400 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-16 18:16:59,520 basehttp 13136 5400 "GET /admin/profileapp/user/1/change/?_changelist_filters=o%3D1.2 HTTP/1.1" 200 32990
+INFO 2023-10-16 18:16:59,540 basehttp 13136 5400 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-16 18:17:16,467 basehttp 13136 5400 "POST /admin/profileapp/user/1/change/?_changelist_filters=o%3D1.2 HTTP/1.1" 200 33065
+INFO 2023-10-16 18:17:16,484 basehttp 13136 5400 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-16 18:17:23,524 basehttp 13136 5400 "POST /admin/profileapp/user/1/change/?_changelist_filters=o%3D1.2 HTTP/1.1" 200 33208
+INFO 2023-10-16 18:17:23,545 basehttp 13136 5400 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-16 18:17:29,539 basehttp 13136 5400 "POST /admin/profileapp/user/1/change/?_changelist_filters=o%3D1.2 HTTP/1.1" 302 0
+INFO 2023-10-16 18:17:29,550 basehttp 13136 5400 "GET /admin/profileapp/user/?o=1.2 HTTP/1.1" 302 0
+INFO 2023-10-16 18:17:29,557 basehttp 13136 5400 "GET /admin/login/?next=/admin/profileapp/user/%3Fo%3D1.2 HTTP/1.1" 200 4543
+INFO 2023-10-16 18:17:35,486 basehttp 13136 5400 "POST /admin/login/?next=/admin/profileapp/user/%3Fo%3D1.2 HTTP/1.1" 200 4583
+INFO 2023-10-16 18:17:42,510 basehttp 13136 5400 "POST /admin/login/?next=/admin/profileapp/user/%3Fo%3D1.2 HTTP/1.1" 200 4583
+INFO 2023-10-16 18:17:55,899 basehttp 13136 5400 "POST /admin/login/?next=/admin/profileapp/user/%3Fo%3D1.2 HTTP/1.1" 200 4583
+INFO 2023-10-16 18:18:48,163 autoreload 12944 11960 Watching for file changes with StatReloader
+INFO 2023-10-16 18:18:56,256 basehttp 12944 6200 "POST /admin/login/?next=/admin/profileapp/user/%3Fo%3D1.2 HTTP/1.1" 302 0
+INFO 2023-10-16 18:18:56,355 basehttp 12944 6200 "GET /admin/profileapp/user/?o=1.2 HTTP/1.1" 200 15304
+INFO 2023-10-16 18:18:56,378 basehttp 12944 6200 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-16 18:19:04,564 basehttp 12944 6200 "GET /admin/profileapp/user/add/?_changelist_filters=o%3D1.2 HTTP/1.1" 200 32579
+INFO 2023-10-16 18:19:04,582 basehttp 12944 6200 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-16 18:19:08,562 basehttp 12944 6200 "GET /admin/profileapp/user/?o=1.2 HTTP/1.1" 200 15304
+INFO 2023-10-16 18:19:15,050 basehttp 12944 6200 "POST /admin/profileapp/user/?o=1.2 HTTP/1.1" 200 11737
+INFO 2023-10-16 18:19:15,149 basehttp 12944 6200 "GET /static/admin/js/cancel.js HTTP/1.1" 200 884
+INFO 2023-10-16 18:19:15,925 basehttp 12944 6200 "POST /admin/profileapp/user/?o=1.2 HTTP/1.1" 302 0
+INFO 2023-10-16 18:19:15,946 basehttp 12944 6200 "GET /admin/profileapp/user/?o=1.2 HTTP/1.1" 200 14279
+INFO 2023-10-16 18:19:15,962 basehttp 12944 6200 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-16 18:19:17,832 basehttp 12944 6200 "GET /profile/register/ HTTP/1.1" 200 4815
+INFO 2023-10-16 18:19:37,065 basehttp 12944 6200 "POST /profile/register/ HTTP/1.1" 302 0
+INFO 2023-10-16 18:19:37,071 basehttp 12944 6200 "GET /profile/login/ HTTP/1.1" 200 3920
+INFO 2023-10-16 18:19:46,199 basehttp 12944 6200 "POST /profile/login/ HTTP/1.1" 302 0
+INFO 2023-10-16 18:19:46,210 basehttp 12944 6200 "GET / HTTP/1.1" 200 4661
+INFO 2023-10-16 18:19:46,238 basehttp 12944 6200 "GET /media/users/images/%D0%A8%D0%B0%D0%BF%D0%BA%D0%B0.png HTTP/1.1" 200 10543
+INFO 2023-10-16 18:19:48,941 basehttp 12944 6200 "GET /profile/profils/4/ HTTP/1.1" 200 4230
+ERROR 2023-10-16 18:19:50,372 log 12944 6200 Internal Server Error: /profile/profils/cabinet/4/
+Traceback (most recent call last):
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn\profileapp\views.py", line 155, in profilusercabinet
+    return render(request, 'profileapp/profile/profile_cabinet.html', context=context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'profil_cabinet' not found. 'profil_cabinet' is not a valid view function or pattern name.
+ERROR 2023-10-16 18:19:50,382 basehttp 12944 6200 "GET /profile/profils/cabinet/4/ HTTP/1.1" 500 189783
+INFO 2023-10-16 18:19:57,689 basehttp 12944 6200 "GET /admin/profileapp/user/?o=1.2 HTTP/1.1" 302 0
+INFO 2023-10-16 18:19:57,703 basehttp 12944 6200 "GET /admin/login/?next=/admin/profileapp/user/%3Fo%3D1.2 HTTP/1.1" 200 4005
+INFO 2023-10-16 18:20:01,493 basehttp 12944 6200 "POST /admin/login/?next=/admin/profileapp/user/%3Fo%3D1.2 HTTP/1.1" 302 0
+INFO 2023-10-16 18:20:01,513 basehttp 12944 6200 "GET /admin/profileapp/user/?o=1.2 HTTP/1.1" 200 14828
+INFO 2023-10-16 18:20:01,536 basehttp 12944 12592 "GET /media/users/images/%D0%A8%D0%B0%D0%BF%D0%BA%D0%B0.png HTTP/1.1" 304 0
+INFO 2023-10-16 18:20:01,538 basehttp 12944 6200 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-16 18:20:06,013 basehttp 12944 6200 "POST /admin/logout/ HTTP/1.1" 302 0
+INFO 2023-10-16 18:20:06,020 basehttp 12944 6200 "GET / HTTP/1.1" 200 4483
+INFO 2023-10-16 18:20:06,046 basehttp 12944 6200 "GET /media/users/images/%D0%A8%D0%B0%D0%BF%D0%BA%D0%B0.png HTTP/1.1" 304 0
+INFO 2023-10-16 18:20:09,546 basehttp 12944 6200 "GET /profile/login/ HTTP/1.1" 200 3920
+INFO 2023-10-16 18:20:16,237 basehttp 12944 6200 "POST /profile/login/ HTTP/1.1" 302 0
+INFO 2023-10-16 18:20:16,246 basehttp 12944 6200 "GET / HTTP/1.1" 200 4661
+INFO 2023-10-16 18:20:16,257 basehttp 12944 6200 "GET /media/users/images/%D0%A8%D0%B0%D0%BF%D0%BA%D0%B0.png HTTP/1.1" 304 0
+INFO 2023-10-16 18:20:17,434 basehttp 12944 6200 "GET /profile/profils/4/ HTTP/1.1" 200 4230
+ERROR 2023-10-16 18:20:18,383 log 12944 6200 Internal Server Error: /profile/profils/cabinet/4/
+Traceback (most recent call last):
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn\profileapp\views.py", line 155, in profilusercabinet
+    return render(request, 'profileapp/profile/profile_cabinet.html', context=context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'profil_cabinet' not found. 'profil_cabinet' is not a valid view function or pattern name.
+ERROR 2023-10-16 18:20:18,392 basehttp 12944 6200 "GET /profile/profils/cabinet/4/ HTTP/1.1" 500 189783
+INFO 2023-10-16 18:21:35,966 autoreload 13280 4912 Watching for file changes with StatReloader
+INFO 2023-10-16 18:21:37,643 basehttp 13280 12216 "GET /profile/profils/cabinet/4/ HTTP/1.1" 200 7775
+INFO 2023-10-16 18:21:38,772 basehttp 13280 12216 "GET /profile/profils/cabinet/4/ HTTP/1.1" 200 7775
+ERROR 2023-10-16 18:21:50,450 log 13280 12216 Internal Server Error: /profile/profils/cabinet/4/
+Traceback (most recent call last):
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn\profileapp\views.py", line 131, in profilusercabinet
+    return HttpResponseRedirect(reverse('profile:profil_cabinet', kwargs={'user_id': user_id}))
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'profil_cabinet' not found. 'profil_cabinet' is not a valid view function or pattern name.
+ERROR 2023-10-16 18:21:50,453 basehttp 13280 12216 "POST /profile/profils/cabinet/4/ HTTP/1.1" 500 79436
+INFO 2023-10-16 18:23:07,581 autoreload 13280 4912 C:\PythonProject\SmartLearn-Squad\SmartLearn\profileapp\views.py changed, reloading.
+INFO 2023-10-16 18:23:08,441 autoreload 12408 5276 Watching for file changes with StatReloader
+INFO 2023-10-16 18:23:08,666 basehttp 12408 12876 "POST /profile/profils/cabinet/4/ HTTP/1.1" 302 0
+INFO 2023-10-16 18:23:08,703 basehttp 12408 12876 "GET /profile/profils/cabinet/4/ HTTP/1.1" 200 7775
+INFO 2023-10-16 18:23:22,182 basehttp 12408 12876 "POST /profile/profils/cabinet/4/ HTTP/1.1" 302 0
+INFO 2023-10-16 18:23:22,200 basehttp 12408 12876 "GET /profile/profils/cabinet/4/ HTTP/1.1" 200 8014
+ERROR 2023-10-16 18:23:27,329 log 12408 12876 Internal Server Error: /cabinet/cabinets/3/
+Traceback (most recent call last):
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn\Cabinet\views.py", line 38, in cabinets_view
+    return render(request, 'Cabinet/cabinet.html', context=context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'profil_cabinet' not found. 'profil_cabinet' is not a valid view function or pattern name.
+ERROR 2023-10-16 18:23:27,339 basehttp 12408 12876 "GET /cabinet/cabinets/3/ HTTP/1.1" 500 167078
+INFO 2023-10-16 18:24:14,962 basehttp 12408 12876 "GET /cabinet/cabinets/3/ HTTP/1.1" 200 10950
+WARNING 2023-10-16 18:24:14,985 basehttp 12408 12876 "GET /static/fullcalendar/dist/index.global.js HTTP/1.1" 404 1959
+INFO 2023-10-16 18:24:19,556 basehttp 12408 11652 "GET /profile/profils/cabinet/4/ HTTP/1.1" 200 8014
+INFO 2023-10-16 18:24:27,011 basehttp 12408 11652 "POST /profile/profils/cabinet/4/ HTTP/1.1" 302 0
+INFO 2023-10-16 18:24:27,030 basehttp 12408 11652 "GET /profile/profils/cabinet/4/ HTTP/1.1" 200 8248
+INFO 2023-10-16 18:24:29,189 basehttp 12408 11652 "GET /cabinet/cabinets/4/ HTTP/1.1" 200 10950
+WARNING 2023-10-16 18:24:29,205 basehttp 12408 11652 "GET /static/fullcalendar/dist/index.global.js HTTP/1.1" 404 1959
+INFO 2023-10-16 18:24:31,248 basehttp 12408 1804 "GET /profile/profils/cabinet/4/ HTTP/1.1" 200 8248
+INFO 2023-10-16 18:24:31,821 basehttp 12408 1804 "GET /profile/services/ HTTP/1.1" 200 9263
+INFO 2023-10-16 18:24:32,349 basehttp 12408 1804 "GET /profile/profils/cabinet/4/ HTTP/1.1" 200 8248
+INFO 2023-10-16 18:24:33,552 basehttp 12408 1804 "GET /profile/profils/cabinet/4/ HTTP/1.1" 200 8248
+ERROR 2023-10-16 18:24:34,122 log 12408 1804 Internal Server Error: /profile/profils/cabinet/info_teacher/4/
+Traceback (most recent call last):
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: profile_info_teacher() got an unexpected keyword argument 'user_id'
+ERROR 2023-10-16 18:24:34,124 basehttp 12408 1804 "GET /profile/profils/cabinet/info_teacher/4/ HTTP/1.1" 500 63034
+ERROR 2023-10-16 18:25:07,650 log 12408 1804 Internal Server Error: /profile/profils/cabinet/info_teacher/4/
+Traceback (most recent call last):
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: profile_info_teacher() got an unexpected keyword argument 'user_id'
+ERROR 2023-10-16 18:25:07,651 basehttp 12408 1804 "GET /profile/profils/cabinet/info_teacher/4/ HTTP/1.1" 500 63034
+ERROR 2023-10-16 18:25:33,857 log 12408 1804 Internal Server Error: /profile/profils/cabinet/info_teacher/4/
+Traceback (most recent call last):
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: profile_info_teacher() got an unexpected keyword argument 'user_id'
+ERROR 2023-10-16 18:25:33,859 basehttp 12408 1804 "GET /profile/profils/cabinet/info_teacher/4/ HTTP/1.1" 500 63171
+ERROR 2023-10-16 18:25:34,419 log 12408 1804 Internal Server Error: /profile/profils/cabinet/info_teacher/4/
+Traceback (most recent call last):
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: profile_info_teacher() got an unexpected keyword argument 'user_id'
+ERROR 2023-10-16 18:25:34,420 basehttp 12408 1804 "GET /profile/profils/cabinet/info_teacher/4/ HTTP/1.1" 500 63171
+ERROR 2023-10-16 18:25:35,576 log 12408 1804 Internal Server Error: /profile/profils/cabinet/info_teacher/4/
+Traceback (most recent call last):
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: profile_info_teacher() got an unexpected keyword argument 'user_id'
+ERROR 2023-10-16 18:25:35,578 basehttp 12408 1804 "GET /profile/profils/cabinet/info_teacher/4/ HTTP/1.1" 500 63171
+ERROR 2023-10-16 18:25:36,547 log 12408 1804 Internal Server Error: /profile/profils/cabinet/info_teacher/4/
+Traceback (most recent call last):
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: profile_info_teacher() got an unexpected keyword argument 'user_id'
+ERROR 2023-10-16 18:25:36,548 basehttp 12408 1804 "GET /profile/profils/cabinet/info_teacher/4/ HTTP/1.1" 500 63171
+INFO 2023-10-16 18:26:27,534 autoreload 12408 5276 C:\PythonProject\SmartLearn-Squad\SmartLearn\profileapp\views.py changed, reloading.
+INFO 2023-10-16 18:26:28,325 autoreload 13152 12472 Watching for file changes with StatReloader
+ERROR 2023-10-16 18:26:28,576 log 13152 3060 Internal Server Error: /profile/profils/cabinet/info_teacher/4/
+Traceback (most recent call last):
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: profile_info_teacher() got an unexpected keyword argument 'user_id'
+ERROR 2023-10-16 18:26:28,578 basehttp 13152 3060 "GET /profile/profils/cabinet/info_teacher/4/ HTTP/1.1" 500 63171
+INFO 2023-10-16 18:27:29,691 autoreload 13152 12472 C:\PythonProject\SmartLearn-Squad\SmartLearn\profileapp\views.py changed, reloading.
+INFO 2023-10-16 18:27:30,434 autoreload 13012 4168 Watching for file changes with StatReloader
+ERROR 2023-10-16 18:27:30,822 log 13012 5520 Internal Server Error: /profile/profils/cabinet/info_teacher/4/
+Traceback (most recent call last):
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: profile_info_teacher() got an unexpected keyword argument 'user_id'
+ERROR 2023-10-16 18:27:30,824 basehttp 13012 5520 "GET /profile/profils/cabinet/info_teacher/4/ HTTP/1.1" 500 63171
+INFO 2023-10-16 18:28:07,123 autoreload 13012 4168 C:\PythonProject\SmartLearn-Squad\SmartLearn\profileapp\views.py changed, reloading.
+INFO 2023-10-16 18:28:07,904 autoreload 2600 4768 Watching for file changes with StatReloader
+ERROR 2023-10-16 18:28:09,087 log 2600 6052 Internal Server Error: /profile/profils/cabinet/4/
+Traceback (most recent call last):
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn\profileapp\views.py", line 155, in profilusercabinet
+    return render(request, 'profileapp/profile/profile_cabinet.html', context=context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'profile_info_teacher' with arguments '('',)' not found. 1 pattern(s) tried: ['profile/profils/cabinet/info_teacher/(?P<user_id>[0-9]+)/\\Z']
+ERROR 2023-10-16 18:28:09,096 basehttp 2600 6052 "GET /profile/profils/cabinet/4/ HTTP/1.1" 500 178013
+INFO 2023-10-16 18:28:25,148 basehttp 2600 6052 "GET /profile/profils/cabinet/4/ HTTP/1.1" 200 8248
+INFO 2023-10-16 18:28:25,504 basehttp 2600 6052 "GET /profile/profils/cabinet/4/ HTTP/1.1" 200 8248
+ERROR 2023-10-16 18:28:26,403 log 2600 6052 Internal Server Error: /profile/profils/cabinet/info_teacher/4/
+Traceback (most recent call last):
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: profile_info_teacher() got an unexpected keyword argument 'user_id'
+ERROR 2023-10-16 18:28:26,405 basehttp 2600 6052 "GET /profile/profils/cabinet/info_teacher/4/ HTTP/1.1" 500 63034
+INFO 2023-10-16 18:28:57,569 basehttp 2600 6052 "GET /profile/profils/cabinet/4/ HTTP/1.1" 200 8248
+INFO 2023-10-16 18:28:59,084 basehttp 2600 6052 "GET /cabinet/cabinets/3/ HTTP/1.1" 200 10950
+WARNING 2023-10-16 18:28:59,101 basehttp 2600 6052 "GET /static/fullcalendar/dist/index.global.js HTTP/1.1" 404 1959
+INFO 2023-10-16 18:29:09,331 basehttp 2600 11668 "GET /profile/profils/cabinet/4/ HTTP/1.1" 200 8248
+ERROR 2023-10-16 18:29:45,877 log 2600 11668 Internal Server Error: /profile/profils/cabinet/1/
+Traceback (most recent call last):
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn\profileapp\views.py", line 136, in profilusercabinet
+    teach = User.objects.get(id=user_id).teacher
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn-Squad\SmartLearn-Squad\venv\Lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+profileapp.models.User.DoesNotExist: User matching query does not exist.
+ERROR 2023-10-16 18:29:45,882 basehttp 2600 11668 "GET /profile/profils/cabinet/1/ HTTP/1.1" 500 75579
+INFO 2023-10-16 18:29:49,667 basehttp 2600 11668 "GET /profile/profils/cabinet/4/ HTTP/1.1" 200 8248
+INFO 2023-10-16 18:29:50,450 basehttp 2600 11668 "GET /cabinet/cabinets/3/ HTTP/1.1" 200 10950
+WARNING 2023-10-16 18:29:50,465 basehttp 2600 11668 "GET /static/fullcalendar/dist/index.global.js HTTP/1.1" 404 1959
+INFO 2023-10-16 18:32:57,888 basehttp 2600 7576 "GET /profile/profils/cabinet/4/ HTTP/1.1" 200 8248
+INFO 2023-10-16 18:32:58,773 basehttp 2600 7576 "GET /cabinet/cabinets/3/ HTTP/1.1" 200 10950
+WARNING 2023-10-16 18:32:58,790 basehttp 2600 7576 "GET /static/fullcalendar/dist/index.global.js HTTP/1.1" 404 1959
+INFO 2023-10-16 18:35:53,477 basehttp 2600 8604 "GET /profile/profils/cabinet/4/ HTTP/1.1" 200 8248
+INFO 2023-10-16 18:35:54,513 basehttp 2600 8604 "GET /cabinet/cabinets/3/ HTTP/1.1" 200 10950
+WARNING 2023-10-16 18:35:54,528 basehttp 2600 8604 "GET /static/fullcalendar/dist/index.global.js HTTP/1.1" 404 1959
+INFO 2023-10-16 18:36:03,361 basehttp 2600 9412 "GET /profile/profils/cabinet/4/ HTTP/1.1" 200 8248
+INFO 2023-10-16 18:36:31,556 basehttp 2600 9412 "GET /profile/profils/cabinet/4/ HTTP/1.1" 200 8248
+INFO 2023-10-16 18:36:32,148 basehttp 2600 9412 "GET /cabinet/cabinets/3/ HTTP/1.1" 200 10950
+WARNING 2023-10-16 18:36:32,163 basehttp 2600 9412 "GET /static/fullcalendar/dist/index.global.js HTTP/1.1" 404 1959
+INFO 2023-10-16 18:37:33,320 autoreload 2600 4768 C:\PythonProject\SmartLearn-Squad\SmartLearn\Cabinet\views.py changed, reloading.
+INFO 2023-10-16 18:37:34,288 autoreload 2372 13248 Watching for file changes with StatReloader
+INFO 2023-10-16 18:37:37,868 basehttp 2372 13064 "GET /cabinet/cabinets/3/ HTTP/1.1" 200 10950
+WARNING 2023-10-16 18:37:37,893 basehttp 2372 13064 "GET /static/fullcalendar/dist/index.global.js HTTP/1.1" 404 1959
+INFO 2023-10-16 18:37:40,347 basehttp 2372 5856 "GET /profile/profils/cabinet/4/ HTTP/1.1" 200 8248
+INFO 2023-10-16 18:37:41,174 basehttp 2372 5856 "GET /cabinet/cabinets/3/ HTTP/1.1" 200 10950
+WARNING 2023-10-16 18:37:41,191 basehttp 2372 5856 "GET /static/fullcalendar/dist/index.global.js HTTP/1.1" 404 1959
+INFO 2023-10-16 18:37:45,376 basehttp 2372 12908 "GET /cabinet/cabinets/3/ HTTP/1.1" 200 10950
+WARNING 2023-10-16 18:37:45,400 basehttp 2372 12908 "GET /static/fullcalendar/dist/index.global.js HTTP/1.1" 404 1959
+WARNING 2023-10-16 18:38:07,291 log 2372 12316 Not Found: /favicon.ico
+WARNING 2023-10-16 18:38:07,291 basehttp 2372 12316 "GET /favicon.ico HTTP/1.1" 404 2694
+INFO 2023-10-16 18:38:09,503 basehttp 2372 12316 "GET /profile/profils/cabinet/4/ HTTP/1.1" 200 8248
+INFO 2023-10-16 18:38:10,442 basehttp 2372 12316 "GET /cabinet/cabinets/3/ HTTP/1.1" 200 10950
+WARNING 2023-10-16 18:38:10,458 basehttp 2372 12316 "GET /static/fullcalendar/dist/index.global.js HTTP/1.1" 404 1959
+INFO 2023-10-16 18:38:40,407 basehttp 2372 11464 "GET /profile/profils/cabinet/4/ HTTP/1.1" 200 8248
+INFO 2023-10-16 18:43:19,831 basehttp 2372 11464 "GET /cabinet/cabinets/3/ HTTP/1.1" 200 10950
+WARNING 2023-10-16 18:43:19,846 basehttp 2372 11464 "GET /static/fullcalendar/dist/index.global.js HTTP/1.1" 404 1959
+INFO 2023-10-16 18:43:23,174 basehttp 2372 11840 "GET /profile/profils/cabinet/4/ HTTP/1.1" 200 8248
+INFO 2023-10-16 18:43:24,222 basehttp 2372 11840 "GET /cabinet/cabinets/3/ HTTP/1.1" 200 10950
+WARNING 2023-10-16 18:43:24,236 basehttp 2372 11840 "GET /static/fullcalendar/dist/index.global.js HTTP/1.1" 404 1959
+INFO 2023-10-16 18:44:55,365 basehttp 2372 7240 "GET /cabinet/cabinets/3/ HTTP/1.1" 200 10582
+WARNING 2023-10-16 18:44:55,386 basehttp 2372 7240 "GET /static/fullcalendar/dist/index.global.js HTTP/1.1" 404 1959
+INFO 2023-10-16 18:54:19,621 autoreload 12548 13052 Watching for file changes with StatReloader
+INFO 2023-10-16 18:54:20,508 basehttp 12548 4912 "GET / HTTP/1.1" 200 4661
+INFO 2023-10-16 18:54:20,571 basehttp 12548 4912 "GET /media/users/images/%D0%A8%D0%B0%D0%BF%D0%BA%D0%B0.png HTTP/1.1" 304 0
+INFO 2023-10-16 18:54:24,632 basehttp 12548 4912 "GET /profile/profils/4/ HTTP/1.1" 200 4230
+INFO 2023-10-16 18:54:25,837 basehttp 12548 4912 "GET /profile/profils/cabinet/4/ HTTP/1.1" 200 8248
+INFO 2023-10-16 18:54:27,084 basehttp 12548 4912 "GET /cabinet/cabinets/3/ HTTP/1.1" 200 10582
+WARNING 2023-10-16 18:54:27,120 basehttp 12548 4912 "GET /static/fullcalendar/dist/index.global.js HTTP/1.1" 404 1959
+INFO 2023-10-16 18:59:04,083 basehttp 12548 12796 "GET /cabinet/cabinets/3/ HTTP/1.1" 200 10582
+WARNING 2023-10-16 18:59:04,122 basehttp 12548 12796 "GET /static/fullcalendar/dist/index.global.js HTTP/1.1" 404 1959
+INFO 2023-10-16 19:01:44,113 basehttp 12548 6352 "GET /profile/profils/cabinet/4/ HTTP/1.1" 200 8248
+INFO 2023-10-16 19:01:45,074 basehttp 12548 6352 "GET /cabinet/cabinets/3/ HTTP/1.1" 200 10582
+WARNING 2023-10-16 19:01:45,087 basehttp 12548 6352 "GET /static/fullcalendar/dist/index.global.js HTTP/1.1" 404 1959
+INFO 2023-10-16 19:03:58,318 basehttp 12548 5352 "GET /profile/profils/cabinet/4/ HTTP/1.1" 200 8248
+INFO 2023-10-16 19:03:59,237 basehttp 12548 5352 "GET /cabinet/cabinets/3/ HTTP/1.1" 200 10582
+WARNING 2023-10-16 19:03:59,252 basehttp 12548 5352 "GET /static/fullcalendar/dist/index.global.js HTTP/1.1" 404 1959
+INFO 2023-10-16 19:08:49,990 autoreload 6736 11964 Watching for file changes with StatReloader
+INFO 2023-10-16 19:08:52,049 basehttp 6736 13080 "GET / HTTP/1.1" 200 4661
+INFO 2023-10-16 19:08:52,113 basehttp 6736 13080 "GET /media/users/images/%D0%A8%D0%B0%D0%BF%D0%BA%D0%B0.png HTTP/1.1" 304 0
+INFO 2023-10-16 19:08:54,800 basehttp 6736 13080 "GET /profile/profils/4/ HTTP/1.1" 200 4230
+INFO 2023-10-16 19:08:56,010 basehttp 6736 13080 "GET /profile/profils/cabinet/4/ HTTP/1.1" 200 8248
+INFO 2023-10-16 19:08:56,954 basehttp 6736 13080 "GET /cabinet/cabinets/3/ HTTP/1.1" 200 10582
+WARNING 2023-10-16 19:08:56,977 basehttp 6736 13080 "GET /static/fullcalendar/dist/index.global.js HTTP/1.1" 404 1959
+INFO 2023-10-16 19:10:27,334 autoreload 1796 6956 Watching for file changes with StatReloader

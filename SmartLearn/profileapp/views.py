@@ -128,7 +128,7 @@ def profilusercabinet(request: HttpRequest, user_id: int) -> render:
         form = CabinetForm(request.POST)
         if form.is_valid():
             form.save()
-            return HttpResponseRedirect(reverse('profile:profil_cabinet', kwargs={'user_id': user_id}))
+            return HttpResponseRedirect(reverse('profile:profile_cabinet', kwargs={'user_id': user_id}))
     if request.user.id:
         pers = User.objects.get(id=request.user.id).is_authenticated
     else:
@@ -217,3 +217,13 @@ def edit_service(request, service_id):
     }
 
     return render(request, 'profileapp/profile/service_edit.html', context=context)
+
+
+def profile_info_teacher(request: HttpRequest, teacher_id: int) -> render:
+    teacher = Teacher.objects.get(id=teacher_id)
+    posts = Post.objects.filter(teacher=teacher)
+    context = {
+        'user': teacher,
+        'posts': posts,
+    }
+    return render(request, 'profileapp/profile/profile_info_teacher.html', context=context)
