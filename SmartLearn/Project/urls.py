@@ -25,6 +25,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('cabinet/', include('Cabinet.urls', namespace='сabinet')),
     path('profile/', include('profileapp.urls', namespace='profile')),
+    # path('accept/<str:email>/<uuid:code>', accepted_email, name='accept'),
 ]
 
 if settings.DEBUG:

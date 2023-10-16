@@ -1,5 +1,9 @@
 from django.contrib.auth.models import AbstractUser
 from django.db import models
+from django.core.mail import send_mail
+from django.urls import reverse
+from django.conf import settings
+from django.utils.timezone import now
 
 
 class Requisites(models.Model):
@@ -18,6 +22,8 @@ class User(AbstractUser):
     images = models.ImageField(upload_to='users/images', null=True, blank=True)
     requisites = models.OneToOneField('Requisites', on_delete=models.CASCADE, related_name='user_requisites', null=True, blank=True)
 
+    is_verified_email = models.BooleanField(default=False)
+
 
 class Teacher(models.Model):
     description = models.TextField()
@@ -34,12 +40,12 @@ class Tag(models.Model):
         return self.name
 
 
-class Category(models.Model):
-    name = models.CharField(max_length=100)
-    category_teacher = models.ForeignKey('Teacher', on_delete=models.CASCADE, related_name='category_teacher')
-
-    def __str__(self):
-        return self.name
+# class Category(models.Model):
+#     name = models.CharField(max_length=100)
+#     category_teacher = models.ForeignKey('Teacher', on_delete=models.CASCADE, related_name='category_teacher')
+#
+#     def __str__(self):
+#         return self.name
 
 
 class Service(models.Model):
@@ -55,8 +61,9 @@ class Service(models.Model):
 class Post(models.Model):
     title = models.CharField(max_length=100)
     content = models.TextField()
+    images = models.ImageField(upload_to='posts/images', null=True, blank=True)
     date_create = models.DateTimeField(auto_now_add=True)
-    category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name='post_category')
+    # category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name='post_category')
     teacher = models.ForeignKey(Teacher, on_delete=models.CASCADE, related_name='post_teacher')
     is_published = models.BooleanField(default=True)
     is_pinned = models.BooleanField(default=False)
@@ -83,3 +90,35 @@ class Record(models.Model):
 
     def __str__(self):
         return self.url
+
+
+class EmailVerification(models.Model):
+    code = models.UUIDField(unique=True)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='email_verification')
+    created = models.DateTimeField(auto_now_add=True)
+    expirations = models.DateTimeField()
+
+    def __str__(self):
+        return f'Email verification for {self.user} - {self.code} - {self.created}'
+
+    # def send_verifications_email(self):
+    #     link = reverse('accept', kwargs={'email': self.user.email, 'code': self.code})
+    #     verifications_link = f'{settings.DOMAIN_NAME}{link}'
+    #     subject = f'Подтверждение учетной записи для {self.user.username}'
+    #     message = f'Для подтверждения учетной записи перейдите по ссылке: {verifications_link}'
+    #     send_mail(
+    #         subject=subject,
+    #         message=message,
+    #         from_email=settings.EMAIL_HOST_USER,
+    #         recipient_list=[self.user.email],
+    #         fail_silently=False
+    #     )
+    #
+    # def is_expired(self):
+    #     return True if now() >= self.expirations else False
+
+
+
+
+
+

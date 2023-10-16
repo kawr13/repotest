@@ -29,7 +29,7 @@ ALLOWED_HOSTS = [
     '*'
 ]
 
-
+DOMAIN_NAME = 'http://127.0.0.1:8000'
 # Application definition
 
 INSTALLED_APPS = [
@@ -128,11 +128,27 @@ MEDIA_ROOT = BASE_DIR / 'media'
 
 # User
 AUTH_USER_MODEL = 'profileapp.User'
+LOGIN_URL = '/profile/login/'
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
+
+# Email settings
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_HOST = 'mail.it-matika.pro'
+# EMAIL_PORT = 465
+# EMAIL_HOST_USER = 'kibardin@it-matika.pro'
+# EMAIL_HOST_PASSWORD = '37645nPP9090!!!'
+# EMAIL_USE_TLS = True
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+
+
+
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,

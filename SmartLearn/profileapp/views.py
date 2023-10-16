@@ -6,8 +6,8 @@ from django.urls import reverse, reverse_lazy
 from django.views.generic import CreateView, UpdateView
 
 from Cabinet.models import Schedule, Cabinet
-from profileapp.forms import UserForm, UserRegisterForm, CabinetForm
-from profileapp.models import Teacher, User, Category, Tag, Post
+from profileapp.forms import UserForm, UserRegisterForm, CabinetForm, BlogForm, ServiceForm
+from profileapp.models import Teacher, User, Tag, Post, EmailVerification, Service
 # from Cabinet.models import Schedule
 from django.contrib import auth
 from django.shortcuts import render
@@ -45,18 +45,37 @@ def sort_category(request: HttpRequest, tag_id: int=None) -> render:
 
 
 def blog(request: HttpRequest, user_id: int) -> render:
+    if request.method == 'POST':
+        form = BlogForm(request.POST)
+        user_t = User.objects.get(id=user_id)
+        if form.is_valid():
+            post = Post.objects.create(
+                title=form.cleaned_data['title'],
+                content=form.cleaned_data['content'],
+                teacher=user_t.teacher,
+                is_published=form.cleaned_data['is_published'],
+                is_pinned=form.cleaned_data['is_pinned'],
+                is_private=form.cleaned_data['is_private'],
+            )
+            post.save()
+            return HttpResponseRedirect(reverse('profile:blog', args=(user_id,)))
     user = User.objects.select_related('teacher').get(id=user_id)
-
+    teach = False
+    form = BlogForm()
     if request.user.id:
         pers = User.objects.get(id=request.user.id).is_authenticated
     else:
         pers = False
     teacher = user.teacher
+    if user.username == request.user.username:
+        teach = True
     context = {
         'title': 'Блог',
         'user': user,
         'autentic': pers,
+        'teach': teach,
         'posts': Post.objects.filter(teacher=teacher),
+        'form': form,
     }
     return render(request, 'profileapp/profile/blog.html', context=context)
 
@@ -141,3 +160,60 @@ def logout(request):
     return HttpResponseRedirect(reverse('index'))
 
 
+# def accepted_email(request, email, code):
+#     user = User.objects.get(email=email)
+#     email_verification = EmailVerification.objects.filter(user=user, code=code)
+#     if email_verification.exists() and email_verification.first().is_expired():
+#         user.is_verified_email = True
+#         user.save()
+#         return HttpResponseRedirect(reverse('profile:login'))
+#     return render(request, 'profileapp/profile/accept.html')
+
+def delete_post(request, post_id):
+    post = Post.objects.get(id=post_id)
+    post.delete()
+    return HttpResponseRedirect(reverse('profile:blog', args=(request.user.id,)))
+
+
+def services(request):
+    if request.method == 'POST':
+        form = ServiceForm(request.POST)
+        if form.is_valid():
+            servis = Service.objects.create(
+                name=form.cleaned_data['name'],
+                description=form.cleaned_data['description'],
+                price=form.cleaned_data['price'],
+                teacher=User.objects.get(id=request.user.id).teacher,
+            )
+            servis.save()
+            return HttpResponseRedirect(reverse('profile:services'))
+    if request.user.id:
+        pers = User.objects.get(id=request.user.id).is_authenticated
+    form = ServiceForm()
+    user_t = request.user.teacher
+    service = Service.objects.filter(teacher=user_t)
+    print(service)
+    context = {
+        'service': service,
+        'autentic': pers,
+        'form': form,
+    }
+    return render(request, 'profileapp/profile/services.html', context=context)
+
+
+def edit_service(request, service_id):
+    services = Service.objects.get(id=service_id)
+
+    if request.method == 'POST':
+        form = ServiceForm(request.POST, instance=services)
+        if form.is_valid():
+            form.save()
+            return HttpResponseRedirect(reverse('profile:services'))
+    else:
+        form = ServiceForm(instance=services)
+    context = {
+        'form': form,
+        'service_id': service_id,
+    }
+
+    return render(request, 'profileapp/profile/service_edit.html', context=context)

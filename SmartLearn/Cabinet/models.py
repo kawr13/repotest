@@ -19,5 +19,6 @@ class Cabinet(models.Model):
 class Schedule(models.Model):
     cabinet = models.ForeignKey('Cabinet', on_delete=models.CASCADE)
     title = models.CharField(max_length=100)
+    url = models.URLField()
     date_create = models.DateTimeField(null=True, blank=True)
     date_end = models.DateTimeField(null=True, blank=True)

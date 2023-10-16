@@ -50,14 +50,14 @@ class ServiceAdmin(admin.ModelAdmin):
     list_display = ('name',)
 
 
-@admin.register(Category)
-class CategoryAdmin(admin.ModelAdmin):
-    list_display = ('name', 'category_teacher')
+# @admin.register(Category)
+# class CategoryAdmin(admin.ModelAdmin):
+#     list_display = ('name', 'category_teacher')
 
 
 @admin.register(Post)
 class PostAdmin(admin.ModelAdmin):
-    list_display = ('title', 'content', 'date_create', 'category', 'teacher', 'is_published', 'is_pinned', 'is_private')
+    list_display = ('title', 'content', 'date_create', 'teacher', 'is_published', 'is_pinned', 'is_private')
 
 
 @admin.register(Comment)
@@ -68,3 +68,10 @@ class CommentAdmin(admin.ModelAdmin):
 @admin.register(Record)
 class RecordAdmin(admin.ModelAdmin):
     list_display = ('url', 'teacher', 'date_create')
+
+
+# @admin.register(EmailVerification)
+# class EmailVerificationAdmin(admin.ModelAdmin):
+#     list_display = ('code', 'user', 'expirations')
+#     fields = ('code', 'user', 'expirations', 'created')
+#     readonly_fields = ('created',)

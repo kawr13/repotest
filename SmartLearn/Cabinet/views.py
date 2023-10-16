@@ -48,6 +48,7 @@ def update_calend(request: HttpRequest, cabinet_id) -> render:
             schedule = Schedule.objects.create(
                 cabinet=cabinet,
                 title=date_string['title'],
+                url=date_string['url'],
                 date_create=date_string['start'],
                 date_end=date_string['end'],
             )
