@@ -16085,3 +16085,401 @@ Traceback (most recent call last):
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 TypeError: profile_info_teacher() got an unexpected keyword argument 'user_id'
 ERROR 2023-10-17 19:32:07,899 basehttp 7496 10196 "GET /profile/profils/cabinet/info_teacher/1/ HTTP/1.1" 500 66243
+INFO 2023-10-17 19:46:30,660 autoreload 9744 4676 Watching for file changes with StatReloader
+INFO 2023-10-17 19:46:32,159 basehttp 9744 6396 "GET / HTTP/1.1" 200 3202
+INFO 2023-10-17 19:46:32,204 basehttp 9744 6396 "GET /static/ProfileApp/css/footer.css HTTP/1.1" 304 0
+INFO 2023-10-17 19:49:27,802 basehttp 9744 6396 "GET / HTTP/1.1" 200 3202
+INFO 2023-10-17 19:49:27,827 basehttp 9744 6396 "GET /static/ProfileApp/css/footer.css HTTP/1.1" 304 0
+WARNING 2023-10-17 19:49:31,834 log 9744 6396 Not Found: /blog
+WARNING 2023-10-17 19:49:31,835 basehttp 9744 6396 "GET /blog HTTP/1.1" 404 2673
+WARNING 2023-10-17 19:49:35,070 log 9744 6396 Not Found: /blog/1
+WARNING 2023-10-17 19:49:35,071 basehttp 9744 6396 "GET /blog/1 HTTP/1.1" 404 2679
+INFO 2023-10-17 19:59:24,656 autoreload 10980 1380 Watching for file changes with StatReloader
+INFO 2023-10-17 19:59:26,111 basehttp 10980 9348 "GET / HTTP/1.1" 200 3202
+INFO 2023-10-17 19:59:26,156 basehttp 10980 9348 "GET /static/ProfileApp/css/footer.css HTTP/1.1" 304 0
+INFO 2023-10-17 19:59:36,153 basehttp 10980 9348 "GET /profile/blog/1 HTTP/1.1" 301 0
+ERROR 2023-10-17 19:59:36,252 log 10980 11536 Internal Server Error: /profile/blog/1/
+Traceback (most recent call last):
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+TypeError: 'ImageFieldFile' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\SmartLearn\ProfileApp\views.py", line 80, in blog
+    return render(request, 'profileapp/profile/blog.html', context=context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\db\models\fields\files.py", line 66, in url
+    self._require_file()
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\db\models\fields\files.py", line 41, in _require_file
+    raise ValueError(
+ValueError: The 'images' attribute has no file associated with it.
+ERROR 2023-10-17 19:59:36,264 basehttp 10980 11536 "GET /profile/blog/1/ HTTP/1.1" 500 187954
+INFO 2023-10-17 20:00:36,254 autoreload 10980 1380 C:\PythonProject\SmartLearn\SmartLearn-Squad\SmartLearn\ProfileApp\views.py changed, reloading.
+INFO 2023-10-17 20:00:37,403 autoreload 1764 7156 Watching for file changes with StatReloader
+WARNING 2023-10-17 20:00:38,620 log 1764 7644 Not Found: /profile/
+WARNING 2023-10-17 20:00:38,620 basehttp 1764 7644 "GET /profile/ HTTP/1.1" 404 4741
+INFO 2023-10-17 20:00:43,786 basehttp 1764 7644 "GET / HTTP/1.1" 200 3202
+INFO 2023-10-17 20:00:46,998 basehttp 1764 7644 "GET /profile/profils/1/ HTTP/1.1" 200 3942
+ERROR 2023-10-17 20:00:55,577 log 1764 7644 Internal Server Error: /profile/blog/1/
+Traceback (most recent call last):
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+TypeError: 'ImageFieldFile' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\SmartLearn\ProfileApp\views.py", line 81, in blog
+    return render(request, 'profileapp/profile/blog.html', context=context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\db\models\fields\files.py", line 66, in url
+    self._require_file()
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\db\models\fields\files.py", line 41, in _require_file
+    raise ValueError(
+ValueError: The 'images' attribute has no file associated with it.
+ERROR 2023-10-17 20:00:55,586 basehttp 1764 7644 "GET /profile/blog/1/ HTTP/1.1" 500 187954
+INFO 2023-10-17 20:08:57,089 autoreload 10608 11568 Watching for file changes with StatReloader
+INFO 2023-10-17 20:09:00,159 basehttp 10608 5636 "GET / HTTP/1.1" 200 3202
+INFO 2023-10-17 20:09:00,182 basehttp 10608 5636 "GET /static/ProfileApp/css/footer.css HTTP/1.1" 304 0
+INFO 2023-10-17 20:17:00,429 autoreload 3576 7992 Watching for file changes with StatReloader
+INFO 2023-10-17 20:17:00,690 basehttp 3576 10968 "GET /admin/ HTTP/1.1" 200 10499
+INFO 2023-10-17 20:17:00,851 basehttp 3576 10968 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2023-10-17 20:17:00,857 basehttp 3576 10968 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2023-10-17 20:17:07,467 basehttp 3576 10968 "GET /admin/ProfileApp/post/add/ HTTP/1.1" 200 16075
+INFO 2023-10-17 20:17:07,483 basehttp 3576 10968 "GET /static/admin/css/forms.css HTTP/1.1" 200 9047
+INFO 2023-10-17 20:17:07,492 basehttp 3576 3540 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-17 20:17:07,493 basehttp 3576 12120 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 292458
+INFO 2023-10-17 20:17:07,502 basehttp 3576 10968 "GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+INFO 2023-10-17 20:17:07,507 basehttp 3576 8660 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2023-10-17 20:17:07,511 basehttp 3576 3540 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11900
+INFO 2023-10-17 20:17:07,515 basehttp 3576 10968 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2023-10-17 20:17:07,516 basehttp 3576 12120 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2023-10-17 20:17:07,517 basehttp 3576 8660 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+INFO 2023-10-17 20:17:07,519 basehttp 3576 10452 "GET /static/admin/js/core.js HTTP/1.1" 200 5682
+INFO 2023-10-17 20:17:07,525 basehttp 3576 3196 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8943
+INFO 2023-10-17 20:17:07,540 basehttp 3576 3196 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO 2023-10-17 20:17:07,540 basehttp 3576 8660 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2023-10-17 20:17:07,550 basehttp 3576 8660 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2023-10-17 20:17:19,179 basehttp 3576 8660 "POST /admin/ProfileApp/post/add/ HTTP/1.1" 200 16271
+INFO 2023-10-17 20:17:19,195 basehttp 3576 8660 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-17 20:17:19,196 basehttp 3576 3196 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2023-10-17 20:17:23,869 basehttp 3576 8660 "GET /admin/ProfileApp/teacher/ HTTP/1.1" 200 10635
+INFO 2023-10-17 20:17:23,880 basehttp 3576 8660 "GET /static/admin/css/changelists.css HTTP/1.1" 200 6566
+INFO 2023-10-17 20:17:23,887 basehttp 3576 10968 "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2023-10-17 20:17:23,887 basehttp 3576 12120 "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2023-10-17 20:17:23,888 basehttp 3576 3540 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2023-10-17 20:17:23,888 basehttp 3576 10452 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2023-10-17 20:17:23,891 basehttp 3576 3196 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-17 20:17:23,895 basehttp 3576 8660 "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2023-10-17 20:17:23,901 basehttp 3576 10968 "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2023-10-17 20:17:23,906 basehttp 3576 12120 "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2023-10-17 20:17:23,906 basehttp 3576 3540 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2023-10-17 20:17:23,919 basehttp 3576 3540 "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2023-10-17 20:17:23,928 basehttp 3576 3540 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2023-10-17 20:17:25,253 basehttp 3576 3540 "GET /admin/ProfileApp/teacher/add/ HTTP/1.1" 200 14790
+INFO 2023-10-17 20:17:25,269 basehttp 3576 3540 "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+INFO 2023-10-17 20:17:25,279 basehttp 3576 12120 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-17 20:17:25,279 basehttp 3576 10968 "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+INFO 2023-10-17 20:17:25,280 basehttp 3576 3540 "GET /static/admin/js/inlines.js HTTP/1.1" 200 15526
+INFO 2023-10-17 20:17:25,289 basehttp 3576 3540 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO 2023-10-17 20:17:25,294 basehttp 3576 3540 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+INFO 2023-10-17 20:17:25,298 basehttp 3576 3540 "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO 2023-10-17 20:17:30,309 basehttp 3576 3540 "POST /admin/ProfileApp/teacher/add/ HTTP/1.1" 302 0
+INFO 2023-10-17 20:17:30,329 basehttp 3576 3540 "GET /admin/ProfileApp/teacher/ HTTP/1.1" 200 12140
+INFO 2023-10-17 20:17:30,344 basehttp 3576 3540 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-17 20:17:30,368 basehttp 3576 3540 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2023-10-17 20:17:36,973 basehttp 3576 3540 "GET /admin/ProfileApp/post/ HTTP/1.1" 200 10614
+INFO 2023-10-17 20:17:36,987 basehttp 3576 3540 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-17 20:17:38,124 basehttp 3576 3540 "GET /admin/ProfileApp/post/add/ HTTP/1.1" 200 16124
+INFO 2023-10-17 20:17:38,137 basehttp 3576 3540 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-17 20:17:38,146 basehttp 3576 3540 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2023-10-17 20:17:43,864 basehttp 3576 3540 "POST /admin/ProfileApp/post/add/ HTTP/1.1" 302 0
+INFO 2023-10-17 20:17:43,884 basehttp 3576 3540 "GET /admin/ProfileApp/post/ HTTP/1.1" 200 13423
+INFO 2023-10-17 20:17:43,898 basehttp 3576 3540 "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2023-10-17 20:17:43,900 basehttp 3576 3196 "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2023-10-17 20:17:43,901 basehttp 3576 8660 "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2023-10-17 20:17:43,901 basehttp 3576 10968 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2023-10-17 20:17:43,904 basehttp 3576 12120 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-17 20:17:43,904 basehttp 3576 10452 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2023-10-17 20:17:43,908 basehttp 3576 3540 "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2023-10-17 20:17:43,910 basehttp 3576 3196 "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2023-10-17 20:17:43,914 basehttp 3576 8660 "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2023-10-17 20:17:43,915 basehttp 3576 10968 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2023-10-17 20:17:43,922 basehttp 3576 10968 "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2023-10-17 20:17:43,925 basehttp 3576 10968 "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+ERROR 2023-10-17 20:17:54,616 log 3576 10968 Internal Server Error: /profile/blog/1/
+Traceback (most recent call last):
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+TypeError: 'ImageFieldFile' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\SmartLearn\ProfileApp\views.py", line 81, in blog
+    return render(request, 'profileapp/profile/blog.html', context=context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\db\models\fields\files.py", line 66, in url
+    self._require_file()
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\db\models\fields\files.py", line 41, in _require_file
+    raise ValueError(
+ValueError: The 'images' attribute has no file associated with it.
+ERROR 2023-10-17 20:17:54,624 basehttp 3576 10968 "GET /profile/blog/1/ HTTP/1.1" 500 187805
+INFO 2023-10-17 20:24:48,224 autoreload 3052 5128 Watching for file changes with StatReloader
+INFO 2023-10-17 20:24:49,684 basehttp 3052 11496 "GET / HTTP/1.1" 200 3202
+INFO 2023-10-17 20:24:49,719 basehttp 3052 11496 "GET /static/ProfileApp/css/footer.css HTTP/1.1" 304 0
+INFO 2023-10-17 20:24:51,273 basehttp 3052 11496 "GET /profile/profils/1/ HTTP/1.1" 200 2869
+INFO 2023-10-17 20:24:51,333 basehttp 3052 11496 "GET /static/ProfileApp/css/profile.css HTTP/1.1" 200 921
+INFO 2023-10-17 20:24:52,452 basehttp 3052 11496 "GET /profile/services/ HTTP/1.1" 200 6274
+INFO 2023-10-17 20:24:52,462 basehttp 3052 11496 "GET /static/ProfileApp/css/services.css HTTP/1.1" 200 2078
+INFO 2023-10-17 20:24:53,140 basehttp 3052 11496 "GET /profile/profils/cabinet/1/ HTTP/1.1" 200 3623
+INFO 2023-10-17 20:24:53,148 basehttp 3052 11496 "GET /static/ProfileApp/css/profile_cabinet.css HTTP/1.1" 200 921
+INFO 2023-10-17 20:24:53,969 basehttp 3052 11496 "GET /profile/profils/cabinet/1/ HTTP/1.1" 200 3623
+INFO 2023-10-17 20:24:53,976 basehttp 3052 11496 "GET /static/ProfileApp/css/profile_cabinet.css HTTP/1.1" 304 0
+ERROR 2023-10-17 20:24:54,295 log 3052 11496 Internal Server Error: /profile/profils/cabinet/info_teacher/1/
+Traceback (most recent call last):
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: profile_info_teacher() got an unexpected keyword argument 'user_id'
+ERROR 2023-10-17 20:24:54,297 basehttp 3052 11496 "GET /profile/profils/cabinet/info_teacher/1/ HTTP/1.1" 500 66517
+INFO 2023-10-17 20:24:56,536 basehttp 3052 11496 "GET /profile/services/ HTTP/1.1" 200 6274
+INFO 2023-10-17 20:24:56,544 basehttp 3052 11496 "GET /static/ProfileApp/css/services.css HTTP/1.1" 304 0
+WARNING 2023-10-17 20:24:59,616 log 3052 11496 Not Found: /contact/
+WARNING 2023-10-17 20:24:59,617 basehttp 3052 11496 "GET /contact/ HTTP/1.1" 404 2685
+WARNING 2023-10-17 20:25:01,199 log 3052 11496 Not Found: /about/
+WARNING 2023-10-17 20:25:01,200 basehttp 3052 11496 "GET /about/ HTTP/1.1" 404 2679
+INFO 2023-10-17 20:25:02,191 basehttp 3052 11496 "GET / HTTP/1.1" 200 3202
+INFO 2023-10-17 20:28:13,883 basehttp 3052 11496 "GET /profile/profils/1/ HTTP/1.1" 200 2869
+INFO 2023-10-17 20:28:13,891 basehttp 3052 11496 "GET /static/ProfileApp/css/profile.css HTTP/1.1" 304 0
+INFO 2023-10-17 20:28:15,969 basehttp 3052 11496 "GET /profile/profils/cabinet/1/ HTTP/1.1" 200 3623
+INFO 2023-10-17 20:28:15,976 basehttp 3052 11496 "GET /static/ProfileApp/css/profile_cabinet.css HTTP/1.1" 304 0
+INFO 2023-10-17 20:28:17,156 basehttp 3052 11496 "GET /profile/profils/cabinet/1/ HTTP/1.1" 200 3623
+ERROR 2023-10-17 20:28:17,649 log 3052 11496 Internal Server Error: /profile/profils/cabinet/info_teacher/1/
+Traceback (most recent call last):
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: profile_info_teacher() got an unexpected keyword argument 'user_id'
+ERROR 2023-10-17 20:28:17,651 basehttp 3052 11496 "GET /profile/profils/cabinet/info_teacher/1/ HTTP/1.1" 500 66517
+INFO 2023-10-17 20:28:19,945 basehttp 3052 11496 "GET /profile/profils/cabinet/1/ HTTP/1.1" 200 3623
+INFO 2023-10-17 20:28:20,426 basehttp 3052 11496 "GET /profile/services/ HTTP/1.1" 200 6274
+INFO 2023-10-17 20:28:20,434 basehttp 3052 11496 "GET /static/ProfileApp/css/services.css HTTP/1.1" 304 0

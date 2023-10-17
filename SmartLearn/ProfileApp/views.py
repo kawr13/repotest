@@ -59,6 +59,7 @@ def blog(request: HttpRequest, user_id: int) -> render:
             )
             post.save()
             return HttpResponseRedirect(reverse('profile:blog', args=(user_id,)))
+
     user = User.objects.select_related('teacher').get(id=user_id)
     teach = False
     form = BlogForm()
