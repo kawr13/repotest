@@ -18,13 +18,13 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf.urls.static import static
 from django.conf import settings
-from profileapp.views import index
+from ProfileApp.views import index
 
 urlpatterns = [
     path('', index, name='index'),
     path('admin/', admin.site.urls),
-    path('cabinet/', include('Cabinet.urls', namespace='сabinet')),
-    path('profile/', include('profileapp.urls', namespace='profile')),
+    path('cabinet/', include('CabinetApp.urls', namespace='сabinet')),
+    path('profile/', include('ProfileApp.urls', namespace='profile')),
     # path('accept/<str:email>/<uuid:code>', accepted_email, name='accept'),
 ]
 

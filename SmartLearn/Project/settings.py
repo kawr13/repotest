@@ -39,8 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    "profileapp.apps.ProfileappConfig",
-    'Cabinet.apps.CabinetConfig',
+    "ProfileApp.apps.ProfileappConfig",
+    'CabinetApp.apps.CabinetConfig',
 ]
 
 MIDDLEWARE = [
@@ -127,7 +127,7 @@ MEDIA_URL = 'media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
 # User
-AUTH_USER_MODEL = 'profileapp.User'
+AUTH_USER_MODEL = 'ProfileApp.User'
 LOGIN_URL = '/profile/login/'
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
@@ -144,9 +144,6 @@ LOGOUT_REDIRECT_URL = '/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-
-
 
 
 LOGGING = {
@@ -178,7 +175,7 @@ LOGGING = {
             'handlers': ['console', 'file'],
             'level': 'INFO',
         },
-        'profileapp': {
+        'ProfileApp': {
             'handlers': ['console', 'file'],
             'level': 'INFO',
             'propagate': True,
