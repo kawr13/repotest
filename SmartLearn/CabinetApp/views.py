@@ -8,12 +8,13 @@ from ProfileApp.models import User
 # Create your views her
 def get_events(request, cabinet_id):
     cabinet = Cabinet.objects.get(id=cabinet_id)
-    events = Schedule.objects.filter(cabinet=cabinet).values('date_create', 'date_end', 'title')
+    events = Schedule.objects.filter(cabinet=cabinet).values('date_create', 'date_end', 'url', 'title')
     event_data = []
     for event in events:
         print()
         event_data.append({
             'title': event['title'],
+            'urls': event['url'],
             'start': event['date_create'].isoformat(),
             'end': event['date_end'].isoformat() if event['date_end'] else None,
         })
@@ -48,10 +49,11 @@ def update_calend(request: HttpRequest, cabinet_id) -> render:
             schedule = Schedule.objects.create(
                 cabinet=cabinet,
                 title=date_string['title'],
-                url=date_string['url'],
+                url=date_string['urls'],
                 date_create=date_string['start'],
                 date_end=date_string['end'],
             )
+            print(schedule)
             schedule.save()
             # Создайте новый объект Schedule и свяжите его с CabinetApp
 
