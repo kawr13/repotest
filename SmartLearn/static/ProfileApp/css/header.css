@@ -1,0 +1,13 @@
+.navbar-nav.mr-auto .nav-item {
+    margin-right: -50px; /* Убираем правый отступ между элементами */
+}
+.card-body {
+  padding: 10px;
+}
+.card-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}

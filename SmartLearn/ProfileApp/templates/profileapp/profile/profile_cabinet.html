@@ -1,0 +1,43 @@
+{% extends 'profileapp/profile/base_home.html' %}
+{% load static %}
+
+{% block title %}{{ title }}{% endblock %}
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'ProfileApp/css/profile_cabinet.css' %}">
+{% endblock %}
+
+
+{% block modals %}
+
+{% endblock %}
+
+{% block content %}
+    <!-- Боковая панель навигации -->
+    <div class="sidenav">
+        <a href="#" class="active">Статистика</a>
+        <a href="{%  url 'profile:services' %}">Услуги</a>
+        <a href="{%  url 'profile:profile_cabinet' user.id %}">Кабинеты</a>
+        <a href="{%  url 'profile:profile_info_teacher' user.id %}">Информация</a>
+    </div>
+
+    <!-- Основной контент -->
+    <div class="content">
+        <h1>Добро пожаловать в ваш кабинет</h1>
+
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Имя: {{ teach.username }}</h5>
+                <p class="card-text">Учитель: {{ teach.teacher.description }}</p>
+                {% for cabinet, users in users_by_cab.items %}
+                    <a href="{% url 'cabinet:cabinet' cab_id=cabinet.id %}" class="card-text">Кабинет: {{ cabinet.name }}</a>
+                    {% for user in users %}
+                        <p class="card-text">Пользователь: {{ user.username }}</p>
+                    {% endfor %}
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}

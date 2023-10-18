@@ -1,0 +1,22 @@
+{% extends 'profileapp/profile/base_home.html' %}
+{% load static %}
+
+{% block title %}{{ title }}{% endblock %}
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'ProfileApp/css/profile.css'%}">
+{% endblock %}
+
+{% block content %}
+    <!-- Боковая панель навигации -->
+    <div class="sidenav">
+        <a href="#" class="active">Статистика</a>
+        <a href="{%  url 'profile:services' %}">Услуги</a>
+        <a href="{%  url 'profile:profile_cabinet' user.id %}">Кабинеты</a>
+    </div>
+
+    <!-- Основной контент -->
+    <div class="content">
+        <h1>Добро пожаловать в ваш кабинет</h1>
+        <!-- Здесь будет отображаться контент для выбранного пункта меню -->
+    </div>
+{% endblock %}
