@@ -11,6 +11,7 @@ from ProfileApp.models import Teacher, User, Tag, Post, EmailVerification, Servi
 # from CabinetApp.models import Schedule
 from django.contrib import auth
 from django.shortcuts import render
+from django.contrib import messages
 
 
 def index(request: HttpRequest) -> render:
@@ -91,6 +92,8 @@ def login(request: HttpRequest) -> render:
             if user:
                 auth.login(request, user)
             return HttpResponseRedirect(reverse('index'))
+        else:
+            messages.error(request, 'Неверный логин или пароль')
     form = UserForm()
     context = {
         'title': 'Авторизация',

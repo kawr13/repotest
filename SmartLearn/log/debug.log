@@ -16483,3 +16483,292 @@ ERROR 2023-10-17 20:28:17,651 basehttp 3052 11496 "GET /profile/profils/cabinet/
 INFO 2023-10-17 20:28:19,945 basehttp 3052 11496 "GET /profile/profils/cabinet/1/ HTTP/1.1" 200 3623
 INFO 2023-10-17 20:28:20,426 basehttp 3052 11496 "GET /profile/services/ HTTP/1.1" 200 6274
 INFO 2023-10-17 20:28:20,434 basehttp 3052 11496 "GET /static/ProfileApp/css/services.css HTTP/1.1" 304 0
+INFO 2023-10-17 20:36:37,453 autoreload 12004 11884 Watching for file changes with StatReloader
+INFO 2023-10-17 20:36:39,585 basehttp 12004 9660 "GET / HTTP/1.1" 200 3202
+INFO 2023-10-17 20:36:39,600 basehttp 12004 9660 "GET /static/ProfileApp/css/footer.css HTTP/1.1" 304 0
+INFO 2023-10-17 20:36:40,579 basehttp 12004 9660 "GET /profile/logout/ HTTP/1.1" 302 0
+INFO 2023-10-17 20:36:40,588 basehttp 12004 9660 "GET / HTTP/1.1" 200 3024
+INFO 2023-10-17 20:36:41,055 basehttp 12004 9660 "GET /profile/login/ HTTP/1.1" 200 3657
+INFO 2023-10-17 20:36:45,496 basehttp 12004 9660 "POST /profile/login/ HTTP/1.1" 200 3657
+INFO 2023-10-17 20:36:50,146 basehttp 12004 9660 "POST /profile/login/ HTTP/1.1" 200 3657
+INFO 2023-10-17 20:37:45,724 autoreload 12004 11884 C:\PythonProject\SmartLearn\SmartLearn-Squad\SmartLearn\ProfileApp\forms.py changed, reloading.
+INFO 2023-10-17 20:37:46,466 autoreload 3828 10940 Watching for file changes with StatReloader
+INFO 2023-10-17 20:38:10,597 autoreload 3828 10940 C:\PythonProject\SmartLearn\SmartLearn-Squad\SmartLearn\ProfileApp\forms.py changed, reloading.
+INFO 2023-10-17 20:38:11,262 autoreload 1280 2856 Watching for file changes with StatReloader
+INFO 2023-10-17 20:40:07,451 basehttp 1280 5128 "GET / HTTP/1.1" 200 3024
+INFO 2023-10-17 20:40:08,423 basehttp 1280 5128 "GET /profile/login/ HTTP/1.1" 200 3641
+INFO 2023-10-17 20:40:11,682 basehttp 1280 5128 "POST /profile/login/ HTTP/1.1" 200 3641
+INFO 2023-10-17 20:40:16,230 basehttp 1280 5128 "POST /profile/login/ HTTP/1.1" 200 3641
+INFO 2023-10-17 20:40:18,642 basehttp 1280 5128 "GET /profile/register/ HTTP/1.1" 200 4527
+INFO 2023-10-17 20:52:02,423 basehttp 1280 8180 "POST /profile/login/ HTTP/1.1" 200 3638
+INFO 2023-10-17 20:52:02,432 basehttp 1280 8180 "GET /static/ProfileApp/css/footer.css HTTP/1.1" 304 0
+INFO 2023-10-17 20:55:37,196 basehttp 1280 7792 "POST /profile/login/ HTTP/1.1" 200 3638
+INFO 2023-10-17 20:55:39,240 basehttp 1280 7792 "POST /profile/login/ HTTP/1.1" 200 3638
+INFO 2023-10-17 20:55:42,304 basehttp 1280 7792 "POST /profile/login/ HTTP/1.1" 200 3638
+INFO 2023-10-17 20:57:07,886 autoreload 10588 6200 Watching for file changes with StatReloader
+INFO 2023-10-17 20:57:13,211 basehttp 10588 1352 "POST /profile/login/ HTTP/1.1" 200 3638
+INFO 2023-10-17 20:57:16,639 basehttp 10588 1352 "POST /profile/login/ HTTP/1.1" 200 3638
+INFO 2023-10-17 20:58:45,501 basehttp 10588 1352 "POST /profile/login/ HTTP/1.1" 200 3638
+INFO 2023-10-17 20:58:53,827 basehttp 10588 1352 "POST /profile/login/ HTTP/1.1" 200 3638
+INFO 2023-10-17 21:04:48,563 basehttp 10588 1312 "GET / HTTP/1.1" 200 3024
+INFO 2023-10-17 21:04:48,603 basehttp 10588 1312 "GET /static/ProfileApp/css/footer.css HTTP/1.1" 304 0
+INFO 2023-10-17 21:04:49,512 basehttp 10588 1312 "GET /profile/login/ HTTP/1.1" 200 3638
+INFO 2023-10-17 21:04:52,318 basehttp 10588 1312 "POST /profile/login/ HTTP/1.1" 200 3638
+INFO 2023-10-17 21:04:55,201 basehttp 10588 1312 - Broken pipe from ('127.0.0.1', 60977)
+INFO 2023-10-17 21:04:55,393 basehttp 10588 6076 "POST /profile/login/ HTTP/1.1" 200 3638
+INFO 2023-10-17 21:05:02,998 basehttp 10588 6076 "POST /profile/login/ HTTP/1.1" 302 0
+INFO 2023-10-17 21:05:03,007 basehttp 10588 6076 "GET / HTTP/1.1" 200 3202
+INFO 2023-10-17 21:05:05,568 basehttp 10588 6076 "GET /profile/logout/ HTTP/1.1" 302 0
+INFO 2023-10-17 21:05:05,575 basehttp 10588 6076 "GET / HTTP/1.1" 200 3024
+INFO 2023-10-17 21:06:35,043 basehttp 10588 6076 "GET / HTTP/1.1" 200 3024
+INFO 2023-10-17 21:06:36,176 basehttp 10588 6076 "GET /profile/login/ HTTP/1.1" 200 3690
+INFO 2023-10-17 21:06:38,944 basehttp 10588 6076 "POST /profile/login/ HTTP/1.1" 200 3690
+INFO 2023-10-17 21:06:41,889 basehttp 10588 6076 "POST /profile/login/ HTTP/1.1" 200 3690
+INFO 2023-10-17 21:06:44,117 basehttp 10588 6076 "POST /profile/login/ HTTP/1.1" 200 3690
+INFO 2023-10-17 21:16:47,536 autoreload 10588 6200 C:\PythonProject\SmartLearn\SmartLearn-Squad\SmartLearn\ProfileApp\views.py changed, reloading.
+INFO 2023-10-17 21:16:48,258 autoreload 9364 6580 Watching for file changes with StatReloader
+INFO 2023-10-17 21:16:49,268 basehttp 9364 6384 "GET / HTTP/1.1" 200 3024
+INFO 2023-10-17 21:16:49,327 basehttp 9364 6384 "GET /static/ProfileApp/css/footer.css HTTP/1.1" 304 0
+ERROR 2023-10-17 21:16:50,676 log 9364 6384 Internal Server Error: /profile/login/
+Traceback (most recent call last):
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\SmartLearn\ProfileApp\views.py", line 99, in login
+    'error': messege,
+             ^^^^^^^
+NameError: name 'messege' is not defined
+ERROR 2023-10-17 21:16:50,679 basehttp 9364 6384 "GET /profile/login/ HTTP/1.1" 500 69734
+INFO 2023-10-17 21:17:48,025 autoreload 9364 6580 C:\PythonProject\SmartLearn\SmartLearn-Squad\SmartLearn\ProfileApp\views.py changed, reloading.
+INFO 2023-10-17 21:17:48,884 autoreload 6180 11436 Watching for file changes with StatReloader
+INFO 2023-10-17 21:18:04,890 autoreload 6180 11436 C:\PythonProject\SmartLearn\SmartLearn-Squad\SmartLearn\ProfileApp\views.py changed, reloading.
+INFO 2023-10-17 21:18:05,671 autoreload 11744 7496 Watching for file changes with StatReloader
+ERROR 2023-10-17 21:19:21,896 log 11744 1444 Internal Server Error: /profile/login/
+Traceback (most recent call last):
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\SmartLearn\ProfileApp\views.py", line 94, in login
+    messege.error(request, 'Неверный логин или пароль')
+    ^^^^^^^
+NameError: name 'messege' is not defined
+ERROR 2023-10-17 21:19:21,898 basehttp 11744 1444 "POST /profile/login/ HTTP/1.1" 500 70820
+INFO 2023-10-17 21:20:07,460 autoreload 11744 7496 C:\PythonProject\SmartLearn\SmartLearn-Squad\SmartLearn\ProfileApp\views.py changed, reloading.
+INFO 2023-10-17 21:20:08,626 autoreload 7484 10176 Watching for file changes with StatReloader
+ERROR 2023-10-17 21:20:20,881 log 7484 12184 Internal Server Error: /profile/login/
+Traceback (most recent call last):
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\SmartLearn\ProfileApp\views.py", line 99, in login
+    'error': messege,
+             ^^^^^^^
+NameError: name 'messege' is not defined
+ERROR 2023-10-17 21:20:20,884 basehttp 7484 12184 "GET /profile/login/ HTTP/1.1" 500 69870
+ERROR 2023-10-17 21:20:22,722 log 7484 12184 Internal Server Error: /profile/login/
+Traceback (most recent call last):
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\SmartLearn\ProfileApp\views.py", line 99, in login
+    'error': messege,
+             ^^^^^^^
+NameError: name 'messege' is not defined
+ERROR 2023-10-17 21:20:22,724 basehttp 7484 12184 "GET /profile/login/ HTTP/1.1" 500 69733
+INFO 2023-10-17 21:21:19,712 autoreload 7484 10176 C:\PythonProject\SmartLearn\SmartLearn-Squad\SmartLearn\ProfileApp\views.py changed, reloading.
+INFO 2023-10-17 21:21:20,851 autoreload 7496 10664 Watching for file changes with StatReloader
+INFO 2023-10-17 21:22:25,149 autoreload 7496 10664 C:\PythonProject\SmartLearn\SmartLearn-Squad\SmartLearn\ProfileApp\forms.py changed, reloading.
+INFO 2023-10-17 21:22:25,950 autoreload 2476 6832 Watching for file changes with StatReloader
+INFO 2023-10-17 21:22:26,929 basehttp 2476 1492 "GET / HTTP/1.1" 200 3024
+ERROR 2023-10-17 21:22:28,448 log 2476 1492 Internal Server Error: /profile/login/
+Traceback (most recent call last):
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\SmartLearn\ProfileApp\views.py", line 95, in login
+    messege.error(request, 'Неверный логин или пароль')
+    ^^^^^^^
+NameError: name 'messege' is not defined
+ERROR 2023-10-17 21:22:28,454 basehttp 2476 1492 "GET /profile/login/ HTTP/1.1" 500 69638
+ERROR 2023-10-17 21:22:40,374 log 2476 1492 Internal Server Error: /profile/login/
+Traceback (most recent call last):
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\SmartLearn\ProfileApp\views.py", line 95, in login
+    messege.error(request, 'Неверный логин или пароль')
+    ^^^^^^^
+NameError: name 'messege' is not defined
+ERROR 2023-10-17 21:22:40,378 basehttp 2476 1492 "GET /profile/login/ HTTP/1.1" 500 69775
+ERROR 2023-10-17 21:22:40,939 log 2476 1492 Internal Server Error: /profile/login/
+Traceback (most recent call last):
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\SmartLearn\ProfileApp\views.py", line 95, in login
+    messege.error(request, 'Неверный логин или пароль')
+    ^^^^^^^
+NameError: name 'messege' is not defined
+ERROR 2023-10-17 21:22:40,941 basehttp 2476 1492 "GET /profile/login/ HTTP/1.1" 500 69775
+INFO 2023-10-17 21:23:13,465 autoreload 2476 6832 C:\PythonProject\SmartLearn\SmartLearn-Squad\SmartLearn\ProfileApp\views.py changed, reloading.
+INFO 2023-10-17 21:23:14,752 autoreload 572 1656 Watching for file changes with StatReloader
+ERROR 2023-10-17 21:23:15,090 log 572 12260 Internal Server Error: /profile/login/
+Traceback (most recent call last):
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\SmartLearn\ProfileApp\views.py", line 100, in login
+    'error': messeges,
+             ^^^^^^^^
+NameError: name 'messeges' is not defined
+ERROR 2023-10-17 21:23:15,094 basehttp 572 12260 "GET /profile/login/ HTTP/1.1" 500 69880
+ERROR 2023-10-17 21:23:17,396 log 572 12260 Internal Server Error: /profile/login/
+Traceback (most recent call last):
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PythonProject\SmartLearn\SmartLearn-Squad\SmartLearn\ProfileApp\views.py", line 100, in login
+    'error': messeges,
+             ^^^^^^^^
+NameError: name 'messeges' is not defined
+ERROR 2023-10-17 21:23:17,398 basehttp 572 12260 "GET /profile/login/ HTTP/1.1" 500 70053
+INFO 2023-10-17 21:23:22,643 autoreload 572 1656 C:\PythonProject\SmartLearn\SmartLearn-Squad\SmartLearn\ProfileApp\views.py changed, reloading.
+INFO 2023-10-17 21:23:23,553 autoreload 12156 10952 Watching for file changes with StatReloader
+INFO 2023-10-17 21:23:23,840 basehttp 12156 10556 "GET /profile/login/ HTTP/1.1" 200 3692
+INFO 2023-10-17 21:23:27,061 basehttp 12156 10556 "POST /profile/login/ HTTP/1.1" 200 3692
+INFO 2023-10-17 21:24:17,393 basehttp 12156 10556 "POST /profile/login/ HTTP/1.1" 200 3711
+INFO 2023-10-17 21:24:22,422 basehttp 12156 10556 "POST /profile/login/ HTTP/1.1" 200 3711
+INFO 2023-10-17 21:24:40,935 basehttp 12156 10556 "POST /profile/login/ HTTP/1.1" 200 3711
+INFO 2023-10-17 21:24:41,158 basehttp 12156 10556 "GET /profile/login/ HTTP/1.1" 200 3711
+INFO 2023-10-17 21:24:45,752 basehttp 12156 10556 "POST /profile/login/ HTTP/1.1" 200 3711
+INFO 2023-10-17 21:25:19,903 basehttp 12156 10556 "POST /profile/login/ HTTP/1.1" 200 4621
+INFO 2023-10-17 21:26:10,888 basehttp 12156 10556 "POST /profile/login/ HTTP/1.1" 200 3784
+INFO 2023-10-17 21:26:27,489 basehttp 12156 10556 "POST /profile/login/ HTTP/1.1" 200 3948
+INFO 2023-10-17 21:26:38,927 basehttp 12156 10556 "POST /profile/login/ HTTP/1.1" 200 3783
+INFO 2023-10-18 13:55:19,732 autoreload 14972 13164 Watching for file changes with StatReloader
+INFO 2023-10-18 13:55:20,998 basehttp 14972 12188 "GET / HTTP/1.1" 200 3024
+INFO 2023-10-18 13:55:21,027 basehttp 14972 12188 "GET /static/ProfileApp/css/footer.css HTTP/1.1" 304 0
+WARNING 2023-10-18 13:55:21,230 log 14972 12188 Not Found: /favicon.ico
+WARNING 2023-10-18 13:55:21,236 basehttp 14972 12188 "GET /favicon.ico HTTP/1.1" 404 2694
+INFO 2023-10-18 13:55:22,467 basehttp 14972 12188 "GET /profile/login/ HTTP/1.1" 200 3783
+INFO 2023-10-18 13:55:33,765 basehttp 14972 12188 - Broken pipe from ('127.0.0.1', 58748)
+INFO 2023-10-18 13:55:33,937 basehttp 14972 8056 "POST /profile/login/ HTTP/1.1" 302 0
+INFO 2023-10-18 13:55:33,947 basehttp 14972 8056 "GET / HTTP/1.1" 200 3202
+INFO 2023-10-18 13:55:35,316 basehttp 14972 8056 "GET /profile/profils/1/ HTTP/1.1" 200 2869
+INFO 2023-10-18 13:55:35,322 basehttp 14972 8056 "GET /static/ProfileApp/css/profile.css HTTP/1.1" 304 0
+INFO 2023-10-18 13:55:36,448 basehttp 14972 8056 "GET /profile/logout/ HTTP/1.1" 302 0
+INFO 2023-10-18 13:55:36,454 basehttp 14972 8056 "GET / HTTP/1.1" 200 3024
+INFO 2023-10-18 13:55:36,893 basehttp 14972 8056 "GET /profile/login/ HTTP/1.1" 200 3783
+INFO 2023-10-18 13:56:29,676 basehttp 14972 8056 "GET /profile/login/ HTTP/1.1" 200 3810
+INFO 2023-10-18 13:56:32,071 basehttp 14972 8056 "GET /profile/login/ HTTP/1.1" 200 3810
+INFO 2023-10-18 13:56:41,900 basehttp 14972 8056 "POST /profile/login/ HTTP/1.1" 302 0
+INFO 2023-10-18 13:56:41,911 basehttp 14972 8056 "GET / HTTP/1.1" 200 3202
+INFO 2023-10-18 13:56:43,245 basehttp 14972 8056 "GET /profile/logout/ HTTP/1.1" 302 0
+INFO 2023-10-18 13:56:43,251 basehttp 14972 8056 "GET / HTTP/1.1" 200 3024
+INFO 2023-10-18 13:56:43,717 basehttp 14972 8056 "GET /profile/login/ HTTP/1.1" 200 3810
+INFO 2023-10-18 13:57:10,318 autoreload 14972 13164 C:\PythonProject\SmartLearn\SmartLearn-Squad\SmartLearn\ProfileApp\views.py changed, reloading.
+INFO 2023-10-18 13:57:11,059 autoreload 13500 15176 Watching for file changes with StatReloader
+INFO 2023-10-18 13:57:20,168 basehttp 13500 11328 "GET /profile/login/ HTTP/1.1" 200 3810
+INFO 2023-10-18 13:57:25,379 basehttp 13500 11328 - Broken pipe from ('127.0.0.1', 58862)
+INFO 2023-10-18 13:57:25,692 basehttp 13500 6916 "POST /profile/login/ HTTP/1.1" 302 0
+INFO 2023-10-18 13:57:25,705 basehttp 13500 6916 "GET / HTTP/1.1" 200 3202
+INFO 2023-10-18 13:57:26,949 basehttp 13500 6916 "GET /profile/logout/ HTTP/1.1" 302 0
+INFO 2023-10-18 13:57:26,956 basehttp 13500 6916 "GET / HTTP/1.1" 200 3024
+INFO 2023-10-18 13:57:28,244 basehttp 13500 6916 "GET /profile/login/ HTTP/1.1" 200 3810
+INFO 2023-10-18 13:57:33,305 basehttp 13500 6916 "POST /profile/login/ HTTP/1.1" 200 3810
+INFO 2023-10-18 13:58:22,959 basehttp 13500 6916 "GET / HTTP/1.1" 200 3024
+INFO 2023-10-18 13:58:24,129 basehttp 13500 6916 "GET /profile/login/ HTTP/1.1" 200 3810
+INFO 2023-10-18 13:59:11,641 basehttp 13500 6916 "GET /profile/login/ HTTP/1.1" 200 3638
+INFO 2023-10-18 13:59:19,300 basehttp 13500 6916 "POST /profile/login/ HTTP/1.1" 200 3638
+INFO 2023-10-18 13:59:24,211 basehttp 13500 6916 "POST /profile/login/ HTTP/1.1" 200 3638
+INFO 2023-10-18 13:59:29,752 basehttp 13500 6916 "POST /profile/login/ HTTP/1.1" 302 0
+INFO 2023-10-18 13:59:29,763 basehttp 13500 6916 "GET / HTTP/1.1" 200 3202
+INFO 2023-10-18 13:59:31,070 basehttp 13500 6916 "GET /profile/logout/ HTTP/1.1" 302 0
+INFO 2023-10-18 13:59:31,076 basehttp 13500 6916 "GET / HTTP/1.1" 200 3024
+INFO 2023-10-18 13:59:43,177 basehttp 13500 6916 "GET / HTTP/1.1" 200 3024
+INFO 2023-10-18 13:59:44,352 basehttp 13500 6916 "GET /profile/login/ HTTP/1.1" 200 4083
+INFO 2023-10-18 13:59:48,759 basehttp 13500 6916 "GET /profile/login/ HTTP/1.1" 200 3810
+INFO 2023-10-18 13:59:50,935 basehttp 13500 6916 "GET /profile/login/ HTTP/1.1" 200 3810
+INFO 2023-10-18 14:02:35,470 autoreload 6152 9120 Watching for file changes with StatReloader
+INFO 2023-10-18 14:02:37,022 basehttp 6152 5768 "GET /profile/login/ HTTP/1.1" 200 3831
+INFO 2023-10-18 14:02:37,700 basehttp 6152 5768 "GET /profile/login/ HTTP/1.1" 200 3831
+INFO 2023-10-18 14:04:17,379 autoreload 6152 9120 C:\PythonProject\SmartLearn\SmartLearn-Squad\SmartLearn\ProfileApp\views.py changed, reloading.
+INFO 2023-10-18 14:04:18,220 autoreload 2392 2944 Watching for file changes with StatReloader
+INFO 2023-10-18 14:04:27,515 basehttp 2392 2356 "GET /profile/login/ HTTP/1.1" 200 3638
+INFO 2023-10-18 14:04:31,067 basehttp 2392 2356 "POST /profile/login/ HTTP/1.1" 200 3831
+INFO 2023-10-18 14:04:38,040 basehttp 2392 2356 "POST /profile/login/ HTTP/1.1" 302 0
+INFO 2023-10-18 14:04:38,052 basehttp 2392 2356 "GET / HTTP/1.1" 200 3202
+INFO 2023-10-18 14:16:00,333 autoreload 6492 14192 Watching for file changes with StatReloader
+INFO 2023-10-18 14:16:01,500 basehttp 6492 12140 "GET / HTTP/1.1" 200 3202
+INFO 2023-10-18 14:16:02,789 basehttp 6492 12140 "GET /profile/logout/ HTTP/1.1" 302 0
+INFO 2023-10-18 14:16:02,795 basehttp 6492 12140 "GET / HTTP/1.1" 200 3024
+INFO 2023-10-18 14:16:03,366 basehttp 6492 12140 "GET /profile/login/ HTTP/1.1" 200 3638
+INFO 2023-10-18 14:16:04,365 basehttp 6492 12140 "GET /profile/register/ HTTP/1.1" 200 4554
+INFO 2023-10-18 14:17:15,373 basehttp 6492 12140 "POST /profile/register/ HTTP/1.1" 200 4759
+INFO 2023-10-18 14:22:01,902 basehttp 6492 12140 "POST /profile/register/ HTTP/1.1" 200 5093
+INFO 2023-10-18 14:22:14,714 basehttp 6492 12140 "GET /admin/ HTTP/1.1" 302 0
+INFO 2023-10-18 14:22:14,778 basehttp 6492 12140 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4267
+INFO 2023-10-18 14:22:14,954 basehttp 6492 12140 "GET /static/admin/css/login.css HTTP/1.1" 200 958
+INFO 2023-10-18 14:22:15,439 basehttp 6492 12140 "GET /admin/ HTTP/1.1" 302 0
+INFO 2023-10-18 14:22:15,448 basehttp 6492 12140 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4267
+INFO 2023-10-18 14:22:19,513 basehttp 6492 12140 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2023-10-18 14:22:19,550 basehttp 6492 12140 "GET /admin/ HTTP/1.1" 200 11130
+INFO 2023-10-18 14:22:19,559 basehttp 6492 12140 "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2023-10-18 14:22:19,567 basehttp 6492 12140 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2023-10-18 14:22:21,561 basehttp 6492 12140 "GET /admin/ProfileApp/user/ HTTP/1.1" 200 13286
+INFO 2023-10-18 14:22:21,577 basehttp 6492 12140 "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2023-10-18 14:22:21,584 basehttp 6492 12140 "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2023-10-18 14:22:21,589 basehttp 6492 1868 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2023-10-18 14:22:21,589 basehttp 6492 12140 "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2023-10-18 14:22:21,593 basehttp 6492 12140 "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2023-10-18 14:22:21,593 basehttp 6492 1868 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2023-10-18 14:22:21,598 basehttp 6492 3096 "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2023-10-18 14:22:21,599 basehttp 6492 11556 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-18 14:22:21,599 basehttp 6492 13884 "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2023-10-18 14:22:21,600 basehttp 6492 14240 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2023-10-18 14:22:21,718 basehttp 6492 14240 "GET /static/admin/img/icon-no.svg HTTP/1.1" 304 0
+INFO 2023-10-18 14:22:21,718 basehttp 6492 11556 "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2023-10-18 14:22:21,745 basehttp 6492 11556 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+WARNING 2023-10-18 14:22:48,600 log 6492 11556 Forbidden (CSRF token from POST incorrect.): /profile/register/
+WARNING 2023-10-18 14:22:48,600 basehttp 6492 11556 "POST /profile/register/ HTTP/1.1" 403 2560
+WARNING 2023-10-18 14:23:08,530 log 6492 11556 Forbidden (CSRF token from POST incorrect.): /profile/register/
+WARNING 2023-10-18 14:23:08,532 basehttp 6492 11556 "POST /profile/register/ HTTP/1.1" 403 2560
+WARNING 2023-10-18 14:23:11,570 log 6492 11556 Forbidden (CSRF token from POST incorrect.): /profile/register/
+WARNING 2023-10-18 14:23:11,572 basehttp 6492 11556 "POST /profile/register/ HTTP/1.1" 403 2560
+INFO 2023-10-18 14:23:12,620 basehttp 6492 11556 "GET /profile/register/ HTTP/1.1" 200 4635
+INFO 2023-10-18 14:23:36,557 basehttp 6492 11556 "POST /profile/register/ HTTP/1.1" 200 4884
+INFO 2023-10-18 14:23:57,341 basehttp 6492 11556 "POST /profile/register/ HTTP/1.1" 302 0
+INFO 2023-10-18 14:23:57,346 basehttp 6492 11556 "GET /profile/login/ HTTP/1.1" 200 3638
+INFO 2023-10-18 14:23:59,665 basehttp 6492 11556 "GET /profile/register/ HTTP/1.1" 200 4635
+INFO 2023-10-18 14:24:17,977 basehttp 6492 11556 "POST /profile/register/ HTTP/1.1" 200 4886
+INFO 2023-10-18 14:33:43,983 basehttp 6492 12120 "POST /profile/register/ HTTP/1.1" 200 4993
+INFO 2023-10-18 14:34:06,883 basehttp 6492 12120 "POST /profile/register/ HTTP/1.1" 302 0
+INFO 2023-10-18 14:34:06,888 basehttp 6492 12120 "GET /profile/login/ HTTP/1.1" 200 3638
+INFO 2023-10-18 14:34:54,492 basehttp 6492 12120 "GET /profile/register/ HTTP/1.1" 200 4635

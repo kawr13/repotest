@@ -5,13 +5,21 @@
     <div class="register-container d-flex justify-content-center align-items-center">
         <div class="register-box p-4 rounded">
             <h2 class="mb-4">Авторизация</h2>
+            {% if messages %}
+              <div class="alert alert-danger">
+                  {% for message in messages %}
+                      {{ message }}
+                  {% endfor %}
+              </div>
+              {% endif %}
             <form method="POST" action="{% url 'profile:login' %}">
             {% csrf_token %}
-        {#        {{ form.as_p }}#}
+
                 {{ form.username.label_tag }}
                 {{ form.username }}
                 {{ form.password.label_tag }}
                 {{ form.password }}
+
                 <input type="submit" value="Login">
             </form>
             <a href="" class="btn btn-primary">Восстановление по электронной почте</a>
