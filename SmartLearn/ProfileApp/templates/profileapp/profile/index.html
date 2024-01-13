@@ -1,0 +1,40 @@
+{% extends 'profileapp/profile/base_home.html' %}
+{% load static %}
+{% block content %}
+    <div class="container mt-5">
+        <div class="btn-group" role="group" id="categoryButtons">
+            <a href="{% url 'index' %}" class="btn btn-secondary">ALL</a>
+            {% for category in categories %}
+                <a href="{% url 'profile:tag' tag_id=category.id|urlencode %}" class="btn btn-primary">{{ category.name }}</a>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="container">
+        <!-- Содержимое страницы -->
+        <h2>Наши преподаватели</h2>
+        <div class="row">
+            {% for user in users %}
+                {% if user.is_teacher %}
+                    <div class="col-md-12">
+                        <div class="card mb-3"">
+                            <div class="card-body d-flex flex-row align-items-center">
+                                <div class="col-md-4">
+                                    <img src="{% if user.images %}{{ user.images.url }}{% else %}{% static 'image/profile_img/img.png' %}{% endif %}" class="card-img img-fluid w-100" alt="Учитель">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <a href="{% url 'profile:blog' user.id %}">
+                                            <p class="card-text text-wrap">Имя: {{ user.first_name }}</p>
+                                            <p class="card-text text-wrap">Фамилия: {{ user.last_name }}</p>
+                                            <p class="card-text text-wrap">{{ user.teacher.description }}</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

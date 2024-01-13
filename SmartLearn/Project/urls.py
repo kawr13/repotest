@@ -18,13 +18,17 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf.urls.static import static
 from django.conf import settings
-from Learn.views import index
+from ProfileApp.views import IndexView
+
+
 
 urlpatterns = [
-    path('', index, name='index'),
+    path('', IndexView.as_view(), name='index'),
     path('admin/', admin.site.urls),
-    path('profile/', include('Learn.urls', namespace='Learn')),
-    path('chat/', include('chat.urls', namespace='chat')),
+    path('cabinet/', include('CabinetApp.urls', namespace='сabinet')),
+    path('profile/', include('ProfileApp.urls', namespace='profile')),
+    path("chat/", include("ChatApp.urls")),
+    path('', include('django.contrib.auth.urls')),
 ]
 
 if settings.DEBUG:

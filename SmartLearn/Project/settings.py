@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
-
+import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -29,19 +29,22 @@ ALLOWED_HOSTS = [
     '*'
 ]
 
-
+DOMAIN_NAME = 'http://127.0.0.1:8000'
 # Application definition
 
 INSTALLED_APPS = [
     'daphne',
-    'chat',
+    'ChatApp.apps.ChatappConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    "Learn.apps.LearnConfig",
+    "ProfileApp.apps.ProfileappConfig",
+    'CabinetApp.apps.CabinetConfig',
+    'tinymce',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -59,10 +62,11 @@ ROOT_URLCONF = 'Project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates'],
+        'DIRS': [os.path.join(BASE_DIR, 'CabinetApp/templates'), os.path.join(BASE_DIR, 'ProfileApp/templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
+
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
@@ -74,9 +78,13 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'Project.wsgi.application'
 
-
-# Daphne
-ASGI_APPLICATION = "Project.asgi.application"
+TINYMCE_DEFAULT_CONFIG = {
+    'height': 360,
+    'width': 1000,
+    'selector': 'textarea',
+    'plugins': 'advlist autolink lists link image charmap print preview anchor',
+    'toolbar': 'aundo redo | formatselect | bold italic backcolor | link image | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat | code',
+}
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
@@ -111,6 +119,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
 
+
 LANGUAGE_CODE = 'ru-ru'
 
 TIME_ZONE = 'UTC'
@@ -131,12 +140,14 @@ MEDIA_URL = 'media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
 # User
-AUTH_USER_MODEL = 'Learn.User'
-
-# Default primary key field type
-# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
+AUTH_USER_MODEL = 'ProfileApp.User'
+LOGIN_URL = '/profile/login/'
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
@@ -166,10 +177,39 @@ LOGGING = {
             'handlers': ['console', 'file'],
             'level': 'INFO',
         },
-        'Learn': {
+        'ProfileApp': {
             'handlers': ['console', 'file'],
             'level': 'INFO',
             'propagate': True,
         },
     },
 }
+
+
+# SMTP Сервер
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+EMAIL_HOST = 'smtp.yandex.ru'
+EMAIL_PORT = 465
+EMAIL_USE_TLS = False
+EMAIL_USE_SSL = True
+
+EMAIL_HOST_USER = 'TampaNechet-Vuun@yandex.ru'
+EMAIL_HOST_PASSWORD = 'ptwkgaopjvvwiale'
+
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+SERVER_EMAIL = EMAIL_HOST_USER
+EMAIL_ADMIN = EMAIL_HOST_USER
+
+ASGI_APPLICATION = "Project.asgi.application"
+CHANNEL_LAYERS = {
+    "default": {
+        "BACKEND": "channels_redis.core.RedisChannelLayer",
+        "CONFIG": {
+            "hosts": [("127.0.0.1", 6379)],
+        },
+    },
+}
+
+# Комманда запуска редис в консоли docker run -p 6379:6379 redis:latest

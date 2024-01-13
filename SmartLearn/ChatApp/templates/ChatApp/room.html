@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Чат</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'ChatApp/css/chat.css' %}">
+</head>
+<body>
+    {{ chat_id |json_script:"chat-id" }}
+    {{ user |json_script:"user-name" }}
+ <div class="chat-container clearfix">
+    <div class="people-list" id="people-list">
+      <div class="search">
+        <input type="text" placeholder="search" />
+      </div>
+
+      <ul class="list">
+          {% if chat_list %}
+              {% for chat in chat_list %}
+                  <li class="clearfix">
+{#                    <img src="{{ chat.members }}" alt="avatar"/>#}
+                    <div class="about">
+                      <div class="name"><a href="{% url 'chat:room' chat.id %}">{{ chat.name_chat }}</a></div>
+                    </div>
+                  </li>
+              {% endfor %}
+          {% else %}
+              У вас нету чата
+          {% endif %}
+
+
+      </ul>
+    </div>
+
+    <div class="chat">
+      <div class="chat-header clearfix">
+        <img src="" alt="avatar" />
+
+        <div class="chat-about">
+          <div class="chat-with">{{ user }}</div>
+        </div>
+
+      </div>
+
+      <div class="chat-history" id="chat-history">
+
+      </div> <!-- end chat-history -->
+
+      <div class="chat-message clearfix">
+        <textarea name="message-to-send" id="message-to-send" placeholder ="Type your message" rows="3"></textarea>
+          <input type="submit" id="chat-message-submit" value="Send">
+      </div> <!-- end chat-message -->
+    </div> <!-- end chat -->
+  </div> <!-- end container -->
+
+<script src="{% static 'ChatApp/js/reconnecting-websocket.js' %}"></script>
+<script src="{% static 'ChatApp/js/chat.js'%}"></script>
+</body>
+</html>
+
+
+
+
+{#    <textarea id="chat-log" cols="100" rows="20"></textarea><br>#}
+{#    <input id="chat-message-input" type="text" size="100"><br>#}
+{#    <input id="chat-message-submit" type="button" value="Send">#}

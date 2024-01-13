@@ -1,0 +1,71 @@
+{% extends 'profileapp/profile/base_cabinet_index.html' %}
+{% load static %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block styles %}
+    <!-- Подключение стилей Editor.js -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@editorjs/editorjs@latest/dist/editorjs.min.css">
+    <style>
+        .sidenav {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #333; /* Цвет фона */
+            padding-top: 20px;
+            z-index: 1; /* Устанавливаем z-index для боковой панели */
+        }
+
+        /* Стили для пунктов меню */
+        .sidenav a {
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #fff; /* Цвет текста */
+            display: block;
+        }
+
+        /* Стили для активного пункта меню */
+        .sidenav a.active {
+            background-color: #4CAF50; /* Цвет активного пункта */
+        }
+
+        /* Стили для контента, сдвигаемого вправо */
+        .content {
+            margin-left: 250px; /* Ширина боковой панели */
+            padding: 20px;
+            z-index: 1; /* Устанавливаем z-index для контента */
+        }
+    </style>
+{% endblock %}
+
+{% block scripts %}
+    <!-- Подключение скрипта Editor.js -->
+    <script src="https://cdn.tiny.cloud/1/YOUR_API_KEY/tinymce/5/tinymce.min.js"></script>
+    <script>
+        tinymce.init({selector:'textarea'});
+    </script>
+{% endblock %}
+
+{% block content %}
+    {% if teach %}
+        <div class="blog-header">
+            <form action="{% url 'profile:publish_post' %}" method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <input type="submit" value="Отправить">
+            </form>
+        </div>
+    {% endif %}
+</div>
+{% endblock %}
+
+{% block script %}
+    <script>
+        tinymce.init({selector:'textarea'});
+    </script>
+{% endblock %}

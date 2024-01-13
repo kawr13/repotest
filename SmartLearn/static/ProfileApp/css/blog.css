@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.blog-header {
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 800px; /* Установите желаемую максимальную ширину */
+    margin: 0 auto;
+}
+
+
+.header-wrapper {
+    height: 5cm; /* Задайте высоту в сантиметрах */
+    overflow: hidden; /* Обрезать содержимое, которое не умещается */
+}
+
+.header-wrapper img {
+    width: 100%; /* Чтобы изображение занимало 100% ширины обертки */
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.user-profile img {
+    max-width: 200px;
+    max-height: 150px;
+    object-fit: cover; /* Обрезать изображение, если оно не соответствует прямоугольному формату */
+    margin-right: 20px;
+}
+
+.blog-post {
+    display: flex;
+    margin: 20px;
+}
+
+.blog-post img {
+    max-width: 150px;
+    max-height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-group input[type="file"] {
+    display: none; /* Скрываем стандартную кнопку выбора файла */
+}
+
+/* Стилизация кнопки загрузки изображения */
+.form-group input[type="file"] + label {
+    display: inline-block;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Стилизация кнопки "Сохранить пост" */
+button[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}

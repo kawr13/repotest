@@ -1,0 +1,60 @@
+/* Задайте модальному окну фиксированное позиционирование и установите z-index */
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1100; /* Значение z-index может быть выбрано на ваше усмотрение */
+    overflow: auto;
+}
+
+/* Удалите фон и обводку модального окна */
+.modal-content {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+/* Затемненный фон за модальным окном */
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Значение прозрачности может быть изменено */
+    z-index: 800; /* Значение z-index должно быть меньше, чем у модального окна */
+}
+
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333; /* Цвет фона */
+    padding-top: 20px;
+    z-index: 1; /* Устанавливаем z-index для боковой панели */
+}
+
+/* Стили для пунктов меню */
+.sidenav a {
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff; /* Цвет текста */
+    display: block;
+}
+
+/* Стили для активного пункта меню */
+.sidenav a.active {
+    background-color: #4CAF50; /* Цвет активного пункта */
+}
+
+/* Стили для контента, сдвигаемого вправо */
+.content {
+    margin-left: 250px; /* Ширина боковой панели */
+    padding: 20px;
+    z-index: 1; /* Устанавливаем z-index для контента */
+}

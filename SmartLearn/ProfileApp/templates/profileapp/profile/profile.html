@@ -1,0 +1,38 @@
+{% extends 'profileapp/profile/base_cabinet_index.html' %}
+{% load static %}
+
+{% block title %}{{ title }}{% endblock %}
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'ProfileApp/css/profile.css'%}">
+{% endblock %}
+
+{% block content %}
+    <div class="content">
+        <h1>Добро пожаловать в ваш кабинет</h1>
+        <img class="profile-image" src="{% if user.images %}{{ user.images.url }}{% else %}{% static 'ProfileApp/images/default_profile_image.png' %}{% endif %}" alt="Profile Image">
+
+        <!-- Здесь будет отображаться контент для выбранного пункта меню -->
+    </div>
+    <div class="content form-container">
+    <div class="content2">
+        <form method="post" action="{% url 'profile:updateViews' user.id %}" enctype="multipart/form-data">
+            {% csrf_token %}
+            {% if form.errors %}
+                <div class="alert alert-danger">
+                    <strong>Ошибки ввода:</strong>
+                    {% for field, errors in form.errors.items %}
+                        {% for error in errors %}
+                            <p>{{ field }}: {{ error }}</p>
+                        {% endfor %}
+                    {% endfor %}
+                </div>
+            {% endif %}
+            {{ form.as_p }}
+{#            <div class="form-row">#}
+{#                <div class="col-lg-6">#}
+{#                    <div class="form-group">#}
+{#                        <label class="small mb-1" for="{{ forms.username.id_for_label }}">Имя пользователя</label>#}
+            <input type="submit" value="Сохранить">
+        </form>
+    </div>
+{% endblock %}

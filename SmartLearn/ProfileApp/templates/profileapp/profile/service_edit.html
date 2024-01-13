@@ -1,0 +1,37 @@
+{%  load static %}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ваша учетная запись подтверждена</title>
+    <link rel="stylesheet" href="{% static 'ProfileApp/css/service_edit.css' %}">
+</head>
+<body>
+    <div class="confirmation-box">
+        <form method="post" id="editServiceForm" action="{% url 'profile:edit_service' service_id %}">
+            {% csrf_token %}
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editServiceModalLabel">Отредактировать</h5>
+                </div>
+                <div class="modal-body">
+                    <p>{{ form.name.label_tag }}
+                        {{ form.name }}</p>
+                    <p>{{ form.description.label_tag }}
+                    {{ form.description }}</p>
+                    <p>{{ form.user_count.label_tag }}
+                    {{ form.user_count }}</p>
+                    <p>{{ form.price.label_tag }}
+                    {{ form.price }}</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                    <button type="submit" class="btn btn-success">Сохранить</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
